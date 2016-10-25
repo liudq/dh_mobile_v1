@@ -1,0 +1,12 @@
+$IMPORT('/DHMUtils/DHMCountdown.js');
+$IMPORT('/DHMUtils/DHMCommon.js');
+$IMPORT('/DHMUtils/DHMInit.js');
+$IMPORT('/DHMUtils/DHMSearch.js');
+$IMPORT('/DHMUtils/DHMSlide.js');
+$IMPORT('/common/deeplink.js');
+$IMPORT('/detail/20150108/config.js');
+$IMPORT('/detail/20150108/priceonapp.js');
+$IMPORT('/detail/20150108/popupTip.js');
+$IMPORT('/detail/20150108/dataErrorLog.js');
+$IMPORT('/detail/20150108/addToFav.js');
+$IMPORT('/detail/20150108/detail_v2.js');

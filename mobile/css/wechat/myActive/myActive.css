@@ -1,0 +1,110 @@
+/* contact us */
+.myActivetit{background-color: #fff;border-bottom: 2px solid #ddd;}
+.myActivetit li{display: block;padding:0 0 0 45px;height: 45px;line-height: 45px;border-top: 1px solid #ddd;background: url(http://css.dhresource.com/mobile/wechat/myActive/image/icon-cu.png) no-repeat 14px 12px;background-size: 22px 22px;}
+.myActivetit li:nth-child(2){background: url(http://css.dhresource.com/mobile/wechat/myActive/image/icon-ren.png) no-repeat 14px 12px;background-size: 22px 22px; }
+.myActivetit li a{display: block;color:#404040;font-size: 15px;font-family: '微软雅黑';padding-right:10px;height: 45px;line-height: 45px;background: url(http://css.dhresource.com/mobile/wechat/myActive/image/icon-skip.png) no-repeat right center content-box;background-size: 8px 12px;}
+.signUp{margin:12px 10px 10px;padding-bottom:20px;border:1px solid #ddd;border-radius:2px;background-color: #fff;border-radius: 1px;-moz-box-shadow: 0px 2px 0px #ddd;-webkit-box-shadow: 0px 2px 0px #ddd;box-shadow: 0px 2px 0px #ddd;}
+.signUp-process{padding: 5px 18px 0;}
+.signUp-process h3{color:#404040;font-size: 15px;font-family: '微软雅黑';padding-top: 15px;}
+.signUp-process p{padding-top: 10px;color: #727171;font-size: 11px;font-family: '微软雅黑';}
+.signUp-process p a{color:#feb901;}
+.t13{margin-top:-13px;}
+.activeList{background-color: #fff;padding: 0 12px 20px;}
+.activeList ul li{border-bottom: 1px solid #ddd;font-family: '微软雅黑';padding-top: 16px;}
+.activeList ul li a{display:block;padding-bottom:16px;color:#404040;background: url(http://css.dhresource.com/mobile/wechat/myActive/image/icon-skip.png) no-repeat right center content-box;background-size: 8px 12px;}
+.activeList ul li h3{font-size: 15px;font-family: '微软雅黑';}
+.activeList ul li p{padding:12px 0 0 26px;line-height:16px;background: url(http://css.dhresource.com/mobile/wechat/myActive/image/icon-style.png) no-repeat 0 12px;background-size: 17px 17px;}
+.activeList ul li .active-tm{background-image: url(http://css.dhresource.com/mobile/wechat/myActive/image/icon-clock.png);}
+.activeList ul li .active-tm span{color: #fe6601;font-size:13px;}
+.activeDetail{font-size: 15px;font-family: '微软雅黑';text-align:center;height:43px;line-height:43px;background-color: #fff;border-bottom: 1px solid #ddd;}
+.signUp-btn{padding: 12px 10px 30px;}
+.signUp-btn input{display: block;-webkit-appearance:none;border:0 none;width: 100%;height: 44px;border-radius: 3px;background-color: #feb901;color:#fff;font-size: 15px;font-family: '微软雅黑';}
+
+.active-status{padding: 5px 0 0 25px;}
+.active-status span{display: inline-block;width: 53px;height: 18px;line-height:18px;text-align:center;color: #fff;font-size: 11px;border-radius: 8px;}
+.notStart{background-color: #feb901;}
+.ongoing{background-color: #009944;}
+.ended{background-color: #bfbfbf;}
+.active-lc{padding: 0 10px;}
+.active-lc h3{height: 40px;line-height:40px;font-size: 15px;font-family: '微软雅黑';}
+.active-lcsignSucc,.active-lcchoosePro,.active-lcsetDis{padding: 4px 0 8px;width:302px;height:42px;margin:0 auto;background: url(http://css.dhresource.com/mobile/wechat/myActive/image/lc3.png) no-repeat 0 0;background-size: 302px 41px;}
+.active-lcchoosePro{background-image: url(http://css.dhresource.com/mobile/wechat/myActive/image/lc1.png);}
+.active-lcsetDis{background-image: url(http://css.dhresource.com/mobile/wechat/myActive/image/lc2.png);}
+.signUp-failTips,.signUp-SuccTips{height: 45px;line-height: 45px;text-align: center;background-color: #fde0e0;border-top: 1px dashed #ff8383;border-bottom: 1px dashed #ff8383;color:#cd0c13;font-size: 15px;font-family: '微软雅黑';font-weight: bold;}
+.signUp-SuccTips{background-color: #e8ffc8;border-top: 1px dashed #7cc95d;border-bottom: 1px dashed #7cc95d;color:#009944;}
+.signUp-failTips span,.signUp-SuccTips span{display: inline-block;margin-top:-5px;vertical-align:middle;margin-right:10px;width: 22px;height: 22px;background: url(http://css.dhresource.com/mobile/wechat/myActive/image/icon-afail.png) no-repeat 0 0;background-size: 22px 22px;}
+.signUp-SuccTips span{background-image: url(http://css.dhresource.com/mobile/wechat/myActive/image/icon-asucc.png);}
+.telphone{padding-top: 25px;}
+.telphone span{float:left;width:84px;font-size: 15px;font-weight:bold;font-family:'微软雅黑';padding-top: 5px;}
+.tel-input{margin-left:84px;}
+.telphone input{display: inline-block;height:25px;line-height:25px;font-size: 14px;text-indent:10px;width:100%;border-radius: 3px;border: 1px solid #ddd;font-family: '微软雅黑';}
+.signUp-notAll{padding:7px 0 5px 55px;line-height:20px;font-family: '微软雅黑';color:#666;background:#fffabc url(http://css.dhresource.com/mobile/wechat/myActive/image/icon-warningbg.png) no-repeat 19px center;background-size: 24px 22px;border-top: 1px solid #ffd35d;border-bottom: 1px solid #ffd35d;}
+.signUp-notAll span{color:#fe6601;font-size: 12px;}
+.signUp-product{padding:0 10px 77px;background: #fff url(http://css.dhresource.com/mobile/wechat/myActive/image/whitebg.png) repeat-x left bottom;background-size: 5px 3px;}
+.signUp-product dl{padding:10px 0px;border-bottom: 1px solid #ddd;}
+.signUp-product dl dt,.proSta-list dl dt{float:left;width: 80px;height: 80px;}
+.signUp-product dl dt img,.proSta-list dl dt img{display: block;border: 1px solid #ddd;padding: 2px;max-width: 74px;max-height: 74px;}
+.signUp-product dl dd{padding:10px 10px 0 7px;overflow:hidden;max-height:64px;min-width:125px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;line-height:21px;margin-left: 80px;color:#404040;font-size:15px;}
+.signUp-product dl dd{min-width: 200px;}
+.productStatus-tit{margin:10px;height:26px;border:1px solid #feb901;border-radius:2px;-webkit-column-count:3;-moz-column-count:3;-o-column-count:3;-moz-column-gap:0px;-webkit-column-gap:0px;}
+.productStatus-tit a{display:block;height:26px;line-height:26px;color:#feb901;font-size:13px;font-family: '微软雅黑';border-left:1px solid #feb901;text-align:center;-moz-box-sizing:border-box;-o-box-sizing:border-box;-webkit-box-sizing:border-box;}
+.productStatus-tit a:nth-child(1){border-left: 0px;}
+.productStatus-tit .active{background-color: #feb901;color: #fff;}
+.proStatusCon,.chooseProList{border-top: 1px solid #ddd;padding:0 10px;}
+.proStatusCon{background-color: #fff;}
+.proSta-list{position:relative;padding:12px 0;border-bottom: 1px solid #ddd;}
+.chooseProList .proSta-list{padding:12px 0 12px 35px;}
+.proSta-list dd{margin-left: 87px;color:#727171;font-size:12px;line-height: 18px;font-family: '微软雅黑';}
+.proSta-list dd h4{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color: #404040;font-size:15px;height: 21px;line-height: 21px;}
+.proSta-list .pro-price{color: #900;font-size: 15px;line-height: 21px;}
+.signUpBtn,.signUpCancel{position: absolute;right:10px;bottom:13px;width:72px;height: 39px;line-height: 39px;text-align: center;color: #fff;font-size:12px;font-family: '微软雅黑';background-color:#fe6601;border-radius: 3px;}
+.signUpCancel{height: 18px;line-height: 20px;background-color: #bfbfbf;border-radius: 8px;}
+
+.proScreening{padding: 8px 10px;border-top: 1px solid #b2b2b2;background-color: #e4e4e4;}
+.proScreenBox{height: 29px;padding:0 10px 0 32px;border-radius: 5px;background:#fff url(http://css.dhresource.com/mobile/wechat/myActive/image/proScebg.png) no-repeat 13px 11px;background-size: 14px 10px;}
+.proScreenBox select{display: block;width: 100%;border: 0 none;height:29px;line-height:29px;background-color: red;-webkit-appearance:none;background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-pgbg.png) no-repeat right center;background-size:13px 8px;}
+.chooseProCon {background: #fff url(http://css.dhresource.com/mobile/wechat/myActive/image/whitebg.png) repeat-x left bottom;background-size: 5px 3px;}
+.pro-checked,.pro-nochecked,.pro-del{position:absolute;left:0;top:41px;width: 23px;height: 23px;background:url(http://css.dhresource.com/mobile/wechat/myActive/image/checked.png) no-repeat 0 0;background-size: 23px 23px;}
+.pro-nochecked{background-image:url(http://css.dhresource.com/mobile/wechat/myActive/image/nochecked.png);}
+.pro-del{background-image:url(http://css.dhresource.com/mobile/wechat/myActive/image/delbg.png);}
+.chooseProList{padding-bottom: 50px;}
+
+/* page */
+.proMan-page{padding: 10px;border-top: 1px solid #ccc;}
+.proMan-pagelf{float: left;position:relative;}
+.proMan-select{position: absolute;background:rgba(0,0,0,0);text-indent:-2000px;width:100px;left:40px;height: 35px;border:0 none;-webkit-appearance:none;}
+.proMan-pageri{float: right;}
+.proMan-pagelf a{display: inline-block;vertical-align:middle;width:40px;height: 35px;}
+.proMan-pagelf span{display: inline-block;vertical-align:middle;text-align:center;color:#333;font-size:13px;width:94px;padding:0 2px;height: 35px;line-height: 35px;border:0 none;}
+.proMan-pagelf .pgprev-nopage{background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-nopalf.png) no-repeat center center;background-size:13px 20px;}
+.proMan-pagelf .pgnext-avtive{background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-pgri.png) no-repeat center center;background-size:13px 20px;}
+.proMan-pagelf .pgprev-active{background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-pglf.png) no-repeat center center;background-size:13px 20px;}
+.proMan-pagelf .pgnext-nopage{background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-nopgri.png) no-repeat center center;background-size:13px 20px;}
+.proMa-pgbg{display: inline-block;width:13px;height:8px;margin-left:5px;vertical-align: middle;background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-pgbg.png) no-repeat 0 0;background-size:13px 8px;}
+.proMan-pageri select{display: inline-block;-webkit-appearance:none;vertical-align: middle;padding:0 0 0 10px;width:74px;height: 35px;border: 1px solid #ddd;border-radius:3px;background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-pgbg.png) no-repeat 40px center;background-size:13px 8px;}
+
+.chooseCon{padding: 10px;font-size:15px;line-height: 39px;}
+.chooseCon span{font-size: 11px;padding-left: 30px;}
+.chooseCon span em{color:#900;}
+.chooseCon .nextBtn{float:right;width:72px;height: 39px;line-height: 39px;text-align: center;color: #fff;font-size:12px;font-family: '微软雅黑';background-color:#fe6601;border-radius: 3px;}
+.allchecked{display:inline-block;margin-top:-3px;vertical-align:middle;padding-right:10px;width: 23px;height: 23px;background:url(http://css.dhresource.com/mobile/wechat/myActive/image/nochecked.png) no-repeat 0 0;background-size: 23px 23px;}
+.checkActive{background-image:url(http://css.dhresource.com/mobile/wechat/myActive/image/checked.png);}
+
+
+.str-Down{padding:10px;border-top: 1px solid #b2b2b2;background-color: #e4e4e4;font-family: '微软雅黑';}
+.downArea{color:#fe6601;}
+.setdownPrice{padding-top: 3px;}
+.setdownPrice input{margin-left:5px;color:#fe6601;text-align:center;font-size:15px;width: 68px;height: 28px;line-height: 28px;background-color: #fff;border: 0 none;border-radius: 3px;}
+.proSta-list .down-price{color: #404040;font-size:12px;font-family: '微软雅黑';padding-top:10px;}
+.proSta-list .down-price input{color:#fe6601;text-align:center;border-radius:3px;font-size:15px;width: 68px;height: 28px;line-height: 28px;border:0 none;border:1px solid #ddd;-webkit-appearance:none;}
+
+/* 弹层 */
+.layyer-wrap{position:fixed;width:100%;bottom:0;padding:20px 0px;background: rgba(0,0,0,0.6);  -webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0); -webkit-transition-duration: .25s;transition-duration: .25s;}
+.cur{-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+.ly-confirm,.ly-cancel{padding: 0 10px;}
+.ly-tips{padding:6px 0px;background-color:#fff;border-radius: 3px 3px 0 0;}
+.ly-tips p{text-align: center;font-family: '微软雅黑';line-height: 20px; }
+.ly-confirmBtn input{display: block;-webkit-appearance:none;width:100%;border:0 none;height: 44px;border-radius: 0 0 3px 3px;background-color: #feb901;color:#fff;font-size:15px;font-family: '微软雅黑';}
+.ly-cancel{padding-top: 8px;}
+.ly-cancel input{display: block;width:100%;-webkit-appearance:none;border:0 none;height: 44px;border-radius: 3px;background-color: #fff;color:#999;font-size:15px;font-family: '微软雅黑';}
+

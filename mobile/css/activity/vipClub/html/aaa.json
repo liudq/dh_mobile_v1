@@ -1,0 +1,332 @@
+{
+	"banners": [
+		{
+			"img_url": "http://www.dhresource.com/fc/s009/Lisa/shouye/1124/spin_the_turkey_banner.jpg",
+			"link_type": "item",
+			"link_url": "",
+			"link_url_wap": "",
+			"item_code":"12341235",
+			"cid":"",
+			"cname":"aaa"
+		},
+		{
+			"img_url": "http://www.dhresource.com/fc/s009//Lisa/shouye/1202/02/640x220_141127_3c.jpg",
+			"link_type": "Lp",
+			"link_url": "http://m.dhgate.com/activities/promotion/app-lp-3c-1202.html",
+			"link_url_wap": "http://m.dhgate.com/activities/promotion/app-lp-3c-1202.html",
+			"item_code":"",
+			"cid":"",
+			"cname":"bbb"
+		},
+		{
+			"img_url": "http://www.dhresource.com/fc/s009//Lisa/shouye/1202/03/640x220_141124_cameraapp.jpg",
+			"link_type": "category",
+			"link_url": "",
+			"link_url_wap":"",
+			"item_code":"",
+			"cid":"014",
+			"cname":"ccc"
+		}
+
+	],
+	"categroies": [
+		{
+			"name": "Consumer Electronics",
+			"vipList": [
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				}
+			]
+		},
+		{
+			"name": "Consumer Electronics",
+			"vipList": [
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"				},
+				{
+					"promohtml" : "",
+					"beforeprice" : "US $104.72 / Piece",
+					"img" : "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode" : "152002342",
+					"promoclass" : "",
+					"price" : "US $ 41.89 / Piece",
+					"productname" : "beatiful hunsh"
+				},{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				}
+			]
+		},
+		{
+			"name": "Consumer Electronics",
+			"vipList": [
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				}
+			]
+		},
+		{
+			"name": "Consumer Electronics",
+			"vipList": [
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				}
+			]
+		},
+		{
+			"name": "Consumer Electronics",
+			"vipList": [
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				}
+			]
+		},
+		{
+			"name": "Consumer Electronics",
+			"vipList": [
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				},
+				{
+					"promohtml": "",
+					"beforeprice": "US $104.72 / Piece",
+					"img": "http://www.dhresource.com/260x260s/f2-albu-g1-M00-00-00-wKjfHVQO8t-IfrWWAAROAWWdamIAAAAAQAebKcABE4Z060.jpg/beatiful-hunsha.jpg",
+					"itemcode": "152002342",
+					"promoclass": "",
+					"price": "US $ 41.89 / Piece",
+					"productname": "beatiful hunsha"
+				}
+			]
+		}
+	]
+}

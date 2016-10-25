@@ -1,0 +1,943 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <#--zgw seo 优化:URL规范的页面不需要添加canonical指向本身-->
+    <#--<link rel="canonical" id="seoitemurl" href="http://m.dhgate.com/product/${canonicalName}/${product.itemcode}.html"/>   -->
+	<title>${product.metavo.title?if_exists} Mobile </title>
+	<meta name="ROBOTS" content="index" />
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta name="keywords" content="${product.metavo.keywords?if_exists}" />
+	<meta name="description" content="${product.metavo.description?if_exists}"/>
+	<meta name="author" content="m.dhgate.com" />
+	<meta name="copyright" content="Copyright &copy;m.dhgate.com Copy right" />
+	<meta name="revisit-after" content="1 days" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="twcClient" content="false" id="twcClient" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="apple-touch-fullscreen" content="YES"/>
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="Window-target" content="_top"/>
+	<meta property="og:type" content="product"/>
+	<meta property="og:url" content="http://m.dhgate.com/product/${canonicalName}/${product.itemcode}.html"/>
+	<meta property="og:description" content="${product.metavo.description?if_exists}"/>
+	<meta property="og:image" content="http://www.dhresource.com/${imageUrl?if_exists}"/>
+	<meta property="og:title" content="${product.productname}"/>
+	<meta property="og:site_name" content="m.dhgate.com"/>
+
+	<#-- App download banner add by wangmeng 2014-12-19-->
+	<meta name="apple-itunes-app" content="app-id=905869418" />
+	<#-- App download banner END -->
+
+	<#--Comment by wangmeng 2014-11-24 for bug of jquery -->
+    <#--<meta name="google-play-app" content="app-id=com.dhgate.buyer" /> -->
+    <#--<link rel="stylesheet" type="text/css" href="http://css.dhresource.com/mobile/appBanner/appBanner.css" /> -->
+    <#--Comment by wangmeng -->
+
+	<link rel="alternate" href="android-app://com.dhgate.buyer/http/m.dhgate.com/product/${canonicalName}/${product.itemcode}.html" />
+	<link rel="stylesheet" type="text/css" href="http://css.dhresource.com/mobile/detail/20140922/detail.css?20141128"/>
+	<script type="text/javascript" src="http://www.dhresource.com/b/js/dht.js" ></script>
+    <script type="text/javascript">
+	function openIMChatFrame_Pro(compid,pid,sellerId){
+    	_gaq.push(['_trackEvent','item chat im ', 'chatim', '${product.itemcode}']);
+	    var target = (/^[0-9]+$/.test(compid)?'c=':'n=') + compid;
+	    var url='http://ichat.dhgate.com/looyu/chat/p2.do?c='+ compid +'&isprivate=1&loc=' + encodeURIComponent(document.location);
+		url +='&seller='+ sellerId;
+		url +='&product='+pid;
+		url +='&phone=true&showPro=1'
+	    var p = "height=540,width=320,directories=no,"+ "location=no,menubar=no,resizable=yes,"+ " status=no,toolbar=no,top=100,left=200";
+	    try {var cw = window.open(url, 'chat_' + compid, p);cw.focus();} catch(e) {}
+	}
+    </script>
+    
+    <script language="javascript" type="text/javascript">
+	    <#-- ntalker的方法	-->
+		NTKF_PARAM = {
+			siteid:'dh_1000',                 //平台基础id
+			sellerid:'dh_${ntalkersellerid?if_exists}',    //商户id，商家页面必须此参数，平台页面不传
+			settingid:'dh_${ntalkersellerid?if_exists}_9999',         //Ntalker分配的缺省客服组id
+			uid:'dh_${ntalkerbuyerid?if_exists}',           //用户id  buyerid   hashcode的绝对值的字符串，前面加dh_
+			uname:'<#if user?exists>${user.nickname?if_exists}</#if>',         //用户名    nickname
+			userlevel:'0'       //用户级别，1为vip用户，0为普通用户
+		}
+		function openIMChatNtalker(){
+			//必须要请求一次后台判断用户是否登录，不能用页面上的参数，因为用户可能在另外一个页面已经退出了登录
+			var charwin = "";
+			$.ajax({
+			    url: '/buyerislogin.do',
+			    type: 'GET',
+			    dataType:'text',
+			    async: false,
+			    error: function(){},
+			    success: function(data){
+			    	if(data != undefined && data.trim()=="true"){//登录
+			    		_gaq.push(['_trackEvent','item chat im ', 'chatim', '${product.itemcode}']);
+		    			//NTKF.im_openInPageChat('dh_${ntalkersellerid?if_exists}_9999','${product.productid}',null,null,null);
+		    			charwin += "${ntalker_js_url?if_exists?substring(0,ntalker_js_url?last_index_of("/"))}/mobilechat_en_us.html";
+		    			charwin += "#siteid="+NTKF_PARAM.siteid+"&settingid="+NTKF_PARAM.settingid;
+						charwin += "&destid="+NTKF_PARAM.sellerid+"_ISME9754_GT2D_embed_"+NTKF_PARAM.settingid+"_icon";
+						charwin += "&myuid="+NTKF_PARAM.uid+"&myuname="+NTKF_PARAM.uname+"&itemid=${product.productid}";
+						charwin += "&single=0&userlevel="+NTKF_PARAM.userlevel+"&ref="+encodeURIComponent(document.location);
+						charwin += "&title=Wholesale"+encodeURIComponent("-${product.productname?if_exists}");
+						charwin += "&itemparam=${bid_sid_pid}";
+			    	}else{//未登录
+			    		location.href = "http://m.dhgate.com/login.do?returnURL=http://m.dhgate.com/product/${canonicalName}/${product.itemcode}.html";
+			    	}
+			    }
+			});
+			 if(charwin.length>0){
+		    	var p = "height=540,width=320,directories=no,"+ "location=no,menubar=no,resizable=yes,"+ " status=no,toolbar=no,top=100,left=200";
+		    	try {window.open(charwin,'chat',p);} catch(e) {}
+		    }
+		}
+		</script>
+		<script type="text/javascript" src="${ntalker_js_url?if_exists}" charset="utf-8"></script>
+    <#global imgurl>http://www.dhresource.com/</#global>
+	<#import "/page/marco/newbottom.ftl" as bottom>
+	<#import "/page/marco/header.ftl" as head>
+    </head>
+    <body>
+    	<!-- 放置一些隐藏的对象 -->
+    	<div style="display:none">
+	    	<input type="hidden" value="${product.productid}" name="proid" id="proid"/>
+	    	<input type="hidden" id="seoitemurl" href="http://m.dhgate.com/product/${canonicalName}/${product.itemcode}.html"/>
+			<input type="hidden" value="${product.itemcode}" name="itemcode" id="itemcode"/>
+			<input type="hidden" value="${product.minSaleSize?if_exists?c}" id="minsalesize"/>
+			<input type="hidden" value="${product.minOrderSize?if_exists?c}" id="minordersize"/>
+			<input type="hidden" value="${product.catePubId?if_exists}" id="catepubid"/>
+			<input type="hidden" value="${mobilehost}/wholesale/<#if cateName?exists && cateName?trim?length gt 0>${cateName?replace('&','-')}<#else>searchitems</#if>/c<#if product.cateDispId?exists && product.cateDispId?length gte 6>${product.cateDispId?substring(0,6)}<#else>${product.cateDispId?if_exists}</#if>.html" id="turntosearchid"/>
+			<input type="hidden" value="${product.promInfo?exists?string("true","false")}" id="isprominfo"/>
+		</div>
+		<input type="hidden" value="d" name="ptype" id="ptype"/>
+		<!-- detail start -->
+		<div id="warp">
+			<div class="j-banerArea">
+				<section class="det-bannercon">
+					<#if nineyear?exists && nineyear == '1'>
+                		<span id="detaisaleoff" class="give-ico"><span>2</span>for<span>1</span></span>
+                	<#elseif nineyear?exists && nineyear == '2'>
+                		<span id="detaisaleoff" class="give-ico"><span>3</span>for<span>2</span></span>
+                	<#elseif isvip>
+                		<#if product.promInfo>
+							<#if product.promInfo.promoTypeId == 0>
+		        				<#assign discountOff = (1 - product.promInfo.discountRate) * 100/>
+		        				<span class="icon-plus-per" id="detaisaleoff">${discountOff}</span>
+		        			<#elseif product.promInfo.promoTypeId == 10>
+		        				<#assign discountOff = product.promInfo.discountRate/>
+		        				<span class="icon-plus" id="detaisaleoff">$${discountOff}</span>
+		        			<#else>
+		        				<span class="icon-vip" id="detaisaleoff"></span>
+							</#if>
+						<#else>
+							<span class="icon-vip"></span>
+						</#if>
+                	<#elseif product.promInfo>
+						<#if product.promInfo.promoTypeId == 0>
+							<#assign discountOff = (1 - product.promInfo.discountRate) * 100/>
+						<#elseif product.promInfo.promoTypeId == 10>
+							<#assign is_zj = true/><!-- 是否直降 -->
+							<#assign discountOff = product.promInfo.discountRate/>
+						</#if>
+						<span id="detaisaleoff" class="${product.promInfo.className}" classname="${product.promInfo.className}"><#if product.promInfo.dynamicType?exists && product.promInfo.dynamicType == "1"><#if is_zj>$</#if>${discountOff}</#if></span>
+					<#elseif isPromotionProduct?exists && isPromotionProduct == true>
+						<span id="detaisaleoff" class="dmega-sale"></span>
+					<#elseif issign?exists&&issign>
+						<span id="detaisaleoff" class="officon"></span>
+					</#if>
+					<#--DailyDeals-->
+
+				</section>
+			</div>
+			<#--zgw seo优化项目,标题设置为<h1>-->
+			<div class="det-protitle"><h1>Wholesale - ${product.productname?if_exists}</h1></div> 
+			<section class="det-priceArea">
+				<#if product.promInfo>
+					<#if product.promInfo.promoTypeId == 0>
+        				<#assign discountOff = (1 - product.promInfo.discountRate) * 100/>
+        			<#elseif product.promInfo.promoTypeId == 10>
+        				<#assign discountOff = product.promInfo.discountRate/>
+					</#if>
+					<#--DailyDeals-->
+					<#if promoDailyDealsResultDto.returncode=="00031">
+						<div class="dspringSale icon-daily-deals">
+							<span class="dspingcon"><span class="spleftbg"></span><span class="spmid">Daily Deals</span></span>
+							<span class="saleoff">
+								<#--
+									<span class="saleoffprice">
+										<span class="left-discount">${discountOff}% off</span>
+									</span> 
+								-->
+								<span class="saleoffprice"> only left : 
+									<#--
+										zgw 修改dailydeals倒计时 时间格式,ios safari浏览器不支持
+										<span class="j-cartLT leftTime" data-countdown="${product.promInfo.promEndDate?string("yyyy MM dd HH:mm:ss")}"></span>
+									-->
+									<span class="j-cartLT leftTime" data-countdown="${product.promInfo.promEndDate?string("yyyy/MM/dd HH:mm:ss")}"></span>
+								</span>
+							</span>
+						</div>
+					<#else>
+						<div class="dspringSale">
+							<span class="dspingcon"><span class="spleftbg"></span><span class="spmid">${product.promInfo.promName}</span></span>
+							<span class="saleoff" discountcountdown="${discountOff}|${product.promInfo.promStartDate?string("yyyy/MM/dd HH:mm:ss")}|${product.promInfo.promEndDate?string("yyyy/MM/dd HH:mm:ss")}<#if product.promInfo.promoTypeId == 10>|reduction</#if>"></span>
+						</div>	
+					</#if>
+				</#if>
+				
+				<#-- 是否vip买家+vip商品 -->
+				<#if isvip>
+					<div class="det-price clearfix">
+						<div class="current-price"><span>US <#if product.vipProductPrice?exists && product.vipProductPrice.SItemPrice?exists && (product.vipProductPrice.SItemPrice.length() gt 0)> $${product.vipProductPrice.SItemPrice} <#else> ${product.vipProductPrice.DItemTemp} </#if>
+							</span> &nbsp;/&nbsp; ${product.measurename}
+						</div>
+						<div class="det-transactions"><#if item_salenum?exists>${item_salenum} Item Sold</#if></div>
+					</div>
+					<div class="original-price"><#if product.productPrice?exists && product.productPrice.discountPrice?exists && (product.productPrice.discountPrice.length() gt 0)>$${product.productPrice.discountPrice} <#else> $${(product.productPrice.DItemTemp)!"0.0"} </#if>&nbsp;/&nbsp; ${product.measurename}</div>
+				<#elseif product.promInfo>
+					<div class="det-price clearfix">
+						<div class="current-price"><span>US <#if product.oldProductPrice?exists && product.oldProductPrice.SItemPrice?exists && (product.oldProductPrice.SItemPrice.length() gt 0)> $${product.oldProductPrice.SItemPrice} <#else> ${product.oldProductPrice.DItemTemp} </#if>
+							</span> &nbsp;/&nbsp; ${product.measurename}
+						</div>
+						<div class="det-transactions"><#if item_salenum?exists>${item_salenum} Item Sold</#if></div>
+					</div>
+					<div class="original-price"><#if product.productPrice?exists && product.productPrice.discountPrice?exists && (product.productPrice.discountPrice.length() gt 0)>$${product.productPrice.discountPrice} <#else> $${(product.productPrice.DItemTemp)!"0.0"} </#if>&nbsp;/&nbsp; ${product.measurename}</div>
+				<#else>
+					<div class="det-price clearfix">
+						<div class="current-price"><span>US $ <#if product.productPrice?exists && product.productPrice.discountPrice?exists && product.productPrice.discountPrice != null> 
+	                        ${product.productPrice.discountPrice} <#else> 
+	                        ${(product.productPrice.DItemTemp)!"0.0"}</#if></span>/ ${product.measurename}</div>
+						<div class="det-transactions"><#if item_salenum?exists>${item_salenum} Item Sold</#if></div>
+					</div>
+				</#if>
+			</section>
+			
+			<#assign wholesalepricelabel>
+				<#if product.skuWholesaleRangevoList?exists && product.skuWholesaleRangevoList?has_content>
+	            	<#list product.skuWholesaleRangevoList as  wholeRange>
+                      	<#if wholeRange.skuSaleStatus == '1' && (wholeRange.wholesaleQtyRangeList?size?number gt 1)>
+							Wholesale Price
+							<#break/>
+						</#if>
+					</#list>
+	            </#if>
+			</#assign>
+            <#assign needselect>
+	            <#list product.tdProAttrList as productSkuAtttr>
+	            	${productSkuAtttr.attrName},
+			    </#list>
+            </#assign>
+            <#--<input type="hidden" id="iscontainwholesale" value="<#if wholesalepricelabel?trim?length gt 0>1<#else>0</#if>" />-->
+            <#-- 决定是否转向2级页 -->
+            <input type="hidden" value="<#if (needselect?trim?length gt 0) || (wholesalepricelabel?trim?length gt 0)>0<#else>1</#if>" id="isturntoeditprop"/>
+            <#--<section class="attr-select" id="J_selectAttr" style="display:<#if needselect?exists && needselect?length gt 0>block<#else>none</#if>"><a href="javascript:;"><i class="linknarr"></i><#if needselect?exists && needselect?length gt 0>Please Select ${needselect?trim?substring(0,needselect?trim?length-1)}, Quantity</#if></a></section>-->
+
+			<section class="attr-select" id="J_selectAttr" style="display:<#if (needselect?trim?length gt 0) || (wholesalepricelabel?trim?length gt 0)>block<#else>none</#if>">
+				<a href="javascript:;"><i class="linknarr"></i>
+					<#if needselect?trim?length gt 0><div class="select-opt" id="seloptionid" label="Please Select ${needselect?trim?substring(0,needselect?trim?length-1)}">Please Select ${needselect?trim?substring(0,needselect?trim?length-1)}</div></#if>
+					<div class="select-wq" id="selquantityid" label="<#if wholesalepricelabel?trim?length gt 0>${wholesalepricelabel},</#if>Quantity"><#if wholesalepricelabel?trim?length gt 0>${wholesalepricelabel},</#if>Quantity</div>
+				</a>
+			</section>
+
+			<section class="detai-shippingcost">
+                <a id="shipMbtn" class="deship" href="javascript:;" rel="nofollow">
+	                <i class="linknarr"></i>
+                    <div class="logistics">
+	                    <span id="shippingcostid">
+	                        <#if (product.isfreeship?exists && product.isfreeship == '0') || (shippingCostParamVO?exists && shippingCostParamVO.shipcostfinal2==0)>
+	                        	<#assign ship=true/>
+		                        <em>Free shipping</em>
+	                        <#elseif shippingCostParamVO?exists && shippingCostParamVO.shipcostfinal2 gt 0>
+		                        <#assign ship=true/>
+		                        US $${shippingCostParamVO.shipcostfinal2}
+	                        </#if>
+	                    </span>
+	                    to
+	                    <span id="shippingM" class="deunits"> 
+	                    	${countryname?if_exists} 
+                        	<#if shippingCostParamVO?exists && shippingCostParamVO.expressType?exists> 
+                        		Via ${shippingCostParamVO.expressType}
+                        	</#if>
+	                    </span>
+                    </div>
+                    <#if !ship>
+					  <span class="error" id="shippingMErr">This item cannot be shipped to ${countryname?if_exists}</span>
+					<#else>
+					  <div class="ship-out">Ships within <em>${product.leadingTime}</em> days</div>
+					</#if>
+                </a>
+            </section>
+            <#if (product.couponMoney?exists && product.couponMoney gt 0) || (product.couponCampaignList?exists && product.couponCampaignList?has_content)>
+				<section id="J_getCoupon" class="getcouponcon">
+					<a href="javascript:;"><i class="linknarr"></i>
+					<#if product.isNewBuyertoSupplier()>
+						Place your first order to get coupon
+					<#else>
+						Buy to get coupon
+					</#if>
+					<em class="getcoupon"></em></a>
+				</section>
+			</#if>
+            
+            <section class="supplier">
+                <div class="suppliercon">
+                    Supplier:<#if product.tdSuppliervo.contactpersondomainname != null>${product.tdSuppliervo.contactpersondomainname}<#else>${product.tdSuppliervo.suppliername}</#if>
+                </div>
+                <div class="posfeedback clearfix">
+                	<#if product.tdFeedbackScoreVO?exists && product.tdFeedbackScoreVO.showpercentum?exists>
+                    <span class="positivefee"><b>${product.tdFeedbackScoreVO.showpercentum}%</b>Positive Feedback</span>
+                    </#if>
+                    <span class="transactions"><b><#if product.tdFeedbackScoreVO?exists && product.tdFeedbackScoreVO.cofirmorderAccumulated?exists > ${product.tdFeedbackScoreVO.cofirmorderAccumulated} <#else>0</#if></b>Transactions</span>
+                    <#if product.productPromiseContent?exists && (product.productPromiseContent.length()>0)>
+					<a rel="nofollow" href="/sellerPromise.do?proid=${product.productid}">Promised by Seller</a>
+					</#if>
+                </div>
+                <div class="detail-chat clearfix">
+                    <div class="dechat">
+                    <#if product.tdSuppliervo.isSellerOnline()>
+						<#--<#if product.tdSuppliervo.dhtalk_compid?exists><#assign compid>#{product.tdSuppliervo.dhtalk_compid!""}</#assign></#if>
+                        <a rel="nofollow" href="javascript:openIMChatFrame_Pro('${compid?if_exists}','${product.productid}','${product.supplierid}')"><span class="online"></span>Chat</a>-->
+                        <a rel="nofollow" href="javascript:openIMChatNtalker()"><span class="online"></span>Chat</a>
+                    <#else>
+                    	<a><span class="notonline"></span>Offline</a>
+					</#if>
+                    </div>
+                    <div class="demessages">
+                        <a rel="nofollow" href="${mobilehost}/sendmsg.do?mty=3&amp;proid=${product.productid}&amp;title=${msgtitle}&amp;spid=${product.tdSuppliervo.systemuserid}" onclick="_gaq.push(['_trackEvent', 'detail', ' message']);"><span></span>Message</a>
+                    </div>
+                </div>
+            </section>
+            <section class="buyer-information">
+            	<div class="buyer-inftitle" id="J_inftitile">
+            		<div class="buyer-inftitle-top">
+            			<a href="javascript:;" >Item Specifics</a>
+            			<a href="javascript:;" class="active" style="display:<#if specification?exists && specification?trim?length gt 0>block<#else>none</#if>">Description</a>
+            			<a href="javascript:;" style="display:<#if reviewSummaryVo?exists && reviewSummaryVo != null>block<#else>none</#if>">Reviews</a>
+            		</div>
+            		<div class="buyer-inftitle-bto">
+            			<em class="narr-down"></em>
+            			<em class="narr-down d-block" style="display:<#if specification?exists && specification?trim?length gt 0>block<#else>none</#if>"></em>
+            			<em class="narr-down" style="display:<#if reviewSummaryVo?exists && reviewSummaryVo != null>block<#else>none</#if>"></em>
+            		</div>
+            	</div>
+            	
+            	<div class="buyer-infcon" id="J_infcon">
+            		<div class="tabcon buyer-Item" style="display:none">
+						<p>
+                            <span>Item Code:</span>
+                            <var>${product.itemcode?if_exists}</var>
+                        </p>
+                        <p>
+                            <span>Category:</span>
+                           	<var>${finalCatalog?if_exists?if_exists}</var>
+                        </p>
+                        <p>
+                            <span>Short Description:</span>
+                            <var>${product.shortdescription}</var>
+                        </p>
+                        <p>
+                            <span>Quantity: </span>
+                            <var>
+                            <#if product.lots = 1 >
+								${product.lots?if_exists} &nbsp; ${product.measurename?if_exists}
+				    		<#else>
+				    			1 lot (${product.lots?if_exists} ${product.measurename?if_exists}&nbsp;/&nbsp;lot)
+				    		</#if>
+				    		</var>
+                        </p>
+                        <p>
+                            <span>Package Size:</span>
+                            <var>
+                            <#if product.length?if_exists>#{product.length;m1M1}</#if>
+                            <#if product.width?if_exists>*#{product.width;m1M1}</#if>
+                            <#if product.height?if_exists>*#{product.height;m1M1}</#if>
+                            <#if product.length!=null || product.width!=null || product.height != null> ( cm )</#if>
+                            </var>
+                        </p>
+                        <p>
+                            <span>Gross Weight/Package: </span>
+                            <var><#if product.grossweight?if_exists>#{product.grossweight;m1M1} ( kg )</#if></var>
+                        </p>
+                        <#if specifics != null && specifics?has_content>
+							<#list specifics?keys as itemKey>
+								<p>
+									<span>${itemKey}: </span>
+									<var>${specifics[itemKey]?if_exists}</var>
+								</p>
+							</#list>
+						</#if>
+            		</div>
+            		<div class="tabcon buyer-description"  id="J_descon">
+            			<div class="buyer-subdescriptioncon j-des-child" style="height:960px;">
+            				${specification?if_exists?replace('.com/0x0/', '.com/600x600/')}
+            			</div>
+            			<div class="learn-more" id="J_learnMore"><a href="javascript:;">Learn  more<var></var></a></div>
+					</div>
+            		<div class="tabcon buyer-reviews" style="display:none">
+            			<#if reviewSummaryVo?exists && reviewSummaryVo != null>
+		                    <div class="average">
+		                        Average Rating:<span class="pingfen"><em style="width:${reviewSummaryVo.widthAverageScore}%;"></em></span>
+		                    </div>
+		                    <div class="rw-baseon">
+		                        <h3 class="baseontit">Based on<em>${reviewSummaryVo.reviewCount}</em>reviews</h3>
+		                        <ul>
+	                                <li>
+	                                    <span class="pingfen"><em style="width:100%;"></em></span>
+	                                    <span class="progressbar"><em style="width:${reviewSummaryVo.widthFive}%;"></em></span>
+	                                    <span class="baseonnum">${reviewSummaryVo.reviewCountFive}</span>
+	                                </li>
+	                                <li>
+	                                    <span class="pingfen"><em style="width:80%;"></em></span>
+	                                    <span class="progressbar"><em style="width:${reviewSummaryVo.widthFour}%;"></em></span>
+	                                    <span class="baseonnum">${reviewSummaryVo.reviewCountFour}</span>
+	                                </li>
+	                                <li>
+	                                    <span class="pingfen"><em style="width:60%;"></em></span>
+	                                    <span class="progressbar"><em style="width:${reviewSummaryVo.widthThree}%;"></em></span>
+	                                    <span class="baseonnum">${reviewSummaryVo.reviewCountThree}</span>
+	                                </li>
+	                                <li>
+	                                    <span class="pingfen"><em style="width:40%;"></em></span>
+	                                    <span class="progressbar"><em style="width:${reviewSummaryVo.widthTwo}%;"></em></span>
+	                                    <span class="baseonnum">${reviewSummaryVo.reviewCountTwo}</span>
+	                                </li>
+	                                <li>
+	                                    <span class="pingfen"><em style="width:20%;"></em></span>
+	                                    <span class="progressbar"><em style="width:${reviewSummaryVo.widthOne}%;"></em></span>
+	                                    <span class="baseonnum">${reviewSummaryVo.reviewCountOne}</span>
+	                                </li>
+	                            </ul>
+		                  </div>
+	                    </#if>
+	                    <article class="rw-baseoncon">
+                        <#if reviewList?exists >
+						  <#list reviewList as tdReviewVO >
+							 <section class="rw-message">
+							 <h4 class="rw-messagetit">
+							 <span class="pingfen">
+								<#if tdReviewVO.score=1>
+								<em style="width:20%;"></em>
+								<#elseif tdReviewVO.score=2>
+								<em style="width:40%;"></em>
+								<#elseif tdReviewVO.score=3> 
+								<em style="width:60%;"></em>
+								<#elseif tdReviewVO.score=4>
+								<em style="width:80%;"></em>
+								<#elseif tdReviewVO.score=5>
+								<em style="width:100%;"></em>
+								</#if>
+							 </span>
+							 <span class="rw-messname">By: ${tdReviewVO.buyerNickname}</span>
+							 <span class="rw-messdate">${tdReviewVO.createdDateText}</span>
+							 </h4>
+							 <p>
+							 ${tdReviewVO.content}
+							 </p>
+							</section>
+						  </#list>
+				 		</#if>
+	                    </article>
+	                </div>
+            	</div>
+            </section>
+            <section class="detail-share">
+                <span><a class="deshare1" onclick="_gaq.push(['_trackEvent', 'KeyFlowByAna', 'bookmark', 'Facebook']);" href="javascript:loadPage('facebook',  document.title, '')" rel="nofollow"></a></span>
+                <span><a class="deshare2" onclick="_gaq.push(['_trackEvent', 'KeyFlowByAna', 'bookmark', 'Twitter']);" href="javascript:loadPage('twitter',  document.title, '')" rel="nofollow"></a></span>
+                <span><a class="deshare3" onclick="_gaq.push(['_trackEvent', 'KeyFlowByAna', 'bookmark', 'Google']);" href="javascript:loadPage('google',  document.title, '')" rel="nofollow"></a></span>
+                <span><a class="deshare4" onclick="_gaq.push(['_trackEvent', 'KeyFlowByAna', 'bookmark', 'Pinterest']);" href="javascript:loadPage('pinterest',  document.title, '')" rel="nofollow"></a></span>
+                <span><a class="deshare5" onclick="_gaq.push(['_trackEvent', 'KeyFlowByAna', 'bookmark', 'vk']);" href="javascript:loadPage('vk',  document.title, '')" rel="nofollow"></a></span>
+                <span><a class="deshare6" onclick="_gaq.push(['_trackEvent', 'KeyFlowByAna', 'bookmark', 'linkedin']);" href="javascript:loadPage('linkedin',  document.title, '')" rel="nofollow"></a></span>
+                <span><a class="deshare7" onclick="loadPage('mail',this);" href="" rel="nofollow"></a></span>
+            </section>
+            <section class="ls-tuijian detail-tuijian" id="recommond">
+                <div class="ls-tuijiancon">
+                    <div class="ls-maylikecon">
+                    	<div class="maylike-titi">You might also like</div>
+                        <div class="ls-maylike clearfix" id="J_mayLike">
+                        	<div class="isloading">
+                                <div class="popup-loading2">
+                                </div>
+                            </div>
+                            <!--<ul id="maylike" class="clearfix">
+                                
+                            </ul>-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <#if relatedResources != null && relatedResources?has_content>
+             <section class="search-word">
+            	<div class="searw-titile"><a href="javascript:;" class="j-toggleBtn"></a><h3>Wholesale ${dispName?if_exists} Resources</h3></div>
+	            	<ul class="clearfix">
+	            		<#list relatedResources as resource>
+            				<#if resource?exists && resource_index lt 4>
+            					<#--zgw seo 优化 加入h3标签-->	
+			            		<li><a href="${mobilehost}${resource.url}"><h3>${resource.keywords}</h3></a></li>
+		            		<#else>
+		            			<#break>
+		            		</#if>
+	            		</#list>
+	            	</ul>
+	            	<ul class="searw-layer clearfix j-seoWordLayer" style="display:none">
+	            		<#list relatedResources as resource>
+            				<#if resource?exists && resource_index gte 4 && resource_index lt 20>
+			            		<li><a href="${mobilehost}${resource.url}">${resource.keywords}</a></li>
+		            		</#if>
+	            		</#list>
+	            	</ul>
+            </section>
+            </#if>
+            <div class="go-backtop"><a href="javascript:scroll(0,0)">TOP OF PAGE<i></i></a></div>
+            <@bottom.BOTNavi/>
+		</div>
+		<div id="J_silderCon" class="slider" style="display:none;">
+			<section class="imheader">
+                <div class="con-main">
+                    <a id="J_bannerback" class="im-back" href="#"></a>
+                    <a class="im-logo" href="#"></a>
+                </div>
+            </section>
+		</div>
+		<article style="display:none;" id="J_couponCon">
+			<header class="detail-header clearfix">
+				<a href="javascript:;" class="det-back j-couponBack"></a>
+				<span class="det-hdtitle">Coupons</span>
+			</header>
+			<article class="couponcon">
+				<#if (product.couponCampaignList?exists && (product.couponCampaignList?size>0))>
+					<section class="coupon-tips">Place your first order with this item and get one of the following coupons:</section>
+					<#list product.couponCampaignList as couponCampaign>
+						<article class="coupon-detail">
+							<section class="coupon-detailcon">
+								<p>Get a <strong>US $${couponCampaign.amount}</strong> coupon if order value reaches <strong>US $${couponCampaign.getcouponorderAmo}</strong>.</p>
+								<p>Expiry Date: ${couponCampaign.endDate}</p>
+							</section>
+							<section class="coupon-condition">
+								<p>Use Conditions: Coupon offer also applies to further orders of over US $${couponCampaign.orderAmo} from this seller</p>
+							</section>
+							<span class="coupon-bg"></span>
+						</article>
+					</#list>
+				</#if>
+				<section class="notecon">
+					<h3 class="notetit">Note:</h3>
+					<p>The minimum order value mentioned above does 
+					   not include shipping costs.</p>
+					<p>Each coupon can be redeemed on one order only.</p>
+				</section>
+			</article>
+		</article>
+		<!-- shipment start -->
+        <article class="shipmentcon" style="display:none" id="shipMentcon">
+            <header class="detail-header clearfix">
+				<a href="javascript:;" class="det-back j-shipBack"></a>
+				<span class="det-hdtitle">Shipment and Cost</span>
+			</header>
+            <article class="shipment">
+                <div class="chooseregion">
+                    <h3 class="shipmenttiti">Choose region:</h3>
+                    <div class="selectcounty">
+                        <select id="selectBtn" name="countryid" >
+							<#list countryList as country>
+								<option value="${country.countryid}" <#if country.countryid=countryid>selected</#if> >${country.name}</option>
+							</#list>
+                        </select>
+                        <span class="selectbutton"></span>
+                    </div>
+                    <div class="choosemethod">
+                        <h3 class="choomethtiti">Choose shipping method:</h3>
+                        <div class="choomethcon" id="chooseMethod">
+                            <h4 class="choomecontiti">
+                            <span class="chocompany">Company</span>
+                            <span class="choshipcost">Shipping Cost</span>
+                            <span class="chodeliver">Delivery Time</span>
+                            </h4>
+							<div class="chosubcon">
+								<#if shippingCostList?exists && (shippingCostList?has_content>0) >
+								<ul>
+								<#list shippingCostList as shippingCost>
+									<li <#if shippingCost.expressType == shippingCostParamVO.expressType>class="choactive"<#else></#if> shippingtypeid="${shippingCostParamVO.shippingtype?if_exists}">
+										<em></em>
+										<span class="choems">${shippingCost.expressType}</span>
+										 <#if shippingCost.shipcostfinal2 == 0>
+										 	<span class="choprice">US $0.00</span>
+										 <#else>
+											<span class="choprice">US $#{shippingCost.shipcostfinal2?double;m2M2}</span>
+										</#if>
+										<span class="choday">${shippingCost.deliverytime} days</span>
+									</li>
+								</#list>
+								</ul>
+								<#else>
+									<div class="error">This item cannot be shipped to ${countryname?if_exists}</div>
+								</#if>
+							</div>
+	                        <div class="choconfirm">
+	                            <input type="submit" value="Confirm" id="shipmentId" />
+	                        </div>
+                    	</div>
+                    </div>
+                </div>
+            </article>
+        </article>
+		<!-- shipment end -->
+		<!-- color-select start -->
+		<div class="color-selected" id="J_selectColor" style="display:none;">
+			<header class="detail-header clearfix">
+				<a href="javascript:;" class="det-back j-attr-back"></a>
+				<span class="det-hdtitle">Product Options</span>
+				<a href="${mobilehost}/viewcart.do" rel="nofollow" id="chart" class="det-cart" onclick="_gaq.push(['_trackEvent', 'detailoption', ' cart'])"><div name="cartnum"></div></a>
+			</header>
+			<div class="color-selectCon">
+				<div class="cartbox">
+	                <#list product.tdProAttrList as productSkuAtttr>
+                    <ul class="sprice">
+			    		<li class="size-color-info">
+						<#if productSkuAtttr.customSized =="1">
+			                <div class="key-info-lt" id="#{productSkuAtttr.attrid}">${productSkuAtttr.attrName}:</div><div class="zline-1"></div>
+	                        <div id="customSizeWarp" class="custom-size-warp">
+	                            <ul id="customSize" class="custom-size-list"  initattr="${productSkuAtttr.attrName}">
+									<input id="hiddenAttrvalcm" type="hidden"  value=""/>
+                                  	<#list productSkuAtttr.tdProSkuAttrList as valueList>
+										<#if valueList.defaultAttrval == "1">
+											<input id="hiddenBuycustomSize" type="hidden" name="buyattrcustomval" attrid="#{productSkuAtttr.attrid}" attrvalId="#{valueList.attrValueId}" value="#{productSkuAtttr.attrid}_#{valueList.attrValueId}" initial="" reset="1"/>
+											<input type="hidden" id="hiddenIamgeUrl" value="${valueList.picUrl}" name="hiddenIamgeUrl"/>
+										</#if>
+										<#if productSkuAtttr.tdProSkuAttrList?size == 1 && valueList.customSize == "1">
+											<em class="sellerTips">Please add remark to seller.</em>
+										<#else>
+											<#if valueList.customSize == "1">
+												<#--<li vHidden="#{productSkuAtttr.attrid}_#{valueList.attrValueId}" class="customOptionsYesButton">${valueList.attrValName}</li>-->
+											<#elseif valueList.picUrl==null || valueList.picUrl=="">
+												<li vHidden="#{productSkuAtttr.attrid}_#{valueList.attrValueId}" attrId="#{productSkuAtttr.attrid}" attrValId="#{valueList.attrValueId}"  <#if valueList.defaultAttrval == "1"> class="color-selected" </#if>> <#if valueList.defaultAttrval == "1"><i>selected</i></#if>${valueList.attrValName}</li>
+											<#else>
+												<li vHidden="#{productSkuAtttr.attrid}_#{valueList.attrValueId}" attrId="#{productSkuAtttr.attrid}" attrValId="#{valueList.attrValueId}"  <#if valueList.defaultAttrval == "1"> class="color-selected" </#if>>
+													<#if valueList.defaultAttrval == "1"><i>selected</i></#if>
+	        										<img src="http://${imageurl}/${valueList.picUrl}" width="28" height="28" title="${valueList.attrValName}"/>
+	        									</li>
+											</#if>
+										</#if>
+        							</#list>
+	                            </ul>
+	                            <a style="display:none;" href="javascript:void(0)" class="customOptionsYesButton modify-options">Modify Options</a>
+	                            <div style="display:none" id="customSizeInfo" class="custom-size-info clearfix"><span>Bust: <b>26</b> inch</span> , <span>Waist: <b>67</b> inch</span> , <span>Hips: <b>56</b> inch</span> , <span>Hollow to Floor: <b>49</b> inch</span></div>
+	                        </div>
+							<!-- Custom Size end -->
+						<#else>
+			               <div class="custom-size-info" id="#{productSkuAtttr.attrid?if_exists}">${productSkuAtttr.attrName}:</div><div class="zline-1"></div>
+		                    <div class="color-warp">
+		                    	<input id="hiddenBuy_${productSkuAtttr_index+1}" type="hidden" name="buyattrval" attrId="#{productSkuAtttr.attrid}" value="" initial="" reset="1"/>
+		                        <ul id="listBuy_${productSkuAtttr_index+1}" class="color-list clearfix" attrid="#{productSkuAtttr.attrid}">
+		                        	<#list productSkuAtttr.tdProSkuAttrList as valueList >
+										<#if !valueList.picUrl?exists || valueList.picUrl=="">
+											<#if valueList.customSize != "1">
+											<li vHidden="#{productSkuAtttr.attrid}_#{valueList.attrValueId}" attrId="#{productSkuAtttr.attrid}" attrValId="#{valueList.attrValueId}"  <#if valueList.defaultAttrval == "1"> class="color-selected" </#if>><#if valueList.defaultAttrval == "1"><i>selected</i></#if>${valueList.attrValName}</li>
+											</#if>
+										<#else>
+											<#if valueList.customSize != "1">
+											<li vHidden="#{productSkuAtttr.attrid}_#{valueList.attrValueId}" attrId="#{productSkuAtttr.attrid}" attrValId="#{valueList.attrValueId}" <#if valueList.defaultAttrval == "1"> class="color-selected" </#if>>
+												<#if valueList.defaultAttrval == "1"><i>selected</i></#if>
+												<img src="${imgurl}${valueList.picUrl}" width="28" height="28" title="${valueList.attrValName}"/>
+											</li>
+											</#if>
+										</#if>
+									</#list>
+		                        </ul>
+		                    </div>                            
+
+						</#if>
+						</li>
+			    	</ul>
+					</#list>
+                    <#list product.tdProSkuList as prosku>
+                        <input type="hidden" id="skuId_#{prosku.skuId}" value="${prosku.saleStatus}" skuMd5="${prosku.skuMd5}"/>
+                        <#list prosku.tdProSkuAttrList as proSkuAttrval>
+                            <input type="hidden" name="skuinfo" attrValId="#{proSkuAttrval.attrValueId}" skuId="#{proSkuAttrval.skuId}" attrId="#{proSkuAttrval.attrId}" inventory="#{prosku.inventory}" attrValName="${proSkuAttrval.attrValName}" skuStatus="${prosku.saleStatus}" />
+                        </#list>
+                    </#list>
+					<input type="hidden" value="#{product.defaultSkuVo.skuId}" name="selectedSku" id="selectedSkuVal"/>
+					<input type="hidden" value="#{product.maxOrderSize}" initial="#{product.maxOrderSize}" id="_cur_maxordersize"/>
+	            </div>
+	            <#-- 是否vip买家+vip商品 -->
+	            <#if isvip>
+					<div class="det-price clearfix">
+						<div class="current-price"><span>US <#if product.vipProductPrice?exists && product.vipProductPrice.SItemPrice?exists && (product.vipProductPrice.SItemPrice.length() gt 0)> $${product.vipProductPrice.SItemPrice} <#else> ${product.vipProductPrice.DItemTemp} </#if>
+							</span> &nbsp;/&nbsp; ${product.measurename}
+						</div>
+						<div class="det-transactions"><#if item_salenum?exists>${item_salenum} Item Sold</#if></div>
+					</div>
+					<div class="original-price"><#if product.productPrice?exists && product.productPrice.discountPrice?exists && (product.productPrice.discountPrice.length() gt 0)>$${product.productPrice.discountPrice} <#else> $${(product.productPrice.DItemTemp)!"0.0"} </#if>&nbsp;/&nbsp; ${product.measurename}</div>
+				<#elseif product.promInfo>
+					<div class="det-price clearfix">
+						<div class="current-price"><span>US <#if product.oldProductPrice?exists && product.oldProductPrice.SItemPrice?exists && (product.oldProductPrice.SItemPrice.length() gt 0)> $${product.oldProductPrice.SItemPrice} <#else> ${product.oldProductPrice.DItemTemp} </#if>
+							</span> &nbsp;/&nbsp; ${product.measurename}
+						</div>
+					</div>
+					<div class="original-price"><#if product.productPrice?exists && product.productPrice.discountPrice?exists && (product.productPrice.discountPrice.length() gt 0)>$${product.productPrice.discountPrice} <#else> $${(product.productPrice.DItemTemp)!"0.0"} </#if>&nbsp;/&nbsp; ${product.measurename}</div>
+				<#else>
+					<div class="det-price clearfix">
+						<div class="current-price"><span>US $ <#if product.productPrice?exists && product.productPrice.discountPrice?exists && product.productPrice.discountPrice != null> 
+	                        ${product.productPrice.discountPrice} <#else> 
+	                        ${(product.productPrice.DItemTemp)!"0.0"}</#if></span>/ ${product.measurename}</div>
+					</div>
+				</#if>
+			</div>
+			
+            <div class="whoseprice">
+                <h3 class="whoseptiti">Wholesale Price: <#if product.lots gt 1><span class="whosenumber">${product.lots} ${product.plural} &nbsp;/&nbsp; Lot </span></#if></h3>
+                <#if product.skuWholesaleRangevoList?exists && product.skuWholesaleRangevoList?has_content>
+                <div class="whosecon <#if product.promInfo || isvip>whodiscount</#if>">
+                    <div class="whosecontiti">
+                        <strong class="whose-quan">Quantity <#if product.lots gt 1>(lots)</#if></strong>
+                        <strong>Price <#if product.lots gt 1>/lot</#if></strong>
+                        <#if product.promInfo?exists && product.promInfo.promoTypeId == 10>
+	                        <strong>Reduced Price </strong>
+	                    <#elseif product.promInfo?exists>
+	                       	<strong>Discount Price </strong>
+	                    <#elseif isvip>
+	                        <strong>VIP Price </strong>
+                        </#if>
+                    </div>
+                    <ul id="whoseLi">
+                    <#list product.skuWholesaleRangevoList as  wholeRange>
+						<#assign lastIndex = wholeRange.wholesaleQtyRangeList?size/>
+                      	<#if wholeRange.skuSaleStatus == '1'>
+							<#list wholeRange.wholesaleQtyRangeList as wholesalevo>
+    						<li name="priceRangeList" <#if wholesalevo_index ==0 > class="active" </#if> vHidden="#{wholeRange.skuId}" <#if product.defaultSkuVo.skuId == wholeRange.skuId> style="visibility:visible" <#else> style="display: none;visibility: hidden;"</#if> >
+                                <span>
+                                <#if (wholesalevo.startQty lt wholesalevo.endQty) && (wholesalevo_index lt (lastIndex?number)-1)>
+                                	<var class="minvalue">#{wholesalevo.startQty}</var> - 
+									<var class="maxvalue">#{wholesalevo.endQty}</var>
+                                <#elseif wholesalevo.startQty == wholesalevo.endQty> 
+                                	<var class="minvalue">#{wholesalevo.startQty}</var>
+                                <#elseif wholesalevo_index == (lastIndex?number)-1>
+                               		<var class="maxvalue">#{wholesalevo.startQty} + </var>
+                                </#if>
+								</span>
+								<span>
+								<#if wholesalevo.discountPrice> US $#{wholesalevo.discountPrice;m2M2} </#if>
+								</span>
+								<#if isvip>
+									<span> US $#{wholesalevo.vipPrice;m2M2} </span>
+								<#elseif product.promInfo>
+									<span> US $#{wholesalevo.promDiscountPrice;m2M2} </span>
+								</#if>
+							</li>
+							</#list>
+						  </#if>
+						</#list>
+                    </ul>
+                </div>
+                <#else>
+                	<!--<h3 class="whoseptiti">Wholesale Price:</h3>-->
+                    <div class="whosecon <#if product.promInfo>whodiscount</#if>">
+                        <div class="whosecontiti">
+                            <strong class="whose-quan">Quantity <#if product.lots gt 1>(lots)</#if></strong>
+                            <strong>Price <#if product.lots gt 1>/lot</#if></strong>
+                            <#if product.promInfo?exists && product.promInfo.promoTypeId == 10>
+                            <strong>Reduced Price </strong>
+                            <#elseif product.promInfo?exists>
+                            <strong>Discount Price </strong>
+                            </#if>
+                        </div>
+                        <ul id="whoseLi">
+                        <#list product.tdProSkuList as wholeRange>
+                          <#if wholeRange.saleStatus == '1'>
+	    						<li name="priceRangeList" class="active" vHidden="#{wholeRange.skuId}" <#if product.defaultSkuVo.skuId == wholeRange.skuId> style="visibility:visible" <#else> style="display: none;visibility: hidden;"</#if> >
+	                                <span>
+	                                	<var class="minvalue"><#if product.minSaleSize>${product.minSaleSize} + <#else> 1 +</#if></var> 
+									</span>
+									<span>
+									<#if wholeRange.retailPrice> US $#{wholeRange.retailPrice;m2M2}</#if>
+									</span>
+									<#if product.promInfo>
+									<span>
+										<#if wholeRange.promRetailPrice> US $#{wholeRange.promRetailPrice;m2M2} </#if>
+									</span>
+									</#if>
+								</li>
+							</#if>
+						</#list>
+                        </ul>
+                    </div>
+                </#if>
+            
+            <#if product.minSaleSize && product.minSaleSize lt product.minOrderSize >
+				<#assign minSize = product.minSaleSize/>
+			<#else>
+				<#assign minSize = product.minOrderSize/>
+			</#if>
+            <#assign display><#if product.istate == "0" || verifydetail == "0" || product.isSellerLimit() || (product.defaultSkuVo.saleStatus=="0") || (product.inventoryStatus == "1" && product.defaultSkuVo.inventory lt minSize)>true<#else>false</#if></#assign>
+            <#-- 是否整个产品均不可售 -->
+			<input type="hidden" value="<#if product.istate == "0" || verifydetail == "0" || product.isSellerLimit()>0<#else>1</#if>" id="isproductcansale"  defaultskucansale="<#if display=="true">0<#else>1</#if>"/>
+		    <div class="d-items" id="J_">
+		    	<span class="qu-tit padr5">Quantity:</span>
+		    	<span class="ui-number">
+				 <input type="number" name="quantity" id="quantity" autocomplete="off" <#if display=="true">disabled="disabled"</#if><#if product.minSaleSize gt 0> <#if display=="true">value=""<#else>value="${product.minSaleSize?c}"</#if> init-value="${product.minSaleSize?c}" <#else> value="${product.minOrderSize?c}" init-value="${product.minOrderSize?c}"</#if> class="d-num" />
+				</span>
+				<span class="qu-tit padr5 de-unit" id="de-unit"><#if product.lots==1><#if product.minOrderSize gt 1><#if product.minSaleSize == 1>${product.measurename}<#else>${product.plural}</#if><#elseif product.minOrderSize == 1>${product.measurename}</#if><#else><#if product.minSaleSize gt 1>Lots<#else>Lot</#if></#if></span>
+				<#--zgw 新加Stock in Location-->
+				<#if product.inventoryStatus=="1">
+					<div class="mart10" >
+                        <span class="d-stock" id="inventoryQty"><em id="inventoryQtyNum"><#if product.inventoryStatus == "1" && product.defaultSkuVo.inventory lt minSize>0<#else>#{product.defaultSkuVo.inventory}</#if></em> in Stock (<em class="padr5">Stock in:</em><img src="http://image.dhgate.com/images/flag/${product.inventoryLocation}.gif" width="16" height="11"/><em>${product.inventoryLocation}</em>)</span>
+                 	</div>
+				</#if>
+			 </div>
+			<#--zgw 获得最大-->
+			<#if promoDailyDealsResultDto.promoNum gt product.defaultSkuVo.inventory>
+				<#assign maxquantity = product.defaultSkuVo.inventory>
+			<#else>
+				<#assign maxquantity = promoDailyDealsResultDto.promoNum>
+			</#if>
+			
+			<div class="error" <#if display !="true">style="display: none;"</#if> id="qtynote">This specification is currently not available</div>
+			<span id="maxOrderError" style="display: none;" class="error">The quantity can't exceed the maximum stock (Max. Stock = <span id="tipinv">
+			<#--<#if product.defaultSkuVo.inventory?exists>#{product.defaultSkuVo.inventory}</#if>-->
+			${maxquantity}
+			</span>)</span>
+			
+			<span id="selectError" style="display: none;" class="error">Please select </span>
+			<span id="soldoutError" style="display: none;" class="error">Item sold out </span>
+		</div>
+		</div>
+		<!-- color-select end -->
+		<div class="cart-buycon" id="J_carBuy">
+			<div class="cart-buy">
+				<a href="javascript:buynow(this);" class="buycls <#if display="true">detail-soldout</#if>" id="buyitnow">Buy it now</a>
+				<a href="javascript:addToCard(this);" <#if display="true">class="detail-soldout"</#if> id="canadd" >Add to cart</a>
+			</div>
+		</div>
+		<div id="J_imgLayer"></div>
+	<div class='opacityLayer' id="opacityLayer"></div>
+	<form id="detailabc">
+		<input type="hidden" name="mbh" id="mbh" reset="1" value=""/>
+		<input type="hidden" name="returnURL" value="${returnURL}" id="param1"/>
+	</form>
+	<#--<script type="text/javascript" src="http://www.dhresource.com/b/mobile/js/mobcommon.js"></script>-->
+	<#--<script type="text/javascript" src="/js/flipsnap.js"></script>
+	<script type="text/javascript" src="/js/detail.js"></script>-->
+	<script type="text/javascript" src="http://js.dhresource.com/mobile/common/zepto.js"></script>
+	<script src="http://js.dhresource.com/mobile/detail/20140922/detail.js"></script>
+	<script type="text/javascript" src="http://www.dhresource.com/dhs/fob/js/common/track/dhta.js"></script>
+	<script type="text/javascript">
+	<!-- D1 Tracking - START -->
+	(function(){
+	 try {
+       var g = location.hash;
+       var h = "";
+       var b = "";
+       var f = "";
+       if (g != "" && g != null) {
+            g = g.substr(1);
+            var d = g.split("-");
+            f = d[0];
+            h = d[1];
+            b = d[2];
+       }
+	   _dhq.push(["setVar", "clkloc", f]);
+       _dhq.push(["setVar", "pos", h]);
+       _dhq.push(["setVar", "type", b]);
+       _dhq.push(["setVar", "pid", "${product.itemcode?if_exists}"]);
+       _dhq.push(["setVar", "pic", "${product.itemcode?if_exists}"	]);
+       _dhq.push(["setVar", "cid", ""]);
+       _dhq.push(["setVar", "pub_cid", ""]);
+       _dhq.push(["setVar", "sellerid", "${product.supplierid?if_exists}"]);
+       _dhq.push(["event", "Item_U0001"]);
+       } catch (c) {}
+	})();
+</script>
+<!-- D1 Tracking - END -->
+<script type="text/javascript">
+try {
+    var t = _dht.getTracker();
+    t.pageview("mpd");
+} catch(e) {}
+function pt(vd){ 
+	try { 
+		var t = _dht.getTracker(); 
+		t.setVar("vd", vd); 
+		t.pageview("mpd"); 
+	}catch(e){}
+}
+</script>
+<script type="text/javascript">
+var _buyAttrListSize = '${product.tdProAttrList?if_exists?size}';
+var _buyAttrCustomListSize = '${product.customSized?if_exists}';
+DH_Product_Properties_Color_Object = {colorList:[],colorListHiddenInput:[]};
+function initsummarynew(){
+	$.ajax({
+		url:'/logodata.do',
+		type:'GET',
+		dataType:"json",
+		async:true,
+		error:function(){},
+		success:function(data){
+			var cartnum=data.cartnum;
+			$("div[name=cartnum]").html(cartnum);
+		}
+	})
+}
+$(document).ready(function(){
+	<#if display =="true">
+		<#if product.inventoryStatus=="1" && product.defaultSkuVo.inventory lt minSize>
+			var msg = "Item sold out";
+		<#else>
+			var msg = "This specification is currently not available";
+		</#if>
+		$('#opacityLayer').html(msg);
+        $('#opacityLayer').animate({ opacity: 1 ,zIndex:99},500, 'ease-out');
+        var timer = null;
+        timer = setTimeout(function(){
+            $('#opacityLayer').animate({ opacity: 0 ,zIndex:-22},500, 'ease-out');
+        },3000);
+	</#if>
+	initsummarynew();
+});
+</script>
+<!-- GATC STANDARD - BEGIN -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-425001-12'], ['_setDomainName', 'm.dhgate.com'], ['_trackPageview', location.pathname + location.search + escape(location.hash)]);
+    (function(){
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- GATC STANDARD - END -->
+<script src="http://js.dhresource.com/mobile/common/criteo.js"></script>
+<script>
+    Criteo.init(function(PID){
+            window.criteo_q=window.criteo_q||[];
+            window.criteo_q.push(
+                { event: "setAccount", account: PID},
+                {event:"setSiteType",type:"m"},
+                { event: "viewItem", product: "${product.itemcode}" }
+            );
+        });
+</script>
+
+
+<!--app download banner andriod by wangmeng 2014-11-21-->
+<#--Comment by wangmeng 2014-11-24 for bug of jquery
+<script src="http://js.dhresource.com/mobile/common/appBanner.js"></script>
+<script>
+    if ( !(/(iPad|iPhone|iPod).*OS [6-7].*AppleWebKit.*Mobile.*Safari/.test(navigator.userAgent)) ) {
+        $.smartbanner({
+            title: 'DHgate Mobile - Wholesale Marketplace',
+            author: 'dhgate.com'
+        });
+    }
+    
+</script>
+-->
+<!--app download banner andriod end-->
+
+</body>
+</html>

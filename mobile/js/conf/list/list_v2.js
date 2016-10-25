@@ -1,0 +1,10 @@
+$IMPORT('/DHMUtils/DHMCommon.js');
+$IMPORT('/DHMUtils/DHMCookie.js');
+$IMPORT('/DHMUtils/DHMInit.js');
+$IMPORT('/common/DHMSliding.js');
+$IMPORT('/DHMUtils/DHMSearch.js');
+$IMPORT('/common/lazyload.min.js');
+$IMPORT('/list/config.js');
+$IMPORT('/list/popupTip.js');
+$IMPORT('/list/addToFav.js');
+$IMPORT('/list/list_v2.js');

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="fragment" content="!">
+    <meta charset="UTF-8">
+    <meta name="ROBOTS" content="all" />
+    <meta name="author" content="m.dhgate.com" />
+    <meta name="copyright" content="Copyright &copy;m.dhgate.com Copy right" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="twcClient" content="false" id="twcClient" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="apple-touch-fullscreen" content="YES"/>
+    <meta property="og:type" content="product"/>
+    <meta property="og:site_name" content="m.dhgate.com"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="http://css.dhresource.com/mobile/detail/20150608/detail.css?201509101627" />
+</head>
+<body>
+<!--banner-->
+<div id="J_appBanner" style="position:relative;background:#fce5af">
+    <img id="J_appImgBanner" src="" width="100%" alt="" />
+    <a class="j-openApp" href="javascript:;" style="display:block;position:absolute;right:0;top:0;width:100%;height:100%;"></a>
+    <a class="j-closeApp" href="javascript:;" style="display:block;position:absolute;left:0;top:0;width:10%;height:32%;z-index:99"></a>
+</div>
+<!--header-->
+<header>
+    <h1><a class="logo" alt="" href="http://m.dhgate.com">DHgate Mobile Site</a></h1>
+    <span id="J_language">EN</span>
+    <div class="logo-info">
+        <a class="j-topSearchBtn t-search" rel="nofollow" href="javascript:;"></a>
+        <a class="cart-num" id="cartnum" rel="nofollow" href="http://m.dhgate.com/viewcart.do">0</a>
+    </div>
+ </header>
+<!--search-->
+<div id="J_search" class="dhm-search">
+    <form action="http://m.dhgate.com/search.do" method="get" autocomplete="off">
+        <a id="J_searchCl" href="javascript:;" class="search-cl-btn">Cancel</a>
+        <div class="search-cont">
+            <a id="J_searchDel" href="javascript:;" class="del-btn dhm-hide"></a>
+            <input type="submit" value="Go" class="search-btn"/>
+            <div class="search-text">
+                <input id="J_searchInput" type="text" value="" name="key" placeholder="I'm shopping for..." autocomplete="off"/>
+            </div>
+        </div>
+    </form>
+    <div id="J_searchResult" class="dhm-search-result"></div>
+</div>
+<!--image info-->
+<div class="dhm-detailLoad">loading...</div>
+<div class="dhm-detail">
+    <div class="mark-ico">
+        <!--促销图标-->
+        <span class="give-ico"></span>
+        <!--轮播图-->
+        <div id="J_detailImg" class="detail-img-con" dataAttr= "itemcode">
+            <ul id="J_detailImgCon" class="detail-con">
+            </ul>
+            <ul id="j-imgLayerCon"></ul>
+        </div>
+        <p class="mark-ico-txt"></p>
+        <h1 id="J_proInfo"></h1>
+    </div>
+    <!--discount-->
+    <div class="detail-discount">
+        <div class="detail-price clearfix">
+               <div class="now-price">
+                    <p class="commonPrice"><span class="company"></span></p>
+                    <p class="pre-price"><strong class="lineThrough"></strong><b class="freeShip"></b></p>
+                    <p class="pre-price garyPrice"><span id="salesVolume"></span>(Min.Order:<span id="MinOrder"></span>)</p>
+                </div>
+                <a id="J_addToFav" class="fav-icon" data="1"><span></span></a>
+                <div class="favorite">
+                    <p class="favoriteTxt"></p>
+                </div>
+        </div>
+        <!--dailydeals-->
+        <div class="dis-con daily-deals">
+            <div class="dis-icon" id="dis-icon">
+                <span class="left-bg"></span>
+                <span class="dis-text"><!-- Daily Deals --></span>
+            </div>
+            <div class="dis-info">
+                Only Left : <b id="J_countdown" class="dis-time"></b>
+                <span class="arrow"></span>
+            </div>
+        </div>
+        <!--shipping-->
+       <div id="J_shipping" class="detail-shipping" style="display:none;">
+            <div>
+                <p id="J_shippingCost" class="detail-fs"><strong></strong></p>
+            </div> 
+        </div> 
+        <!--shippingto-->
+     
+
+    </div>
+</div>
+<!--select attributes-->
+<div id="J_sku" class="detail-attr">
+    <a  class="detail-a detail-arrow-right">
+        <div class="detail-skuCont">Please Select <span id="selectAttr"></span></div>
+        <div class="gary">Quantity</div>
+    </a>
+</div>
+
+<div class="shipto-area clearfix">
+    <a href="javascript:;" class="j-shiptobtn" itemcode = "20150920">
+        <div class="js-canship">
+            <div class="shipto-cost j-shipcost"><span>Free</span> shipping</div> <!-- 有价钱的class:hasprice -->
+            <div class="shipto-infro">
+                <div>To <span class="towhere j-shipcountry">United States</span> Via <span class="delivery-way j-shipway">DHL</span></div>
+                <div>Est.Delivery. <span class="delivery-tm js-deliverytm">Aug 13 and 24</span></div>
+            </div>
+        </div>
+        <div class="js-notcanship" style="display:none;">
+
+        </div>
+    </a>
+    
+</div>  
+
+<div class="addBtn clearfix">
+    <div class="addCart buyNow"><span title="Add to Cart" class="J_buyNow">Buy it now</span></div>
+    <div class="addCart"><span title="Add to Cart" class="J_addToCart">Add to Cart</span></div>
+</div>
+<!--Item Specifics-->
+<div id="J_specifics" class="j-sdr detail-specifics">
+    <a href="javascript:;" class="detail-a detail-arrow-right">Specification</a>
+</div>
+<!--Description-->
+<div id="J_des" class="j-sdr detail-des">
+    <a href="javascript:;" class="detail-a detail-arrow-right">Description</a>
+</div>
+<!--Reviews-->
+<div id="J_reviews" class="j-sdr detail-reviews">
+    <a href="javascript:;" class="detail-a detail-arrow-right reviewCont"><div class="dh-star-g"><div class="dh-star-y"></div></div><h3>(0 Reviews)</h3></a>
+</div>
+<!--supplier-->
+<div class="detail-supplier"></div>
+<!--message-->
+<div class="detail-message"></div>
+<div class="guaranTee clearfix">
+    <div class="guaranTeeTit clearfix">
+        <h3><span class="dhIcon"></span>Buyer Protection</h3>
+    </div>
+    <ul class="guaranTeeTxt clearfix">
+        <li>- Guaranteed Secure Payments on Every Order</li>
+        <li>- Refund if your item is not delivered or as described</li>
+        <li>- Buyer Protection after order confirmation</li>
+    </ul>
+    <div class="payment-container">
+        <img src="http://css.dhresource.com/mobile/detail/20150608/image/payment-pic.png" alt="" />
+    </div>
+</div>
+<!-- <div id="J_share" class="detail-share">
+    <span class="detail-shareIcon"></span>Share Product
+</div> -->
+    <div id="detail-share-pop">
+        <ul class="detail-share-pop clearfix">
+            <h3>Share on</h3>
+            <li><a class="f-share" data-name="facebook" href="javascript:void(0);"></a></li>
+            <li><a class="g-share" data-name="twitter" href="javascript:void(0);"></a></li>
+            <li><a class="ga-share" data-name="google" href="javascript:void(0);"></a></li>
+            <li><a class="p-share" data-name="pinterest" href="javascript:void(0);"></a></li>
+            <li><a class="icon-mailto" data-name="mail" href="javascript:void(0);"></a></li>
+        </ul>
+    </div>
+<!--个性化推荐 -->
+<div class="rp-items">
+    <h3 class="tit"><strong>Recommended Products</strong></h3>
+    <ul id="J_recommendItems" class="con"></ul>
+    <a class="show-more">load more<i></i></a>   
+</div>
+<!--may like-->
+<div class="detail-mayLike">
+    <h3 class="title"><strong>You might also like</strong></h3>
+    <div id="J_mayInterest" class="may-like" data-pp="d" data-itemcode="123">
+        <ul></ul>
+    </div>
+</div>
+<!--SKU layer #ViewAttr-->
+<div class="ceng"></div>
+<section id="J_skuLayer" class="dh-layer" defaultskuid="123">
+    <div class="sku_loading"></div>
+    <div class="sku-con">
+        <nav id="dingwei"><a class="j-back close" href="javascript:;"></a> </nav>
+        <div class="detail-price border_line">
+            <img src="" class="Sku_leadimg" alt=""/>
+            <div class="sku-price">
+                <div class="sku_price">
+                   </div>
+                <div class="pre-price" id="line_price"></div>
+                <div><span id="salesVolume_sku"></span></div>
+            </div>
+        </div>
+        <div id="sku_List" style="overflow-y: scroll">
+            <div id="sku_item_list"></div>
+            <div class="sku-wprice">
+                <h4 id="sku_lot" class="padd">Wholesale Price :<span id="Piece_sku"></span> / Lot</h4>
+                <dl>
+                    <dt >
+                        <span >Quantity</span>
+                        <span class="originalPrice">Price</span>
+                        <span class="Price">Price</span>
+                        <span class="vipPrice">vipPrice</span>
+                        <span class="promDiscountPrice">Discount Price</span>
+                    </dt>
+              
+                </dl>
+                <div class="sku-num">
+                    <p class="padd">Quantity:<span id="skuMinOrder"></span></p>
+                    <span class="jian jianb"></span>
+
+                    <input id="J_quantity" type="test" init-value="1" autocomplete="off" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')" maxlength="5" size="14" name="amount" type="text" />
+                    <!--<input  type="number" init-value="1" autocomplete="off" value="1" min="1" max="6842"/>-->
+                    <span class="jia jiak"></span></div>
+            </div>
+        </div>
+        <span class="done" id="J_done">Done</span>
+    </div>
+</section>
+<!--sdr layer #Viewsdr-->
+<section id="J_sdrLayer" class="sdr">
+    <nav>
+        <div id="J_sdrNav" class="tit detail-arrow-left">
+            <a name="s"><span>Specification</span></a>           
+            <a name="d" id="nav_desLayer"><span>Description</span></a>
+            <a class="active" name="r" id="nav_reviews"><span>Reviews</span></a>
+        </div>
+        <a href="javascript:;" class="j-back sdr-back"></a>
+    </nav>
+    <article id="J_reviewLayer">
+        <div class="review-all clearfix">
+            <div class="star">
+                <div class="star-info">
+                    <div class="star-num"><div class="dh-star-g"></div></div>
+                    <span><em></em></span>
+                </div>
+                <ul  id="dhm-lt"></ul>
+            </div>
+        </div>
+        <div class="review-image">
+            <h3>Customer Images</h3>
+            <a id="J_reviewImg" href="javascript:;" class="detail-a detail-arrow-right ">
+            <ul id=J_reviewImgList>
+            </ul>
+            </a>
+        </div>
+        <div class="review-con">
+            <h3>Customer Reviews:</h3>
+        </div>
+        <div class="dh-review-more">
+            <a id="J_showMoreR" href="javascript:;">Show 10 more reviews<span></span></a>
+        </div>
+    </article>
+    <article id="J_specificsLayer" class="specifics-con" style="display:none"></article>
+    <article id="J_descriptionLayer" class="description-con" style="display:none">  
+    </article>
+</section>
+<div class="opacityLayer" id="opacityLayer"></div>
+<!--go back-->
+<a href="javascript:scroll(0,0)" class="ui-gotop"></a>
+<!--footer-->
+<footer class="footer">
+    <div class="ft-join-login" id="J_logined">
+        <span>Welcome to DHgate!</span>
+        <a rel="nofollow" href="http://m.dhgate.com/register.do">Join Free</a> |
+        <a rel="nofollow" href="http://m.dhgate.com/login.do">Sign In</a>
+    </div>
+    <nav class="ft-nav">
+        <a rel="nofollow" href="http://m.dhgate.com/about.html">About</a> |
+        <a href="http://m.dhgate.com/sitemap/index.html">Sitemap</a> |
+        <a href="http://m.dhgate.com/sitemap/top-wholesale-searches.html">Top Search</a> |
+        <a href="http://www.dhgate.com/index.shtml">Classic Site</a> |
+        <a rel="nofollow" href="http://survey.dhgate.com/index.php?sid=92928&amp;lang=en">Feedback</a>
+    </nav>
+    <p>Copyright Notice &copy; 2004 - 2014 DHgate.com All rights reserved.</p>
+</footer>
+<div class="addBtn j-fixedAdd clearfix">
+    <div class="addCart buyNow"><span title="Add to Cart" class="J_buyNow">Buy it now</span></div>
+    <div class="addCart"><span title="Add to Cart" class="J_addToCart">Add to Cart</span></div>
+</div>
+<div class="mask-layer" style="display:none;"></div>
+<div class="shipto-layyer" id="shiptolayyer">
+    <a href="javascript:;" class="close js-shipclose"></a>
+    <div class="shipto-result js-shipmethodlist">
+        <div class="re-cost j-shipcost"><span>Free</span> shipping</div>
+        <div class="re-via"><span class="j-from">From</span> <span class="js-stockcountry">United States</span> to <span class="j-shipcountry">United States</span> via <span class="j-shipway">DHL</span></div>
+        <div class="re-delivery">Ships within <span class="js-shipwithin">10</span> days,estimated delivery time: <span class="js-deliverytm">Aug 29 and Sep 3</span></div>
+       <!--  <div class="country-from clearfix">
+            <a href="javascript:;" class="detail-arrow-right js-stockinbtn"><span class="js-stockcountry">United States</span>From</a>
+        </div> -->
+        <div class="country-shipto clearfix js-allcountrybtn">
+            <a href="javascript:;" class="detail-arrow-right"><span class="j-shipcountry">United States</span>Ships to</a>
+        </div>
+        <div class="choose-method" id="choosemethodLayyer">
+            <div class="sku_loading js-loading" style="display: none;"></div>
+        </div>
+        <!-- <div class="choose-method">
+            <div class="choose-method-tit">Ships to Choose Shipping Method:</div>
+            <div class="choose-methodcon">
+                <ul>
+                    <li class="active">
+                        <div class="method-cost">Free Shipping</div>
+                        <div class="method-type clearfix"><var class="method-deliveryway">DHL</var><span class="method-deliverytm">delivery time: <span>1-6days</span>to ship</span></li>
+                    </li>
+                    <li>
+                        <div class="method-cost">Free Shipping</div>
+                        <div class="method-type clearfix"><var class="method-deliveryway">DHL</var><span class="method-deliverytm">delivery time: <span>1-6days</span>to ship</span></li>
+                    </li>
+                    <li>
+                        <div class="method-cost">Free Shipping</div>
+                        <div class="method-type clearfix"><var class="method-deliveryway">Fedex - Abroad Delivery </var><span class="method-deliverytm">delivery time: <span>1-6days</span>to ship</span></li>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+    </div>
+</div>
+<div class="allcountry-layyer" id="countrylayyer" >
+    <!-- <div class="allcountrycon">
+        <div class="back"><a href="javascrript:;"></a></div>
+        <div class="popular-country">
+            <h3 class="pop-tit">Popular</h3>
+            <ul>
+                <li class="active">United States</li>
+                <li>United States</li>
+                <li>China</li>
+                <li>Japan</li>
+            </ul>
+        </div>
+        <div class="all-countrylist">
+            <div class="countrylist-module">
+                <h3 class="coun-moduletit">A</h3>
+                <ul>
+                    <li class="active">United States</li>
+                    <li>United States</li>
+                    <li>China</li>
+                    <li>Japan</li>
+                    <li>United States</li>
+                    <li>United States</li>
+                    <li>China</li>
+                    <li>Japan</li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    
+</div>
+<div class="stockin-layyer" id="stocklayer">
+   
+    
+</div>
+<script src="http://js.dhresource.com/mobile/common/appSpread.js?v=20141225"></script>
+<script src="http://js.dhresource.com/mobile/common/common_msg_en.js"></script>
+<script src="http://js.dhresource.com/mobile/common/zepto.js"></script>
+<script src="http://js.dhresource.com/mobile/detail/20150608/detail.js?201509101627"></script>
+<script src="http://www.dhresource.com/dhs/fob/js/common/track/dhta.js"></script>
+<script src="http://www.dhresource.com/b/js/dht.js" ></script>
+<script type="text/javascript">
+try {
+    var t = _dht.getTracker();
+    t.pageview("mpd");
+} catch(e) {}
+function pt(vd){ 
+    try { 
+        var t = _dht.getTracker(); 
+        t.setVar("vd", vd); 
+        t.pageview("mpd"); 
+    }catch(e){}
+}
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-425001-12', 'auto');
+  ga('send', 'pageview');
+  ga('set', 'dimension1', '1');
+</script>
+
+<script src="http://js.dhresource.com/mobile/common/criteo.js"></script>
+<script>   
+<!-- CJ码 -->
+    try{
+        var _caq = _caq || []; 
+        (function () { 
+            var ca = document.createElement("script");  
+            ca.type = "text/javascript";  
+            ca.async = true; 
+            ca.id = "_casrc";  
+            ca.src = "//t.channeladvisor.com/v2/12016266.js"; 
+            var ca_script = document.getElementsByTagName("script")[0];  
+            ca_script.parentNode.insertBefore(ca, ca_script); 
+        })();
+    }catch(e){} 
+<!-- CJ代码2 -->
+</script>
+<script>
+<!-- remarketing -->
+(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '816036941799019']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+
+<!--Criteo Begin-->
+<script type="text/javascript" src="//static.criteo.net/js/ld/ld.js" async="true"></script>
+<script type="text/javascript">
+var itemcode =window.location.pathname.match(/(\d+).html/)[1];
+window.criteo_q = window.criteo_q || [];
+window.criteo_q.push(  
+        { event: "setAccount", account: [3090, 3091, 8607, 11555, 8606,8605,8604,11553,11554,8603,20418,8602,20419,8600,8601,11552,20417,8599,8598]},
+        { event: "setHashedEmail", email: "" },
+        { event: "setSiteType", type: "m" },
+        { event: "viewItem", item: "itemcode" }
+);
+</script>
+<!--Criteo End-->
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=816036941799019&amp;ev=PixelInitialized" /></noscript>
+</body>
+</html>

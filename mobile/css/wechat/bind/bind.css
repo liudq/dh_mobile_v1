@@ -1,0 +1,8 @@
+/* bind */
+.w-loginbox{padding:0 15px;}
+.w-loginbox .w-user,.w-loginbox .w-password{-moz-box-sizing:border-box;-o-box-sizing:border-box;-webkit-box-sizing:border-box;padding-left:38px;font-size:16px;color:#000;margin:15px 0 0 0;border-radius:3px;font-family:'微软雅黑';height: 38px;line-height: 38px;border: 1px solid #999;}
+.w-user input,.w-password input{width:100%;height: 36px;line-height:36px;vertical-align:top;border:0 none;-webkit-appearance:none;}
+.w-user{background:#fff url(http://css.dhresource.com/mobile/wechat/bind/image/icon-login.png) no-repeat 10px 11px;background-size:18px 17px;}
+.w-password{background:#fff url(http://css.dhresource.com/mobile/wechat/bind/image/icon-password.png) no-repeat 10px 11px;background-size:18px 17px;}
+.w-loginbtn{padding:20px 13px 20px 14px;}
+.w-loginbtn .w-submit{border:0 none;display:block;width:100%;text-align:center;-webkit-appearance:none;border:1px solid #e1a72b;border-top-color:#e7b440;border-left-color:#e7b440;border-right-color:#e7b440;color:#333;font-size:16px;font-family:'微软雅黑';border-radius:3px;width:100%;height: 43px;line-height: 43px;background-color:#fdd000;-webkit-box-shadow:0 2px 2px rgba(234,195,115,0.65);-o-box-shadow: 0 2px 2px rgba(234,195,115,0.65);-moz-box-shadow: 0 2px 3px rgba(234,195,115,0.65);box-shadow: 0 2px 3px  rgba(234,195,115,0.65);}

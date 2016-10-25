@@ -1,0 +1,1 @@
+{"coupons":[{"total":0,"name":"coupon3","isExpire":false},{"total":30,"name":"coupon4","isExpire":false},{"total":24388,"name":"coupon1","isExpire":false},{"total":3225,"name":"coupon2","isExpire":false}],"isVip":true,"hasLogin":true}

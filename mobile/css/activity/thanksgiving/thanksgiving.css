@@ -1,0 +1,30 @@
+.tg-head{height:216px;color:#fff;background:#9a1b1c url(http://css.dhresource.com/mobile/activity/thanksgiving/image/coupon-head.jpg) no-repeat 50% 0;}
+.tg-head h1{padding:5px 0 0;text-align:center;font-size:24px;font-weight:bold;line-height:28px}
+.tg-head span{display:block;text-align:center;margin-top:6px}
+.tg-head span em{font-weight:bold}
+.tg-cont{padding:10px 5px;background-color:#9a1b1c}
+.tg-cont ul{border:1px dotted #c04f54}
+.tg-cont li{position:relative;height:125px;width:300px;margin:10px auto; background:url(http://css.dhresource.com/mobile/activity/thanksgiving/image/item_bg.jpg) no-repeat 50% 50%;background-size:280px 125px}
+.tg-cont .gray{background:url(http://css.dhresource.com/mobile/activity/thanksgiving/image/item_gray.jpg) no-repeat 50% 50%;background-size:280px 125px}
+.tg-cont a{display:block;height:125px;width:300px}
+.tg-cont .tg-ring{position:absolute;top:-15px;left:-10px;width:70px;height:63px;background:url(http://css.dhresource.com/mobile/activity/thanksgiving/image/ring.png) no-repeat 50% 50%;background-size:70px 63px}
+.tg-cont .tg-money{position:absolute;top:25px;left:64px}
+.tg-cont .tg-money-100{left:58px;top:26px}
+.tg-cont .tg-info{float:right;padding:5px 6px;width:160px;color:#c1f197}
+.tg-cont .tg-info em{color:#fff}
+.tg-cont .tg-get{display:block;margin-right:20px;font-size:16px;font-weight:bold;text-decoration:underline;text-align:center;color:#fff}
+.tg-rules{padding:20px 10px 50px;margin:0 auto;color:#ed8c97;background-color:#9a1b1c}
+.tg-rules-tit{font-size:18px;text-align:center;padding-bottom:20px}
+.tg-rules-cont{font-size:12px;line-height:23px;}
+.tg-rules-cont li{overflow:hidden}
+.tg-rules-cont span{width:20px;float:left}
+.tg-rules-cont p{margin-left:20px;}
+.tg-shadow{display:none;width:100%;height:100%;position:fixed;top:0;left:0;z-index:999;zoom:1;background:#999;opacity:0.5}
+.tg-close-layer{position:fixed;width:280px;display:none;zoom:1;z-index:1000;padding:5px 10px;top:20%;left:50%;margin-left:-150px;background:#fff}
+.tg-close-layer h3 img{margin:10px auto;}
+.tg-close-layer .closeBtn{text-align:center;margin:15px 0}
+.tg-close-layer .closeBtn a{display:inline-block;width:140px;height:30px;line-height:30px;text-align:center;color:#fff;font-size:15px;background-color:#eb3e10;}
+.tg-underline{text-decoration:underline}
+.tg-color1{color:#b51215}
+.tg-font-normal{font-weight:normal}
+

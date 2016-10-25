@@ -1,0 +1,23 @@
+article,aside,details,figcaption,figure,footer,header,menu,hgroup,nav,section{display:block}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,label,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+html{font-size:100%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+fieldset,img{border:0}
+img{display:block}
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+body{color:#444;font:12px/18px Arial,Helvetica,sans-serif;background-color:#fff}
+input,textarea,select,button{font:100% Arial,Helvetica,sans-serif;}
+ol,ul{list-style:none;}
+a{text-decoration:none;color:#004b91}
+.clearfix:after {clear:both;font-size:0;height:0;display:block;visibility:hidden;content:'';line-height:0}
+.dhm-lt{float:left}
+.dhm-rt{float:right}
+.dhm-hide{display:none}
+
+
+.eleven-ico{display:inline-block;height:14px;line-height:13px;font-size:11px;position:relative;top:-1px;padding:1px 4px 0;margin-right:2px;background:#db4b4b;color:#fff;font-weight: bold;border-radius: 3px;}
+.mobile-deals{display:inline-block;vertical-align:top;width:13px;height:16px;background:url(http://css.dhresource.com/mobile_v2/common/image/promotion/exclusiveprice.png) no-repeat -3px 0;background-size:16px 16px;}
+@media screen and (min-device-width:414px){
+.mobile-deals{width:21px;height:21px;background:url(http://css.dhresource.com/mobile_v2/common/image/promotion/exclusiveprice3.png) no-repeat -3px 0;background-size:21px 21px;}
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+  <SCRIPT> 
+function  setCaretAtEnd  (field)  { 
+	
+   if  (field.createTextRange)  { 
+       var  r  =  field.createTextRange(); 
+       r.moveStart('character',  field.value.length); 
+       r.collapse(); 
+       r.select(); 
+   } 
+} 
+</SCRIPT>
+<style>
+.pic2{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+.image_container a{
+    float:left;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+}
+.image_container a .pic1{
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    -o-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+.image_container a:hover .pic1{
+    -webkit-transform:rotateX(180deg);
+    -moz-transform:rotateX(180deg);
+}
+.image_container a .pic2{
+    -webkit-transform: rotateX(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    -o-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .4s ease-in-out;/*z-index:10;
+    position:absolute;*/
+}
+.image_container a:hover .pic2{
+    -webkit-transform:rotateX(0deg) rotateY(0deg);
+    -moz-transform:rotateX(0deg) rotate(0deg);
+    z-index: 10;
+    position: absolute;
+	left:8px;
+	top:6px;
+}
+</style> 
+</head>
+<body>
+	 <FORM  NAME="aForm"> 
+<INPUT  TYPE="text"  NAME="userName"  VALUE="测试文字"  ONFOCUS="setCaretAtEnd(this)"> 
+<INPUT  TYPE="text"  NAME="userAge"  VALUE="测试文字"  ONFOCUS="setCaretAtEnd(this)"> 
+</FORM> 
+<a href="detail.html">jump!!</a>
+<div class="image_container">
+     <a>
+         <div class="pic1"><img src="http://css.dhresource.com/mobile/detail/image/store-over.png"></div>
+         <div class="pic2"><img src="http://css.dhresource.com/mobile/detail/image/add-store.png"></div>
+     </a>
+ </div>
+</body>
+</html>

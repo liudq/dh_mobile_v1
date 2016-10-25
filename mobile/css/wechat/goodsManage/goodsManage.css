@@ -1,0 +1,68 @@
+/* goodsMan-header */
+
+.goodsMan-header{padding:7px 10px 8px;border-top:1px solid #b2b2b2;border-bottom: 1px solid #ddd;background-color: #e4e4e4;}
+.gm-head-search{background: #fff;border-radius: 5px;}
+.gm-hd-searchBtn {float: left;width:30px;height: 30px;}
+.gm-hd-searchBox{margin-left: 30px;position: relative;padding-right: 30px;}
+.gm-hd-searchBtn input{display: inline-block;-webkit-appearance:none;border:0 none;width: 30px;height: 30px;background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-search.png) no-repeat center 5px;background-size:15px 15px;}
+.gm-hd-searchBox input{width:100%;height: 30px;border: 0px;font-family: '微软雅黑';background: transparent;}
+.search-closeBtn{position:absolute;display:none;right:0px;top:0px;width:30px;height: 30px;background: url(http://css.dhresource.com/mobile/wechat/goodsManage/image/icon-qx.png) no-repeat 8px 8px;background-size:14px 14px;}
+
+.goodsMan-list{background-color: #fff;}
+.gm-product{margin-top:7px;border-top: 1px solid #ddd;border-bottom:1px solid #ddd;}
+.gm-product h3{padding:0 10px;font-size:11px;font-family: '微软雅黑';background-color: #eee;height:29px;line-height: 29px;}
+.gm-product h3 span{float: right;}
+.gm-productcon{position:relative;padding: 12px 10px;}
+.gm-productcon dl{margin-right: 73px;}
+.appeal-product dl{padding: 12px 10px;}
+.gm-productcon dl dt,.appeal-product dl dt{float:left;width: 80px;height: 80px;}
+.gm-productcon dl dt img,.appeal-product dl dt img{display: block;border: 1px solid #ddd;padding: 2px;max-width: 74px;max-height: 74px;}
+.gm-productcon dl dd,.appeal-product dl dd{padding:10px 10px 0 7px;overflow:hidden;max-height:64px;min-width:125px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;line-height:20px;margin-left: 80px;color:#404040;font-size:15px;}
+.appeal-product dl dd{padding: 0px 0 0 7px;}
+.appeal-product dl .appeal-pronum{font-size: 11px;font-family: '微软雅黑';line-height: 15px;}
+.gm-soldOutBtn{position: absolute;width: 73px;height: 38px;right:10px;top:50%;margin-top: -19px;}
+.gm-soldOutBtn input{width: 73px;height: 38px;-webkit-appearance:none;line-height: 38px;background-color:#fe6601;border:0 none;color:#fff;border-radius: 3px;font-size:12px;font-family: '微软雅黑';}
+
+/* page */
+.proMan-page{padding: 10px;border-top: 1px solid #ccc;}
+.proMan-pagelf{float: left;position:relative;}
+.proMan-select{position: absolute;background:rgba(0,0,0,0);text-indent:-2000px;width:100px;left:40px;height: 35px;border:0 none;-webkit-appearance:none;}
+.proMan-pageri{float: right;}
+.proMan-pagelf a{display: inline-block;vertical-align:middle;width:40px;height: 35px;}
+.proMan-pagelf span{display: inline-block;vertical-align:middle;text-align:center;color:#333;font-size:13px;width:94px;padding:0 2px;height: 35px;line-height: 35px;border:0 none;}
+.proMan-pagelf .pgprev-nopage{background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-nopalf.png) no-repeat center center;background-size:13px 20px;}
+.proMan-pagelf .pgnext-avtive{background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-pgri.png) no-repeat center center;background-size:13px 20px;}
+.proMan-pagelf .pgprev-active{background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-pglf.png) no-repeat center center;background-size:13px 20px;}
+.proMan-pagelf .pgnext-nopage{background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-nopgri.png) no-repeat center center;background-size:13px 20px;}
+.proMa-pgbg{display: inline-block;width:13px;height:8px;margin-left:5px;vertical-align: middle;background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-pgbg.png) no-repeat 0 0;background-size:13px 8px;}
+.proMan-pageri select{display: inline-block;-webkit-appearance:none;vertical-align: middle;padding:0 0 0 10px;width:74px;height: 35px;border: 1px solid #ddd;border-radius:3px;background: url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-pgbg.png) no-repeat 40px center;background-size:13px 8px;}
+/* 弹层 */
+.layyer-wrap{position:fixed;width:100%;bottom:0;padding:20px 0px;background: rgba(0,0,0,0.6);z-index:999;}
+.ly-confirm,.ly-cancel{padding: 0 10px;}
+.ly-tips{padding:6px 0px;background-color:#fff;border-radius: 3px 3px 0 0;}
+.ly-tips p{text-align: center;font-family: '微软雅黑';line-height: 20px; }
+.ly-confirmBtn a{display: block;line-height:44px;text-align:center;-webkit-appearance:none;width:100%;border:0 none;height: 44px;border-radius: 0 0 3px 3px;background-color: #feb901;color:#fff;font-size:15px;font-family: '微软雅黑';}
+.ly-cancel{padding-top:8px;}
+.ly-cancel a{display:block;width:100%;line-height:44px;text-align:center;-webkit-appearance:none;border:0 none;height: 44px;border-radius: 3px;background-color: #fff;color:#999;font-size:15px;font-family: '微软雅黑';}
+
+.reason{padding:6px 10px 6px 41px;color: #68390d;font-size:11px;font-family: '微软雅黑';background: #ffd35d url(http://css.dhresource.com/mobile/wechat/goodsManage/image/icon-warning.png) no-repeat 10px center;background-size:24px 22px;}
+.appeal-product{background-color: #fff;}
+.appeal-product .reason{padding: 6px 10px;background:#ffd35d;}
+.appeal-product .reason em{color:#ff3b2f;font-size:12px;}
+.mygoods .reason{padding: 11px 10px 11px 67px;background-position:30px center;font-size:13px;border-bottom: 1px solid #feb901;}
+.appealcon{background-color: #f5f5f5;padding-bottom: 30px;}
+.appeal-box{padding: 12px 10px;}
+.appeal-box textarea{display: block;width: 100%;height: 136px;padding:5px 0;text-indent:5px;border: 1px solid #ddd;resize:none;font-size:12px;font-family: '微软雅黑';}
+.appeal-btn{padding: 0 10px;}
+.appeal-btn input{display: block;-webkit-appearance:none;border:0 none;width: 100%;height: 44px;border-radius: 3px;background-color: #feb901;color:#fff;font-size: 15px;font-family: '微软雅黑';}
+.goods-state{width:100%;display: -webkit-box;display: -moz-box;display: box;padding: 10px 0;border-bottom: 1px solid #ddd;background-color: #fff;}
+.goods-state a{display:block;height:48px;padding-top:5px;text-align:center;border-left:1px solid #ddd;-moz-box-flex:1;-webkit-box-flex:1;box-flex:1;}
+.goods-state a:nth-child(1){border-left: 0px;}
+.goods-state a em{display: inline-block;padding:1px 6px;height:17px;line-height:17px;background-color: #f6712a;font-size: 14px;color:#fff;border-radius: 10px;}
+.goods-state a span{display: block;padding-top:3px;text-align: center;font-size: 12px;color:#666;font-family: '微软雅黑';}
+
+.warm-tips{margin:20px;padding:10px 0px 0;border:1px solid #ffe7a8;border-radius: 2px;background-color: #fff6d6;-moz-box-shadow: 0px 2px 0px #ddd;-webkit-box-shadow: 0px 2px 0px #ddd;box-shadow: 0px 2px 0px #ddd;}
+.warm-tips h3{padding-left:50px;height: 24px;line-height: 24px;font-size:12px;font-family: '微软雅黑';color:#feb901;background:url(http://css.dhresource.com/mobile/wechat/goodsManage/image/icon-warmtips.png) no-repeat 18px center;background-size:26px 24px;}
+.warm-tipscon{padding:5px 18px;background:url(http://css.dhresource.com/mobile/wechat/goodsManage/image/warmbg.png) no-repeat right center;background-size:125px 171px; }
+.warm-tipscon p{font-size:11px;padding:10px 0;font-family: '微软雅黑';color: #727171;line-height: 19px;}
+/*a{-webkit-tap-highlight-color:rgba(255, 255, 255, 0);outline:none;background:#ff0000}*/

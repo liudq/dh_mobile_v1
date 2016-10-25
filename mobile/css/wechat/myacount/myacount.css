@@ -1,0 +1,27 @@
+/* my-acount */
+.my-acountinfor{padding:10px 10px;border-top: 1px solid #ccc;}
+.my-acountinfor p{font-size:14px;line-height:22px;font-family: '微软雅黑';color:#693a0d;}
+.skip-inbox{float: right;width:79px;height: 45px;background: url(http://css.dhresource.com/mobile/wechat/myacount/image/icon-inbox.png) no-repeat center center;background-size:26px 26px;}
+.my-acountinfor p b{font-weight:normal;color: #f00;}
+.my-acountinfor p em{padding: 0 3px;}
+.w-mycountRbind{display: inline-block;width: 72px;height: 33px;line-height: 33px;color: #604400;font-size:15px;margin-top: 4px;}
+.order-state{padding:10px 10px;-webkit-column-count:4;-moz-column-count:4;-o-column-count:4;-moz-column-gap:0px;-webkit-column-gap:0px;}
+.order-state a{display: inline-block;color:#666;font-size:12px;width:100%;text-align:center;-moz-box-sizing:border-box;-o-box-sizing:border-box;-webkit-box-sizing:border-box;border-left: 1px solid #ccc;}
+.order-state a:nth-child(1){border-left: 0px;}
+.order-state a em,.order-state a span{display: block;}
+.order-state a em{color: #ff0000;}
+.order-state a span{padding-top:3px;}
+.feedback-skip a{display:block;}
+.feedback-skip li{height:43px;line-height: 43px;margin-bottom:10px;background-color:#fff;border-bottom:1px solid #ccc;background:#fff;}
+.feedback-skip li a{color:#333;font-size:14px;padding:0 10px;background: url(http://css.dhresource.com/mobile/wechat/myacount/image/icon-skip.png) no-repeat right center content-box;background-size:8px 13px;}
+.w-header .w-mycountRbind{display: inline-block;width: 72px;height: 33px;line-height: 33px;color: #604400;font-size:15px;margin-top: 4px;text-align:center;border:1px solid #f2cd69;-webkit-box-shadow:0 2px 2px rgba(234,195,115,0.65);-o-box-shadow: 0 2px 2px rgba(234,195,115,0.65);-moz-box-shadow: 0 2px 3px rgba(234,195,115,0.65);box-shadow: 0 2px 3px  rgba(234,195,115,0.65);background-color:#fbeba3;font-family: '微软雅黑';}
+.expecting{color: #333;padding:60px 10px 30px;}
+.mycount-infro {border-top: 1px solid #fcd22c;border-bottom: 1px solid #fcd22c;margin-bottom: 10px;}
+.mycount-infro ul{text-align: center;padding: 10px 0 10px;}
+.mycount-infro li{display: inline-block;margin-right:10px;}
+.mycount-infro li a{display: inline-block;width: 44px;padding-top: 44px;width: 55px;text-align: center;}
+.mycount-infro li:nth-child(1) a{background: url(http://css.dhresource.com/mobile/wechat/myacount/image/icon-myorder.png) no-repeat 4px -2px;background-size:44px 44px;}
+.mycount-infro li:nth-child(2) a{background: url(http://css.dhresource.com/mobile/wechat/myacount/image/icon-mail.png) no-repeat center 1px;background-size:44px 44px;}
+.mycount-infro li:nth-child(3) a{background: url(http://css.dhresource.com/mobile/wechat/myacount/image/icon-myproduct.png) no-repeat center 1px;background-size:44px 44px;}
+.mycount-infro li:nth-child(4) a{background: url(http://css.dhresource.com/mobile/wechat/myacount/image/icon-myactivity.png) no-repeat center 1px;background-size:44px 44px;}
+

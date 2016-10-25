@@ -1,0 +1,1 @@
+$IMPORT('/pay/pay.js');

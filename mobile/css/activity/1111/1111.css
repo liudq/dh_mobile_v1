@@ -1,0 +1,17 @@
+body{background:#d92b42}
+.cont-1111{position:relative;width:270px;padding:800px 25px 50px;margin:0 auto;background:url(http://css.dhresource.com/mobile/activity/1111/image/coupon-lp.png) no-repeat 50% 0;background-size:320px 784.5px}
+.cont-1111 h3{line-height:30px;font-size:14px;font-weight:bold;color:#fff}
+.cont-1111 p{font-size:12px;color:#fff}
+.get-btn{position:absolute;display:block;left:40px;width:240px;height:45px;line-height:45px;text-align:center;font-size:14px;border:#d53b3b 1px solid;color:#d53b3b;background:#fff}
+.g-100{top:266px}
+.g-20{top:495px}
+.g-10{top:722px}
+.gray-1111{background:#979797}
+.tg-shadow{display:none;width:100%;height:100%;position:fixed;top:0;left:0;z-index:999;zoom:1;background:#999;opacity:0.5}
+.tg-close-layer{position:fixed;width:280px;display:none;zoom:1;z-index:1000;padding:5px 10px;top:20%;left:50%;margin-left:-150px;background:#fff}
+.tg-close-layer h3 img{margin:10px auto;}
+.tg-close-layer .closeBtn{text-align:center;margin:15px 0}
+.tg-close-layer .closeBtn a{display:inline-block;width:140px;height:30px;line-height:30px;text-align:center;color:#fff;font-size:15px;background-color:#eb3e10;}
+.tg-underline{text-decoration:underline}
+.tg-color1{color:#b51215}
+.tg-font-normal{font-weight:normal}

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="ROBOTS" content="all" />
+    <meta name="keywords" content="${product.metavo.keywords?if_exists}" />
+    <meta name="description" content="${product.metavo.description?if_exists}" />
+    <meta name="author" content="m.dhgate.com" />
+    <meta name="copyright" content="Copyright &copy;m.dhgate.com Copy right" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="twcClient" content="false" id="twcClient" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="apple-touch-fullscreen" content="YES"/>
+    <meta property="og:type" content="product"/>
+    <meta property="og:url" content="http://m.dhgate.com/product/${canonicalName}/${product.itemcode}.html"/>
+    <meta property="og:description" content="${product.metavo.description?if_exists}"/>
+    <meta property="og:image" content="http://www.dhresource.com/${imageUrl?if_exists}"/>
+    <meta property="og:title" content="${product.productname}"/>
+    <meta property="og:site_name" content="m.dhgate.com"/>
+    <meta name="apple-itunes-app" content="app-id=905869418" />
+    <title>${product.metavo.title?if_exists} Mobile </title>
+    <link rel="stylesheet" type="text/css" href="http://css.dhresource.com/mobile/detail/20150108/detail.css?v=20141225" />
+    <#global imgurl>http://www.dhresource.com/</#global>
+    <#import "/page/marco/newbottom.ftl" as bottom>
+</head>
+<body>
+<#--app推广begin-->
+    <div id="J_appBanner" style="position:relative;background:#fce5af">
+        <img id="J_appImgBanner" src="" width="100%" alt="" />
+        <a class="j-openApp" href="javascript:;" style="display:block;position:absolute;left:0;top:0;width:100%;height:100%;"></a>
+        <a class="j-closeApp" href="javascript:;" style="display:block;position:absolute;right:0;top:0;width:10%;height:32%;z-index:99"></a>
+    </div>
+<#--app推广end-->
+<#--header begin-->
+    <header>
+        <a href="${mobilehost}" alt="DHgate Mobile Site" class="logo">DHgate Mobile Site</a>
+        <div class="logo-info">
+            <a href="javascript:;" rel="nofollow" class="j-topSearchBtn t-search"></a>
+            <a href="${mobilehost}/viewcart.do" rel="nofollow" id="cartnum" class="cart-num">0</a>
+        </div>
+    </header>
+<#--header end-->
+<#--search begin-->
+    <div id="J_search" class="dhm-search">
+        <form action="${mobilehost}/search.do" method="get" autocomplete="off">
+            <a id="J_searchCl" href="javascript:;" class="search-cl-btn">Cancel</a>
+            <div class="search-cont">
+                <a id="J_searchDel" href="javascript:;" class="del-btn dhm-hide"></a>
+                <input type="submit" value="Go" class="search-btn"/>
+                <div class="search-text">
+                    <input id="J_searchInput" type="text" value="" name="key" placeholder="I'm shopping for..." autocomplete="off"/>
+                </div>
+            </div>
+        </form>
+        <div id="J_searchResult" class="dhm-search-result"></div>
+    </div>
+<#--search end-->
+<#--image info begin-->
+    <div class="dhm-detail">
+        <div class="mark-ico">
+            <#--促销图标-->
+            <#if nineyear?exists && nineyear == '1'>
+                <span class="give-ico">2<span>1</span></span>
+            <#elseif nineyear?exists && nineyear == '2'>
+                <span class="give-ico">3<span>2</span></span>
+            <#elseif isvip>
+                <#if product.promInfo>
+                    <#if product.promInfo.promoTypeId == 0>
+                        <#assign discountOff = (1 - product.promInfo.discountRate) * 100/>
+                        <span class="icon-plus-per">${discountOff}</span>
+                    <#elseif product.promInfo.promoTypeId == 10>
+                        <#assign discountOff = product.promInfo.discountRate/>
+                        <span class="icon-plus">$${discountOff}</span>
+                    <#else>
+                        <span class="icon-vip"></span>
+                    </#if>
+                <#else>
+                    <span class="icon-vip"></span>
+                </#if>
+            <#elseif product.promInfo>
+                <#if product.promInfo.promoTypeId == 0>
+                    <#assign discountOff = (1 - product.promInfo.discountRate) * 100/>
+                    <#elseif product.promInfo.promoTypeId == 10>
+                        <#assign is_zj = true/><!-- 是否直降 -->
+                        <#assign discountOff = product.promInfo.discountRate/>
+                </#if>
+                <span class="${product.promInfo.className}" classname="${product.promInfo.className}"><#if product.promInfo.dynamicType?exists && product.promInfo.dynamicType == "1"><#if is_zj>$</#if>${discountOff}</#if></span>
+                <#elseif isPromotionProduct?exists && isPromotionProduct == true>
+                    <span class="dmega-sale"></span>
+                <#elseif issign?exists&&issign>
+                    <span class="officon"></span>
+            </#if>
+            <#--轮播图-->
+            <div id="J_detailImg" class="detail-img-con">
+                <ul id="J_detailImgCon" class="detail-con">
+                    <#if imageUrl?exists>
+                        <li><img src="" data-src="http://www.dhresource.com/${imageUrl?if_exists?replace('0x0/','600x600/')}" alt="" /></li>
+                    </#if>
+                    <#list product.attachList as atta>
+                        <li><img src="" data-src="http://www.dhresource.com/${atta.r_image?if_exists?replace('0x0/','600x600/')}" alt="" /></li>
+                    </#list>
+                </ul>
+            </div>
+            <a id="J_addToFav" class="fav-icon" href="javascript:;"><span class="<#if user?exists && isfavorited=="true">fav-span</#if>"></span></a>
+        </div>
+        <h1 id="J_proInfo" data-proid="${product.productid}" data-itemcode="${product.itemcode}">Wholesale - ${product.productname?if_exists}</h1>
+    </div>
+<#--image info end-->
+<#--discount begin-->
+    <div class="detail-discount">
+        <#if product.promInfo>
+            <#if product.promInfo.promoTypeId == 0>
+                <#assign discountOff = (1 - product.promInfo.discountRate) * 100/>
+            <#elseif product.promInfo.promoTypeId == 10>
+                <#assign discountOff = product.promInfo.discountRate/>
+            </#if>
+            <#--DailyDeals-->
+            <#if promoDailyDealsResultDto.returncode=="00031">
+                <div class="dis-con daily-deals">
+                    <div class="dis-icon">
+                        <span class="left-bg"></span>
+                        <span class="dis-text">Daily Deals</span>
+                    </div>
+                    <div class="dis-info">
+                        <span class="dis-dis">$55 off</span> only left : <span id="J_countdown" class="dis-time" data-endtime="${product.promInfo.promEndDate?string("yyyy/MM/dd HH:mm:ss")}">00d 00h 00m 00s</span>
+                    </div>
+                </div>
+            <#else>
+                <div class="dis-con d-spring">
+                    <div class="dis-icon">
+                        <span class="left-bg"></span>
+                        <span class="dis-text">Limited Time Discount</span>
+                    </div>
+                    <div class="dis-info">
+                        <span class="dis-dis">$55 off</span> only left : <span id="J_countdown" class="dis-time" data-endtime="${product.promInfo.promEndDate?string("yyyy/MM/dd HH:mm:ss")}">00d 00h 00m 00s</span>
+                    </div>
+                </div>
+            </#if>
+        </#if>
+    </div>
+<#--discount end-->
+<#--price begin-->
+    <div class="detail-price">
+    <#if isvip>
+        <div class="now-price">
+            <span><i>US <#if product.vipProductPrice?exists && product.vipProductPrice.SItemPrice?exists && (product.vipProductPrice.SItemPrice.length() gt 0)> $${product.vipProductPrice.SItemPrice} <#else> ${product.vipProductPrice.DItemTemp} </#if></i> &nbsp;/&nbsp; ${product.measurename}</span>
+            <span class="dhm-rt"><#if item_salenum?exists>${item_salenum} Item Sold</#if></span>
+        </div>
+        <span class="pre-price"><#if product.productPrice?exists && product.productPrice.discountPrice?exists && (product.productPrice.discountPrice.length() gt 0)>$${product.productPrice.discountPrice} <#else> $${(product.productPrice.DItemTemp)!"0.0"} </#if> &nbsp;/&nbsp; ${product.measurename}</span>
+    <#elseif product.promInfo>
+        <div class="now-price">
+            <span><i>US <#if product.oldProductPrice?exists && product.oldProductPrice.SItemPrice?exists && (product.oldProductPrice.SItemPrice.length() gt 0)> $${product.oldProductPrice.SItemPrice} <#else> ${product.oldProductPrice.DItemTemp} </#if></i> &nbsp;/&nbsp; ${product.measurename}</span>
+            <span class="dhm-rt"></span><#if item_salenum?exists>${item_salenum} Item Sold</#if></span>
+        </div>
+        <span class="pre-price"><#if product.productPrice?exists && product.productPrice.discountPrice?exists && (product.productPrice.discountPrice.length() gt 0)>$${product.productPrice.discountPrice} <#else> $${(product.productPrice.DItemTemp)!"0.0"} </#if> &nbsp;/&nbsp; ${product.measurename}</span>
+    <#else>
+        <div class="now-price">
+            <span><i>US $ <#if product.productPrice?exists && product.productPrice.discountPrice?exists && product.productPrice.discountPrice != null>
+                ${product.productPrice.discountPrice} <#else>
+                ${(product.productPrice.DItemTemp)!"0.0"}</#if></i> &nbsp;/&nbsp; ${product.measurename}</span>
+            <span class="dhm-rt"><#if item_salenum?exists>${item_salenum} Item Sold</#if></span>
+        </div>
+    </#if>
+    </div>
+<#--price end-->
+    <#assign wholesalepricelabel>
+        <#if product.skuWholesaleRangevoList?exists && product.skuWholesaleRangevoList?has_content>
+            <#list product.skuWholesaleRangevoList as  wholeRange>
+                <#if wholeRange.skuSaleStatus == '1' && (wholeRange.wholesaleQtyRangeList?size?number gt 1)>
+                    Wholesale Price
+                    <#break/>
+                </#if>
+            </#list>
+        </#if>
+    </#assign>
+    <#assign needselect>
+        <#list product.tdProAttrList as productSkuAtttr>
+            ${productSkuAtttr.attrName},
+        </#list>
+    </#assign>
+<#--select attributes begin-->
+    <div id="J_sku" class="detail-attr">
+        <a href="javascript:;" class="detail-a detail-arrow-right">
+            <#if needselect?trim?length gt 0><div id="J_skuSel">Please Select ${needselect?trim?substring(0,needselect?trim?length-1)}</div></#if>
+            <div id="J_skuQut"><#if wholesalepricelabel?trim?length gt 0>${wholesalepricelabel},</#if>Quantity</div>
+        </a>
+    </div>
+<#--select attributes end-->
+<#--shipping begin-->
+    <div id="J_shipping" class="detail-shipping">
+        <a href="javascript:;" class="detail-a detail-arrow-right">
+            <div>
+                <span id="J_shippingCost" class="detail-fs">
+                    <#if (product.isfreeship?exists && product.isfreeship == '0') || (shippingCostParamVO?exists && shippingCostParamVO.shipcostfinal2==0)>
+                        <#assign ship=true/>
+                        <em>Free shipping</em>
+                    <#elseif shippingCostParamVO?exists && shippingCostParamVO.shipcostfinal2 gt 0>
+                        <#assign ship=true/>
+                        US $${shippingCostParamVO.shipcostfinal2}
+                    </#if>
+                </span> to <span id="J_shippingCty" class="detail-adr">
+                    ${countryname?if_exists}
+                    <#if shippingCostParamVO?exists && shippingCostParamVO.expressType?exists>
+                        Via ${shippingCostParamVO.expressType}
+                    </#if>
+                </span>
+            </div>
+            <#if !ship>
+                <span id="J_shippingError" class="error-info">This item cannot be shipped to ${countryname?if_exists}</span>
+            <#else>
+                <div class="ship-out">Ships within <em>${product.leadingTime}</em> days</div>
+            </#if>
+        </a>
+    </div>
+<#--shipping end-->
+<#--get coupon begin-->
+    <#if (product.couponMoney?exists && product.couponMoney gt 0) || (product.couponCampaignList?exists && product.couponCampaignList?has_content)>
+    <div id="J_coupon" class="detail-coupon">
+        <a href="javascript:;" class="detail-a detail-arrow-right">
+            <span><#if product.isNewBuyertoSupplier()>Place your first order to get coupon<#else>Buy to get coupon</#if></span>
+            <span class="coupon-icon"></span>
+        </a>
+    </div>
+    </#if>
+<#--get coupon end-->
+<#--Item Specifics begin-->
+<div id="J_specifics" class="j-sdr detail-specifics">
+    <a href="javascript:;" class="detail-a detail-arrow-right">Item Specifics</a>
+</div>
+<#--Item Specifics end-->
+<#--Description begin-->
+<div id="J_des" class="j-sdr detail-des">
+    <a href="javascript:;" class="detail-a detail-arrow-right">Description</a>
+</div>
+<#--Description end-->
+<#--Reviews begin-->
+<div id="J_reviews" class="j-sdr detail-reviews">
+    <a href="javascript:;" class="detail-a detail-arrow-right dhstar-y"><span></span><span></span><span></span><span></span><span class="dhstar-g"></span>&nbsp;4.5&nbsp;(50 Reviews)</a>
+</div>
+<#--Description end-->
+<#--supplier begin-->
+    <div class="detail-supplier">
+        <div>Supplier:<#if product.tdSuppliervo.contactpersondomainname != null>${product.tdSuppliervo.contactpersondomainname}<#else>${product.tdSuppliervo.suppliername}</#if></div>
+        <div>
+            <#if product.tdFeedbackScoreVO?exists && product.tdFeedbackScoreVO.showpercentum?exists>
+                <span><b>${product.tdFeedbackScoreVO.showpercentum}%</b> Positive Feedback</span>
+            </#if>
+            <span class="dhm-rt"><b><#if product.tdFeedbackScoreVO?exists && product.tdFeedbackScoreVO.cofirmorderAccumulated?exists > ${product.tdFeedbackScoreVO.cofirmorderAccumulated} <#else>0</#if></b> Transactions</span>
+            <#if product.productPromiseContent?exists && (product.productPromiseContent.length()>0)>
+                <a rel="nofollow" href="/sellerPromise.do?proid=${product.productid}">Promised by Seller</a>
+            </#if>
+        </div>
+    </div>
+<#--supplier end-->
+<#--message begin-->
+    <div class="detail-message">
+        <#if product.tdSuppliervo.isSellerOnline()>
+            <a rel="nofollow" href="javascript:openIMChatNtalker()"><span class="chat"></span>Chat</a>
+        <#else>
+            <a><span class="notonline"></span>Offline</a>
+        </#if>
+        <a rel="nofollow" href="${mobilehost}/sendmsg.do?mty=3&amp;proid=${product.productid}&amp;title=${msgtitle}&amp;spid=${product.tdSuppliervo.systemuserid}" onclick="_gaq.push(['_trackEvent', 'detail', ' message']);"><span class="msg"></span>Message</a>
+    </div>
+<#--message end-->
+<#--share begin-->
+    <div id="J_share" class="detail-share">
+        <a class="f-share" data-name="facebook" href="javascript:void(0);"></a>
+        <a class="g-share" data-name="twitter" href="javascript:void(0);"></a>
+        <a class="ga-share" data-name="google" href="javascript:void(0);"></a>
+        <a class="p-share" data-name="pinterest" href="javascript:void(0);"></a>
+        <a class="b-share" data-name="vk" href="javascript:void(0);"></a>
+        <a class="in-share" data-name="linkedin" href="javascript:void(0);"></a>
+        <a class="icon-mailto" data-name="mail" href="javascript:void(0);"></a>
+    </div>
+<#--share end-->
+<#--may like begin-->
+    <div class="detail-mayLike">
+        <h3 class="title">You might also like</h3>
+        <div id="J_mayInterest" class="may-like" data-pp="d" itemcode="${product.itemcode}"></div>
+    </div>
+<#--may like end-->
+<#--seo word begin-->
+    <div id="J_seoWord" class="detail-seo">
+        <h3 class="title">Wholesale ${dispName?if_exists} Resources</h3>
+        <ul>
+            <#list relatedResources as resource>
+                <#if resource?exists && resource_index lt 20>
+                    <li><a href="${mobilehost}${resource.url}"><h3>${resource.keywords}</h3></a></li>
+                <#else>
+                    <#break>
+                </#if>
+            </#list>
+        </ul>
+    </div>
+<#--seo word end-->
+<#--go back begin-->
+    <div class="go-back"><a href="javascript:scroll(0,0)">TOP OF PAGE<i></i></a></div>
+<#--go back end-->
+    <@bottom.BOTNavi/>
+<#-- 各种 layer 开始啦-->
+    <#--buy or to cart begin-->
+    <div id="J_cartBuy" class="cart-buy">
+        <a id="J_buyNow" href="javascript:;" class="<#if display=="true">sold-out</#if>">Buy it now</a>
+        <a id="J_addToCart" href="javascript:;" class="<#if display=="true">sold-out</#if>">Add to cart</a>
+    </div>
+    <#--buy or to cart end-->
+
+    <div class="opacityLayer" id="opacityLayer">
+        <#if display =="true">
+            <#if product.inventoryStatus=="1" && product.defaultSkuVo.inventory lt minSize>
+                Item sold out
+            <#else>
+                This specification is currently not available
+            </#if>
+        </#if>
+    </div>
+
+    <#--SKU layer #ViewAttr begin-->
+    <section id="J_skuLayer" class="dh-layer" defaultskuid="#{product.defaultSkuVo.skuId}">
+        <nav><a class="j-back" href="javascript:;"></a><span>Product Options</span><a href="http://m.dhgate.com/viewcart.do" rel="nofollow" class="j-cartNum cart-num">0</a></nav>
+        <div class="sku-con">
+            <#list product.tdProAttrList as productSkuAtttr>
+                <#if productSkuAtttr.customSized !="1">
+                    <h4 id="#{productSkuAtttr.attrid?if_exists}">${productSkuAtttr.attrName}:</h4>
+                    <ul class="j-skuSelect">
+                        <#list productSkuAtttr.tdProSkuAttrList as valueList >
+                            <#if !valueList.picUrl?exists || valueList.picUrl=="">
+                                <#if valueList.customSize != "1">
+                                    <li attrId="#{productSkuAtttr.attrid}" attrValId="#{valueList.attrValueId}"  <#if valueList.defaultAttrval == "1"> class="active" </#if>>${valueList.attrValName}</li>
+                                </#if>
+                            <#else>
+                                <#if valueList.customSize != "1">
+                                    <li vHidden="#{productSkuAtttr.attrid}_#{valueList.attrValueId}" attrId="#{productSkuAtttr.attrid}" attrValId="#{valueList.attrValueId}" <#if valueList.defaultAttrval == "1"> class="active" </#if>>
+                                <#if valueList.defaultAttrval == "1"></#if>
+                                    <img src="${imgurl}${valueList.picUrl}" width="28" height="28" title="${valueList.attrValName}"/>
+                                </#if>
+                                    </li>
+                            </#if>
+                        </#list>
+                    </ul>
+                </#if>
+            </#list>
+            <#list product.tdProSkuList as prosku>
+                <div class="j-skuid" skuid="#{prosku.skuId}" value="${prosku.saleStatus}" skuMd5="${prosku.skuMd5}" style="display:none">
+                    <#list prosku.tdProSkuAttrList as proSkuAttrval>
+                        <input type="hidden" value="#{proSkuAttrval.attrValueId}-#{proSkuAttrval.attrId}" attrValName="${proSkuAttrval.attrValName}" />
+                    </#list>
+                </div>
+            </#list>
+            <div class="sku-price">
+                <#if isvip>
+                    <div><span class="red">US <#if product.vipProductPrice?exists && product.vipProductPrice.SItemPrice?exists && (product.vipProductPrice.SItemPrice.length() gt 0)> $${product.vipProductPrice.SItemPrice} <#else> ${product.vipProductPrice.DItemTemp} </#if></span><span> &nbsp;/&nbsp; ${product.measurename}</span><span class="dhm-rt"><#if item_salenum?exists>${item_salenum} Item Sold</#if></span></div>
+                <#elseif product.promInfo>
+                    <div><span class="red">US <#if product.oldProductPrice?exists && product.oldProductPrice.SItemPrice?exists && (product.oldProductPrice.SItemPrice.length() gt 0)> $${product.oldProductPrice.SItemPrice} <#else> ${product.oldProductPrice.DItemTemp} </#if></span><span> &nbsp;/&nbsp; ${product.measurename}</span></div>
+                    <div class="pre-price"><#if product.productPrice?exists && product.productPrice.discountPrice?exists && (product.productPrice.discountPrice.length() gt 0)>$${product.productPrice.discountPrice} <#else> $${(product.productPrice.DItemTemp)!"0.0"} </#if> &nbsp;/&nbsp; ${product.measurename}</div>
+                <#else>
+                    <div><span class="red">US $ <#if product.productPrice?exists && product.productPrice.discountPrice?exists && product.productPrice.discountPrice != null>
+                        ${product.productPrice.discountPrice} <#else>
+                        ${(product.productPrice.DItemTemp)!"0.0"}</#if></span><span> &nbsp;/&nbsp; ${product.measurename}</span></div>
+                </#if>
+            </div>
+            <div class="sku-wprice">
+                <h4>Wholesale Price: <#if product.lots gt 1>${product.lots} ${product.plural} &nbsp;/&nbsp; Lot</#if></h4>
+                <#if product.skuWholesaleRangevoList?exists && product.skuWholesaleRangevoList?has_content>
+                    <dl>
+                        <dt>
+                            <span>Quantity <#if product.lots gt 1>(lots)</#if></span>
+                            <span>Price <#if product.lots gt 1>/lot</#if></span>
+                            <span>
+                                <#if product.promInfo?exists && product.promInfo.promoTypeId == 10>
+                                    Reduced Price
+                                <#elseif product.promInfo?exists>
+                                    Discount Price
+                                <#elseif isvip>
+                                    VIP Price
+                                </#if>
+                            </span>
+                        </dt>
+                        <#list product.skuWholesaleRangevoList as  wholeRange>
+                            <#assign lastIndex = wholeRange.wholesaleQtyRangeList?size/>
+                            <#if wholeRange.skuSaleStatus == '1'>
+                                <#list wholeRange.wholesaleQtyRangeList as wholesalevo>
+                                    <dd name="priceRangeList" <#if wholesalevo_index ==0 > class="active" </#if> vHidden="#{wholeRange.skuId}" <#if product.defaultSkuVo.skuId == wholeRange.skuId> style="display:block" <#else> style="display:none"</#if> >
+                                    <span>
+                                    <#if (wholesalevo.startQty lt wholesalevo.endQty) && (wholesalevo_index lt (lastIndex?number)-1)>
+                                        <var class="j-minvalue">#{wholesalevo.startQty}</var> - <var class="j-maxvalue">#{wholesalevo.endQty}</var>
+                                    <#elseif wholesalevo.startQty == wholesalevo.endQty>
+                                        <var class="j-minvalue">#{wholesalevo.startQty}</var>
+                                    <#elseif wholesalevo_index == (lastIndex?number)-1>
+                                        <var class="j-maxvalue">#{wholesalevo.startQty} + </var>
+                                    </#if>
+                                    </span>
+								    <span>
+								        <#if wholesalevo.discountPrice> US $#{wholesalevo.discountPrice;m2M2} </#if>
+                                        <#if isvip>
+                                            US $#{wholesalevo.vipPrice;m2M2}
+                                        <#elseif product.promInfo>
+                                            US $#{wholesalevo.promDiscountPrice;m2M2}
+                                        </#if>
+                                    </span>
+                                    </dd>
+                                </#list>
+                            </#if>
+                        </#list>
+                    </dl>
+                <#else>
+                    <dl>
+                        <dt>
+                            <span>Quantity <#if product.lots gt 1>(lots)</#if></span>
+                            <span>Price <#if product.lots gt 1>/lot</#if></span>
+                            <span>
+                                <#if product.promInfo?exists && product.promInfo.promoTypeId == 10>
+                                    Reduced Price
+                                <#elseif product.promInfo?exists>
+                                    Discount Price
+                                </#if>
+                            </span>
+                        </dt>
+                        <#list product.tdProSkuList as wholeRange>
+                            <#if wholeRange.saleStatus == '1'>
+                                <dd name="priceRangeList" class="active" vHidden="#{wholeRange.skuId}" <#if product.defaultSkuVo.skuId == wholeRange.skuId> style="display:block" <#else> style="display:none;"</#if> >
+	                                <span>
+	                                	<var class="j-minvalue"><#if product.minSaleSize>${product.minSaleSize} + <#else> 1 +</#if></var>
+									</span>
+									<span>
+									    <#if wholeRange.retailPrice> US $#{wholeRange.retailPrice;m2M2}</#if>
+                                        <#if product.promInfo>
+										    <#if wholeRange.promRetailPrice> US $#{wholeRange.promRetailPrice;m2M2} </#if>
+                                        </#if>
+									</span>
+                                </dd>
+                            </#if>
+                        </#list>
+                    </dl>
+                </#if>
+                <#if product.minSaleSize && product.minSaleSize lt product.minOrderSize >
+                    <#assign minSize = product.minSaleSize/>
+                <#else>
+                    <#assign minSize = product.minOrderSize/>
+                </#if>
+                <#assign display><#if product.istate == "0" || verifydetail == "0" || product.isSellerLimit() || (product.defaultSkuVo.saleStatus=="0") || (product.inventoryStatus == "1" && product.defaultSkuVo.inventory lt minSize)>true<#else>false</#if></#assign>
+
+                <input id="J_isProCanSale" type="hidden" value="<#if display=="true">0<#else>1</#if>"/>
+                <div class="sku-num"><span>Quantity:</span>
+				    <input id="J_quantity" type="number" name="quantity" autocomplete="off" <#if display=="true">disabled="disabled"</#if><#if product.minSaleSize gt 0> <#if display=="true">value=""<#else>value="${product.minSaleSize?c}"</#if> init-value="${product.minSaleSize?c}" <#else> value="${product.minOrderSize?c}" init-value="${product.minOrderSize?c}"</#if> class="d-num" />
+                    <span><#if product.lots==1><#if product.minOrderSize gt 1><#if product.minSaleSize == 1>${product.measurename}<#else>${product.plural}</#if><#elseif product.minOrderSize == 1>${product.measurename}</#if><#else><#if product.minSaleSize gt 1>Lots<#else>Lot</#if></#if></span>
+                </div>
+            </div>
+            <div class="sku-stock">
+                <#if product.inventoryStatus=="1">
+                    <em id="J_stock"><#if product.inventoryStatus == "1" && product.defaultSkuVo.inventory lt minSize>0<#else>#{product.defaultSkuVo.inventory}</#if></em><span>&nbsp;in Stock (</span>Stock in:<img src="http://image.dhgate.com/images/flag/${product.inventoryLocation}.gif" width="16" height="11"/>${product.inventoryLocation}<span>)</span>
+                </#if>
+            </div>
+            <#if promoDailyDealsResultDto.promoNum gt product.defaultSkuVo.inventory>
+                <#assign maxquantity = product.defaultSkuVo.inventory>
+            <#else>
+                <#assign maxquantity = promoDailyDealsResultDto.promoNum>
+            </#if>
+            <div class="error-info" <#if display !="true">style="display:none;"</#if> id="qtynote">This specification is currently not available.</div>
+            <div class="error-info">The quantity can't exceed the maximum stock (Max. Stock = <span>${maxquantity}</span>)</div>
+            <div id="J_soldOutError" style="display: none;" class="error-info">Item sold out </div>
+        </div>
+    </section>
+    <#--SKU layer #ViewAttr end-->
+
+    <#-- shipping layer #Viewcshipment begin-->
+    <section id="J_shippingLayer" class="dh-layer">
+        <nav><a class="j-back" href="javascript:;"></a><span>Shipment and Cost</span></nav>
+        <div class="sl-con">
+            <h3>Choose region:</h3>
+            <div class="sl-select">
+                <span class="sl-ico"></span>
+                <select>
+                    <#list countryList as country>
+                        <option value="${country.countryid}" <#if country.countryid=countryid>selected</#if> >${country.name}</option>
+                    </#list>
+                </select>
+            </div>
+            <h4>Choose shipping method:</h4>
+            <dl>
+                <dt><span>Company</span><span>Shipping Cost</span><span>Delivery Time</span></dt>
+                <#if shippingCostList?exists && (shippingCostList?has_content>0) >
+                    <#list shippingCostList as shippingCost>
+                        <dd <#if shippingCost.expressType == shippingCostParamVO.expressType>class="active"<#else></#if>>
+                            <em></em>
+                            <span class="choems">${shippingCost.expressType}</span>
+                            <#if shippingCost.shipcostfinal2 == 0>
+                                <span class="choprice">US $0.00</span>
+                            <#else>
+                                <span class="choprice">US $#{shippingCost.shipcostfinal2?double;m2M2}</span>
+                            </#if>
+                            <span class="choday">${shippingCost.deliverytime} days</span>
+                        </dd>
+                    </#list>
+                <#else>
+                    <div class="error">This item cannot be shipped to ${countryname?if_exists}</div>
+                </#if>
+            </dl>
+            <input type="submit" value="Confirm" />
+        </div>
+    </section>
+    <#-- shipping layer #Viewcshipment end-->
+
+    <#--coupon layer #Viewcoupcon begin-->
+    <section id="J_couponLayer" class="dh-layer">
+        <nav><a class="j-back" href="javascript:;"></a><span>Coupons</span></nav>
+        <div class="cl-con">
+            <#if (product.couponCampaignList?exists && (product.couponCampaignList?size>0))>
+            <h4>Place your first order with this item and get one of the following coupons:</h4>
+            <#list product.couponCampaignList as couponCampaign>
+                <div class="coupon-detail">
+                    <p>Get a <strong>US $${couponCampaign.amount}</strong> coupon if order value reaches <strong>US $${couponCampaign.getcouponorderAmo}</strong>.</p>
+                    <p>Expiry Date: ${couponCampaign.endDate}</p>
+                    <p class="cl-condition">Use Conditions: Coupon offer also applies to further orders of over US $${couponCampaign.orderAmo} from this seller</p>
+                    <div class="c-layer-ico"></div>
+                </div>
+            </#list>
+            </#if>
+           <div class="coupon-note">
+                <span>Note:</span>
+                <p>The minimum order value mentioned above does not include shipping costs.</p>
+                <p>Each coupon can be redeemed on one order only.</p>
+            </div>
+        </div>
+    </section>
+    <#--coupon layer #Viewcoupcon end-->
+
+    <#--sdr begin-->
+    <section id="J_sdrLayer" class="sdr">
+        <nav>
+            <a href="javascript:;" class="j-back sdr-back"></a>
+            <div id="J_sdrNav" class="tit detail-arrow-left">
+                <a class="active" name="r"><span>Reviews</span></a>
+                <a name="d"><span>Description</span></a>
+                <a name="s"><span>Specification</span></a>
+            </div>
+        </nav>
+        <article id="J_reviewLayer">
+            <div class="review-all">
+                <h3>Customer Reviews(154)</h3>
+                <div class="star">
+                    <ul class="dhm-lt">
+                        <li><span>5 start</span><span><em style="width:100%"></em></span><span>123324354</span></li>
+                        <li><span>4 start</span><span><em style="width:50%"></em></span><span>123</span></li>
+                        <li><span>3 start</span><span><em style="width:0"></em></span><span class="zero">0</span></li>
+                        <li><span>2 start</span><span><em style="width:0"></em></span><span class="zero">0</span></li>
+                        <li><span>1 start</span><span><em style="width:0"></em></span><span class="zero">0</span></li>
+                    </ul>
+                    <div class="star-info">
+                        <div class="star-num dhstar-y"><span></span><span></span><span></span><span></span><span class="dhstar-g"></span></div>
+                        <span><em>4.0</em> out of 5 stars</span>
+                        <p>All the reviews are from the buyers who bought the product on DHgate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-image">
+                <h3>Customer Images</h3>
+                <ul>
+                    <li><img src="http://css.dhresource.com/mobile/detail/image/exam1.jpg" /></li>
+                    <li><img src="http://css.dhresource.com/mobile/detail/image/cart.png" /></li>
+                    <li><img src="http://css.dhresource.com/mobile/detail/image/exam3.jpg" /></li>
+                    <li><img src="http://css.dhresource.com/mobile/detail/image/exam2.jpg" /></li>
+                </ul>
+            </div>
+            <div class="review-con">
+                <div class="rc-info">
+                    <div class="tit">
+                        <div class="tit-star dhstar-y dhm-lt"><span></span><span></span><span></span><span class="dhstar-g"></span><span class="dhstar-g"></span></div>
+                        <span class="review-from">By:pnetutu</span><span class="review-time">November 18,2014</span>
+                    </div>
+                    <div class="con">
+                        <p>This dress was absolutely beautiful when I received it! The details in the dress is unbelieveable- very well put together. I gave her the correct measurements so everything was perfect- no alterations needed. The seller was very cooperative and easy to work with. She responded to all of my questions in a timely manner-our line of communication was great! The dress was everything I expected and I recommend this seller to everyone. The only problem I had was I received it (1 day) pass the agreed date of arrival. I paid an extra $50 to receive it by a specific date. I forgive the seller because maybe this was out of her control- so make sure you order it well in advance if you need it on a specific date (let the seller know). Overall you all will love this dress- lots of bling! Very well crafted! My daughter is still receiving compliments on this dress!</p>
+                        <div class="good-click">
+                            <span class="j-good good-ico"><em>6</em></span>
+                            <span class="j-bad bad-ico"><em>0</em></span>
+                            <a href="#" class="dhm-rt">Report This Review</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rc-info">
+                    <div class="tit">
+                        <div class="tit-star dhstar-y dhm-lt"><span></span><span></span><span></span><span></span><span class="dhstar-g"></span></div>
+                        <span class="review-from">By:pnetutu</span><span class="review-time">November 18,2014</span>
+                    </div>
+                    <div class="con">
+                        <p class="p-res">This dress was absolutely beautiful when I received it! The details in the dress is unbelieveable- very well put together. I gave her the correct measurements so everything was perfect- no alterations needed. The seller was very cooperative and easy to work with. She responded to all of my questions in a timely manner-our line of communication was great! The dress was everything I expected and I recommend this seller to everyone. The only problem I had was I received it (1 day) pass the agreed date of arrival. I paid an extra $50 to receive it by a specific date. I forgive the seller because maybe this was out of her control- so make sure you order it well in advance if you need it on a specific date (let the seller know). Overall you all will love this dress- lots of bling! Very well crafted! My daughter is still receiving compliments on this dress!</p>
+                        <div class="response">
+                            <h4>Seller response:</h4>
+                            <p>This dress was absolutely beautiful when I received it! The details in the dress is unbelieveable</p>
+                        </div>
+                        <div class="good-click">
+                            <span class="j-good good-ico"><em>6</em></span>
+                            <span class="j-bad bad-ico"><em>0</em></span>
+                            <a href="#" class="dhm-rt">Report This Review</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rc-info no-b-m">
+                    <div class="tit">
+                        <div class="tit-star dhstar-y dhm-lt"><span></span><span></span><span></span><span></span><span class="dhstar-g"></span></div>
+                        <span class="review-from">By:pnetutu</span><span class="review-time">November 18,2014</span>
+                    </div>
+                    <div class="con">
+                        <ul>
+                            <li><img src="http://css.dhresource.com/mobile/detail/image/exam1.jpg" /></li>
+                            <li><img src="http://css.dhresource.com/mobile/detail/image/exam1.jpg" /></li>
+                        </ul>
+                        <p class="p-res">This dress was absolutely beautiful when I received it! The details in the dress is unbelieveable- very well put together. I gave her the correct measurements so everything was perfect- no alterations needed. The seller was very cooperative and easy to work with. She responded to all of my questions in a timely manner-our line of communication was great! The dress was everything I expected and I recommend this seller to everyone. The only problem I had was I received it (1 day) pass the agreed date of arrival. I paid an extra $50 to receive it by a specific date. I forgive the seller because maybe this was out of her control- so make sure you order it well in advance if you need it on a specific date (let the seller know). Overall you all will love this dress- lots of bling! Very well crafted! My daughter is still receiving compliments on this dress!</p>
+                        <div class="good-click">
+                            <span class="j-good good-ico"><em>6</em></span>
+                            <span class="j-bad bad-ico"><em>0</em></span>
+                            <a href="#" class="dhm-rt">Report This Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dh-review-more">
+                <a href="javascript:;">Show 10 more reviews<span></span></a>
+            </div>
+        </article>
+        <article id="J_specificsLayer" class="specifics-con" style="display:none">
+            <p><span>Item Code: </span><var>${product.itemcode?if_exists}</var></p>
+            <p><span>Category: </span><var>${finalCatalog?if_exists?if_exists}</var></p>
+            <p><span>Short Description: </span><var>${product.shortdescription}</var></p>
+            <p><span>Quantity: </span>
+                <var>
+                    <#if product.lots = 1 >
+                        ${product.lots?if_exists} &nbsp; ${product.measurename?if_exists}
+                    <#else>
+                            1 lot (${product.lots?if_exists} ${product.measurename?if_exists}&nbsp;/&nbsp;lot)
+                    </#if>
+                </var>
+            </p>
+            <p><span>Package Size:</span>
+                <var>
+                    <#if product.length?if_exists>#{product.length;m1M1}</#if>
+                    <#if product.width?if_exists>*#{product.width;m1M1}</#if>
+                    <#if product.height?if_exists>*#{product.height;m1M1}</#if>
+                    <#if product.length!=null || product.width!=null || product.height != null> ( cm )</#if>
+                </var>
+            </p>
+            <p><span>Gross Weight/Package: </span>
+                <var><#if product.grossweight?if_exists>#{product.grossweight;m1M1} ( kg )</#if></var>
+            </p>
+            <#if specifics != null && specifics?has_content>
+                <#list specifics?keys as itemKey>
+                    <p><span>${itemKey}: </span>
+                        <var>${specifics[itemKey]?if_exists}</var>
+                    </p>
+                </#list>
+            </#if>
+        </article>
+        <article id="J_descriptionLayer" class="description-con" style="display:none">
+            ${specification?if_exists?replace('.com/0x0/', '.com/600x600/')}
+        </article>
+    </section>
+    <#--sdr end-->
+<#-- 各种 layer 结束啦-->
+    <script src="http://js.dhresource.com/mobile/common/zepto.js"></script>
+    <script src="http://js.dhresource.com/mobile/detail/20150108/detail.js?v=20141225"></script>
+    <script type="text/javascript" src="${ntalker_js_url?if_exists}" charset="utf-8"></script>
+    <script type="text/javascript" src="http://www.dhresource.com/b/js/dht.js" ></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-425001-12'], ['_setDomainName', 'm.dhgate.com'], ['_trackPageview', location.pathname + location.search + escape(location.hash)]);
+        (function(){
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script src="http://js.dhresource.com/mobile/common/criteo.js"></script>
+    <script>
+        Criteo.init(function(PID){
+            window.criteo_q=window.criteo_q||[];
+            window.criteo_q.push(
+                    { event: "setAccount", account: PID},
+                    {event:"setSiteType",type:"m"},
+                    { event: "viewItem", product: "${product.itemcode}" }
+            );
+        });
+    </script>
+</body>
+</html>

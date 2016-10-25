@@ -1,0 +1,90 @@
+/* home-stylesheet */
+.header-back{position:relative;height:43px;border-bottom:1px solid #ddd;background:-webkit-gradient(linear,center  top,center bottom,color-stop(0,#fff),color-stop(0.97,#f6f6f6),color-stop(1,#f2f2f2));background:-moz-linear-gradient(top, #fff,#f2f2f2);background:-o-linear-gradient(top, #fff,#f2f2f2);border-bottom: 1px solid #ddd;}
+.header-back .det-back{float:left;margin:7px 0 0 15px;width:65px;height:31px;background:url(http://css.dhresource.com/mobile/placeOrder/image/back.png) no-repeat 0 0;background-size:65px 31px;}
+.header-back em{font-weight: bold;}
+.det-hdtitle{display:block;color:#333;font-size:18px;line-height:43px;font-weight:bold;text-align:center;margin:0 60px;}
+.process-bar{padding:0 15px;height:58px;background-color: #dbdbdb;background: url(http://css.dhresource.com/mobile/placeOrder/image/process-plaorderbg.png) no-repeat center 13px;background-size:290px 40px;}
+.process-pay{background: url(http://css.dhresource.com/mobile/placeOrder/image/process-paybg.png) no-repeat center 15px;background-size:290px 40px;}
+.process-paySucc{background: url(http://css.dhresource.com/mobile/placeOrder/image/process-paysucc.png) no-repeat center 15px;background-size:290px 40px;}
+/* new address */
+.bill-edit{padding: 5px 15px 0;}
+.contact-name input,.bill-txt input,.remark input,.addcoup-text input{width: 100%;text-indent:8px;font-size:14px;height: 40px;line-height: 40px;border: 1px solid #999;border-radius: 3px;-webkit-box-shadow: inset 0 3px 5px rgba(80,80,80,0.15);-moz-box-shadow:inset 0 2px 3px rgba(80,80,80,0.15);-o-box-shadow:inset 0 2px 3px rgba(80,80,80,0.2);box-shadow:inset 0 2px 3px rgba(80,80,80,0.2);}
+.contact-name{padding-top:15px;-webkit-column-count:2;-moz-column-count:2;-o-column-count:2;-moz-column-gap:10px;-webkit-column-gap:10px;}
+.conctact-txtone,.conctact-txttwo{display:inline-block;width:99.8%;height:40px;-moz-box-sizing:border-box;-o-box-sizing:border-box;-webkit-box-sizing:border-box;}
+.contact-name input{width:99%;}
+.bill-txt{padding-top: 15px;}
+.bill-txt select,.shipcost-select select,.select-coupon select{display: inline-block;color:#999;font-size:14px;height: 41px;line-height: 41px;-webkit-appearance:none;border-radius:3px;width: 100%;background:url(http://css.dhresource.com/mobile/placeOrder/image/zkbg_03.png) no-repeat 97% center;background-size: 9px 8px;border: 1px solid #999;border-radius: 3px;-webkit-box-shadow: inset 0 3px 5px rgba(80,80,80,0.15);-moz-box-shadow:inset 0 2px 3px rgba(80,80,80,0.15);-o-box-shadow:inset 0 2px 3px rgba(80,80,80,0.2);box-shadow:inset 0 2px 3px rgba(80,80,80,0.2);}
+@media screen and (min-width: 480px){
+	.contact-name input{width:99.7%;}
+	.bill-txt select,.shipcost-select select,.select-coupon select{background:url(http://css.dhresource.com/mobile/placeOrder/image/zkbg_03.png) no-repeat 99.5% center;background-size: 9px 8px;}
+}
+.pay-btn{padding:73px 0px 33px;}
+.bill-edit .pay-btn{padding:33px 0px 33px;}
+.pay-btn input,.pay-btn a{width:100%;height:42px;font-size:16px;font-weight:bold;border-radius:2px;border:1px solid #f2cc68; color:#693a0d; -moz-box-shadow:0 1px 1px rgba(234, 195, 110, 0.65);-webkit-box-shadow:0 1px 1px rgba(234, 195, 110, 0.65);box-shadow:0 1px 1px rgba(234, 195, 110, 0.65);background:-webkit-gradient(linear, 0 0, 0 100%, from(#fff5d9), to(#ffe4ba));background:-moz-linear-gradient(top, #fff5d9,#ffe4ba);background:-o-linear-gradient(top, #fff5d9,#ffe4ba);}
+.pay-btn a{display:block;line-height:42px;text-align: center;}
+/* new address */
+.placeOd-price{padding: 13px 15px 5px;}
+.placeOd-price li {zoom:1;overflow: hidden;padding-bottom: 10px;color: #333;font-size:12px;}
+.placeOd-price li span{float: left;width: 180px;}
+.placeOd-price li em{display:block;margin-left: 180px;text-align: right;color: #900;}
+.placeOd-price .boldStyle,.placeOd-price .boldStyle em{font-size: 15px;font-weight: bold;}
+.plaord-tit{height: 40px;line-height: 40px;background-color: #dcdcdc;padding: 0 15px;color: #333;font-size: 16px;}
+.ship-addresscon a,.ship-hasaddress a{display:block;padding:0 15px;height:70px;line-height:70px;color: #004080;font-weight: bold;background:url(http://css.dhresource.com/mobile/placeOrder/image/skip.png) no-repeat right center content-box;background-size:7px 11px;}
+.ship-hasaddress a{height: auto;line-height: 20px;padding: 15px;}
+.ship-hasaddress a p{line-height: 20px;}
+
+.order-details{padding:15px 10px 18px;}
+.nobor{border-top:0px;}
+.od-imgcon{float: left;width:106px;padding-top: 10px;}
+.od-con{margin-left: 106px;}
+.od-imgcon img{display:block;margin:0 auto;max-width: 80px;max-height: 80px;}
+.od-con p{line-height: 22px; }
+.od-productit{display:block;height:22px;width:100%;color:#333;font-size:12px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis; }
+.od-productAttr{color:#999;font-size:12px;}
+.free-shipping{color: #008000;padding-bottom: 12px;}
+.unit-price{color: #333;font-size:12px;width:171px;overflow: hidden;}
+.unit-price strong{color: #900;}
+.ui-number{display:inline-block;margin-top:13px;vertical-align:middle;width:132px;height:38px;line-height:38px;border-radius:3px;border:1px solid #999;-webkit-box-shadow:inset 0 3px 4px rgba(80, 80, 80, 0.2); -moz-box-shadow:inset 0 3px 4px rgba(80, 80, 80, 0.2); box-shadow:inset 0 3px 4px rgba(80, 80, 80, 0.2);}
+.d-num{display:inline-block;border-radius:0px;vertical-align:top;width:47px;height:38px;line-height:38px;font-size:18px;text-align:center;border:0 none;border-left:1px solid #999;border-right:1px solid #999;}
+.ui-number input[type="button"]{display:inline-block;color:#999;font-size:25px;background:none;padding:0px;border:0 none;width:38px;height:38px;line-height:38px;}
+.shipping-cost{margin:0 15px;}
+.pla-orderList{border-bottom: 1px solid #999;padding-bottom: 10px;}
+.shipcost-select{margin-left: 101px;}
+.remark{padding: 15px 15px 5px;}
+.use-couponlayer{padding-bottom: 15px;}
+.shipcost-tit{float: left;width: 101px;line-height: 41px;}
+.shipping-cost .shipcost-select{line-height: 41px;}
+.shipping-cost .shipcost-select select{vertical-align: top;}
+.use-coupBtn a{display: inline-block;color:#004080;font-size:12px;padding-right:18px;height: 38px;line-height: 38px;background:url(http://css.dhresource.com/mobile/placeOrder/image/narrow-open.png) no-repeat right 15px;background-size:13px 8px;}
+.openLayer a{background:url(http://css.dhresource.com/mobile/placeOrder/image/narrow-close.png) no-repeat right 15px;background-size:13px 8px;}
+.coupon{padding: 0 15px;}
+.add-coupon{padding-top: 13px;}
+.addcoup-btn{float: right;width: 90px;padding-left: 10px}
+.addcoup-btn input{width: 90px;height: 40px;border:0 none;-webkit-appearance:none;color: #fff;font-size:15px;background-color: #fca01b;border-radius: 2px;}
+.addcoup-text{margin-right:100px;}
+.total-pricelist{background-color:#eee;}
+.total-pricelist .boldStyle{border-top: 1px solid #999;padding-top: 15px;}
+.placeOrder-submit {padding: 15px 0 30px;}
+.placeOrder-submit input{display:block;width:100%;-webkit-appearance:none;border-radius:2px;height:44px;line-height:44px;color: #fff;font-size: 17px;border:0 none;background-color: #fca01b;}
+.shipAddress-edit{width:46px;position: absolute;top: 50%;right: 7px;margin-top: -23px;}
+.shipAddress-edit a{display:inline-block;width: 46px;height: 46px;background:url(http://css.dhresource.com/mobile/placeOrder/image/icon-edit.png) no-repeat 11px 11px;background-size:23px 23px;}
+.shipAdress-detail{margin-right: 46px;}
+.hasSelect a{display:block;vertical-align:middle;background:url(http://css.dhresource.com/mobile/placeOrder/image/icon-right.png) no-repeat right center;background-size:20px 20px;}
+.shipAdress-list{padding: 15px;border-bottom: 1px solid #999;position: relative;}
+.shipAdress-detail p{line-height: 20px;color: #333;}
+.shipAdress .pay-btn{padding-left:15px;padding-right: 15px;}
+.error{color:#f00;background:url(http://css.dhresource.com/mobile/placeOrder/image/error.gif) no-repeat 0 8px;padding: 8px 0 0 20px;}
+.shadow{width:100%;height:100%;position:fixed;top:0;left:0;z-index:999;zoom:1;display:none;background:#999 url(http://css.dhresource.com/mobile/placeOrder/image/loading3.gif) no-repeat center center;background-size:48px 48px;opacity: 0.5;}
+.error-tips{display:none;color:#f00;padding-top:5px;}
+.bill-txt .color-f00,.conctact-txtone .color-f00,.conctact-txttwo .color-f00{border: 1px solid #f00;}
+.p15{padding: 10px 15px 0;}
+.estimate-deliver{color: #999;padding-top: 5px;font-size:10px;}
+.vat-numtips{color: #999;font-size: 11px;padding-top: 5px;}
+
+.shadow{display:none;width:100%;height:100%;position:fixed;top:0;left:0;z-index:999;zoom:1;background:#999;background-size:48px 48px;opacity: 0.5;}
+.language{display:none;position:absolute;width:280px;top:50px;left:50%;margin-left:-140px;background:#fff;z-index:1000}
+.language li{height:50px;line-height:50px;padding:0 15px;font-size:15px;color:#464646;border-bottom:1px solid #d7d7d7}
+.language li.tit{text-align:center}
+.language li.active{background:url('data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABkAAD/4QOBaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MDE4MDExNzQwNzIwNjgxMUIwOEJDMzRDRDA4MjI0MjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjZFQTFGMTdBNzYxMTFFNDlGQjRENzkwNjY1MkI3RjIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjZFQTFGMTZBNzYxMTFFNDlGQjRENzkwNjY1MkI3RjIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NUFCRTE3QzA2QTZFNDExQTZDQUFDQTdFNjdGNDFGQyIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmY0ZGY2ZTkwLWRkMzMtMTE3Ny05ZGRhLWIxZmMyMjJjYWZhNCIvPiA8L3JkZjpEZXNjcmlwdGlv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') no-repeat 96% 50%;background-size:23px 16px}
+.language a{display:block;color:#464646;}
+.language .j-languageCancel{height:40px;line-height:40px;margin:10px 15px;text-align:center;font-size:15px;color:#000;border:1px solid #c6c6c6;border-radius:3px;background:-webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#f0f0f0));background:-moz-linear-gradient(top, #fff,#f0f0f0);background:-o-linear-gradient(top, #fff,#f0f0f0)}

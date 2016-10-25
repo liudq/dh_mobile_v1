@@ -1,0 +1,10 @@
+.w-inforList{padding:0px 0 10px;border-top:1px solid #ccc;}
+.w-inforList ul li{padding:0 10px;height: 42px;line-height:42px;overflow: hidden;border-bottom:1px solid #ccc;}
+.w-inforList ul li span{float:left;margin-top:10px;width:22px;height: 22px;line-height:22px;text-align:center;font-weight:bold;border-radius:20px;background: #fdd000;color: #fff;}
+.w-inforList ul li a{margin-left:32px;display:block;height: 42px;line-height: 42px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-family: '微软雅黑';font-size:16px;color: #333;}
+.w-inforcon{padding:10px;border-top: 1px solid #ccc;font-family: '微软雅黑';}
+.w-inforcon h2{padding:10px 0;line-height: 22px;font-weight: bold;color: #333;font-size: 16px;text-align: center;}
+.w-inforcon p{line-height: 22px;padding-bottom: 10px;font-size: 12px;}
+.w-inforcon p strong{color: #333;}
+.w-inforcon p img{display: block;max-width: 320px;margin: 0 auto;}
+.w-inforcon h3{font-weight: bold;color: #333;font-size: 14px;}

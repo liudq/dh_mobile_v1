@@ -1,0 +1,53 @@
+header{ display:none;height:45px;padding:5px 15px 0;background-color:#fff;border-bottom:1px solid #ddd}
+.logo{display:block;width:100px;height:45px;float:left;margin:0;text-indent:-2000px;background:url(//css.dhresource.com/mobile/common/image/logo.png) no-repeat 0 10px;background-size:100px 25px}
+.logo a:hover,.logo a:focus{text-decoration:none}
+h1{padding:15px 15px 10px;line-height:20px;text-align:left;font-size:14px;color:#8e9aa2;-webkit-box-shadow:inset 0 2px 3px rgba(80,80,80,0.20);-o-box-shadow:inset 0 2px 3px rgba(80,80,80,0.20);-moz-box-shadow:inset 0 2px 3px rgba(80,80,80,0.20);box-shadow:inset 0 2px 3px rgba(80,80,80,0.20)}
+.sec{margin:10px 10px;background: #f8f8f8;border: 1px solid #ddd;}
+.sec .tit{height:45px;padding:0 5px;line-height:45px;font-size:18px;font-weight:bold;background:#ffefc1;color:#fff;}
+.sec .tit a{display:block;color:#735112;background:url(//css.dhresource.com/mobile/login/image/login-right.png) no-repeat center right;background-size:8px 14px;}
+.sec .cur-bg a{color: #727272;background: none;border-bottom: 1px solid #ddd;}
+.sec .cur-bg{background:#f8f8f8;border: none}
+.mar-b-30{border: 1px solid #ffb902;}
+/*#J_login{border: 1px solid #ddd;}*/
+.lr-form{padding:0 10px;}
+.lr-form div{position:relative;margin-top:5px;overflow:hidden;border:1px solid #ddd;border-radius:3px;background:#fff;}
+.lr-form label{float:left;line-height:44px;padding:0 10px;vertical-align:middle;font-size:14px}
+.lr-form input{width:100%;height:38px;padding:3px 0;font-size:14px;color:#727272;text-indent:5px;vertical-align:middle;border:0;border-radius:3px;-webkit-appearance:none}
+.lr-form input[type=submit]{height:45px;border:0;margin:10px 0;font-size:16px;font-weight:bold;-webkit-appearance:none;border-radius:3px;background:#feb901;color:#fff}
+.lr-form .forget{float: right;color: #727272;font-size: 11px;cursor: pointer;margin-bottom: 15px;}
+.join-info{text-align:center;height:40px;padding:0 0 10px;line-height:30px;background:#ececec}
+.join-info span{display:block;font-size:14px;line-height:16px;color:#666}
+.join-info a{font-size:14px;font-weight:bold;line-height:14px;color:#3366cc}
+.error-info{color:#ff0000;font-size:11px;padding:0 5px}
+.lr-form div.error-border{border:1px solid #ff0000}
+.thirdLogin{ background: #f0f2f3; margin: 10px auto 0;padding:10px 0 152px;border-top: 1px solid #e7e9e9;position: relative;text-align: center; }
+.thirdLogin .divider{border-bottom: 1px solid #dadee1;margin-top: 30px;}
+.thirdLogin h3{font-size: 20px;font-weight: bolder;color: #8e9aa2; line-height: 44px; height: 44px;background: #f0f2f3; position: absolute;top: 38px; left: 50%; -webkit-transform: translate(-50%, -50%); padding: 0 10px;  }
+.oh-login{display:inline-block;padding:10px 36px;border-radius:2px;text-align:center;margin-top: 20px;}
+.oh-login a{display:inline-block;height:60px;width:60px;line-height:60px;text-align:right;font-size:16px;font-weight:bold;margin:0 auto;border-radius:2px;color:#fff;}
+.fb-login a{background: url(//css.dhresource.com/mobile/login/image/facebook-logo.png) no-repeat 0 0; background-size: 58px 58px;}
+.gl-login a{background: url(//css.dhresource.com/mobile/login/image/google-logo.png) no-repeat 0 0; background-size: 58px 58px;}
+/*验证码*/
+.lr-form div.verificationCode{background: #f8f8f8;border: none;}
+.lr-form div.verificationCode input{float: left;width: 60%;border: 1px solid #ddd;outline:none;}
+.lr-form div.verificationCode img{float: right;width: 100px;height: 44px;border: 1px solid #ddd}
+.hidden{display: none}
+.lr-form .emailcon{position:relative;border: 0 none;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius:0px;margin: 0px;overflow: visible;background:none;}
+.emaillist{width:100%;border: 1px solid #ddd;background-color: #fff;border-radius: 3px;margin-top:6px;}
+.emaillist li{height: 34px;line-height: 34px;padding-left: 6px;cursor: pointer;color:#727272;font-size: 14px;border-bottom: 1px solid #ddd;}
+.emaillist li:hover,.emaillist .s-hover{background-color: #e8e8e8;}
+.close-btn{display:none;position:absolute;right:9px;top:10px;width:25px;height:25px;background: url(//css.dhresource.com/mobile/login/image/close-btn.png) no-repeat 4px 4px; background-size: 17px 17px;}
+.passwordcon .close-btn{right: 45px;}
+.nosee{position:absolute;right:9px;top:12px;width:25px;height:21px;background: url(//css.dhresource.com/mobile/login/image/nosee.png) no-repeat 0 0; background-size: 25px 21px;}
+.see{background: url(//css.dhresource.com/mobile/login/image/see.png) no-repeat 0 0; background-size: 25px 21px;}
+.lr-form .foucusColor{border:1px solid #ffb902;}
+.emaillist .ly-close{text-align: right;height:34px;line-height:31px;padding-right: 6px;border: none;}
+.emaillist .ly-close:hover{background: none;}
+.ly-close a{color: #47abef;font-size: 14px;}
+.email-txt,.passwordcon{padding-right: 35px;}
+.email-txt input,.passwordcon input{outline:none;} 
+
+.lr-form div.selectcon{margin-top:5px;border:none;background:none;}
+.lr-form div.selectcon select{display:inline-block;color:#999;font-size:14px;height:45px;text-indent:5px;-webkit-appearance:none;border-radius:3px;width: 100%;background:url(image/arrow.png) no-repeat 94% center #fff;background-size:11px 6px;border: 1px solid #ddd;border-radius:3px;}
+.lr-form div.selectcon select.error-border{border: 1px solid #ff0000;}
+.lr-form div.error-info,.lr-form div.j-error-info{border:none;background:none;margin-top:0px;}

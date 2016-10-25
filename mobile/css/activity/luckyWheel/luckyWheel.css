@@ -1,0 +1,37 @@
+/* header */
+.header,.spheader{width:100%;}
+.header .hd-logo{height:42px;padding:0 15px;border-bottom:1px solid #d0d0d0; -webkit-box-shadow: 0 3px 43px rgba(6, 0, 1, 0.07);-o-box-shadow:0 3px 4px rgba(6, 0, 1, 0.07);-moz-box-shadow: 0 3px 4px rgba(6, 0, 1, 0.07);box-shadow: 0 3px 4px rgba(6, 0, 1, 0.07);background:-webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#f2f2f2));background:-moz-linear-gradient(top, #fff,#f2f2f2);background:-o-linear-gradient(top, #fff,#f2f2f2);}
+.header .logo{float:left;text-indent:-2000px;margin:0px;width:100px;height:43px;background:url(http://css.dhresource.com/mobile/activity/10th/allCate/image/logo.png) no-repeat 0 11px;background-size:100px 25px;}
+.header .hdtop-right{float:right;height:43px;}
+.hdtop-right a{float:left;width:40px;height:40px;}
+.hdtop-right a:hover,.hdtop-right a:focus{text-decoration: none; }
+.hdtop-right .hdri-login{width:38px;background:url(http://css.dhresource.com/mobile/activity/10th/allCate/image/login.png) no-repeat 2px 12px;background-size:32px 22.5px;margin-right:6px;}
+.hdtop-right .hdri-shopping{width:32px;height:33px;padding:7px 0 0 7px;color:#ee7711;text-align:center;font-size:14px;font-weight:bold;background:url(http://css.dhresource.com/mobile/activity/10th/allCate/image/shopping.png) no-repeat 3px 12px;background-size:32px 22.5px;margin-right:11px;}
+.hdtop-right .hdri-letter{color:#ee7711;height:33px;padding-top:7px;height:36px;text-align:center;font-size:14px;font-weight:bold;background:url(http://css.dhresource.com/mobile/activity/10th/allCate/image/letter.png) no-repeat 6px 16px;background-size:27px 18px;}
+.detail-header{position:relative;height:43px;border-bottom:1px solid #ddd;background:-webkit-gradient(linear,center  top,center bottom,color-stop(0,#fff),color-stop(0.97,#f6f6f6),color-stop(1,#f2f2f2));background:-moz-linear-gradient(top, #fff,#f2f2f2);background:-o-linear-gradient(top, #fff,#f2f2f2);}
+.detail-header .det-back{float:left;margin:7px 0 0 10px;width:65px;height:31px;background:url(http://css.dhresource.com/mobile/activity/10th/allCate/image/back.png) no-repeat 0 0;background-size:65px 31px;}
+.det-hdtitle{display:block;color:#333;font-size:14px;line-height:43px;font-weight:bold;text-align:center;margin:0 50px;}
+
+.allCate{ background:#961b46;}
+.allCate img{ min-width:320px; max-width: 320px; margin:0 auto;}
+.allCate .panbg{ width:320px; height:295px;background:url(http://css.dhresource.com/mobile/activity/luckyWheel/image/pan.jpg) no-repeat; background-size:320px; margin:0 auto; position:relative; }
+.allCate .pan{width:80px; height:122px;background:url(http://css.dhresource.com/mobile/activity/luckyWheel/image/de.png) no-repeat; background-size:80px; margin:0 auto;position:absolute; top:55px; left:118px;}
+.allCate .btmText{width:320px; margin:0 auto;}
+.allCate .btmText span{display:block; width:300px; font-size:20px; color:#ffee5d; text-align: center;height: 30px;line-height: 30px;}
+.allCate .btmText ul{color: hsl(0, 100%, 100%); width: 300px;}
+.allCate .btmText ul li{background: url(http://www.dhresource.com/dhs/oth/lp/201502/05/li.png) no-repeat 20px 5px;padding-left: 40px;margin-bottom: 15px;font-size: 14px;line-height: 18px;}
+.allCate .btmText{ padding-bottom: 50px;}
+.bobDivs{ width:275px; height: 340px; background:#ffffff; margin:0 auto;position: relative;}
+.bobDivs .close{ width:21px; height: 21px; background:url(http://css.dhresource.com/mobile/activity/luckyWheel/image/close.jpg) no-repeat; background-size: 21px; position: absolute;top: 13px;right: 13px;cursor: pointer; }
+.text1, .text2, .text3, .text4, .text5 {padding: 50px 33px 0;font-size: 20px;line-height: 24px;color:#000;}
+.text44{padding: 35px 13px 0;}
+.text1 a, .text2 a, .text3 a, .text4 a {display: block;margin:0 auto;width: 210px;height: 40px; line-height: 40px;margin-top: 50px; text-align: center; color:#fff; background:#30a719;}
+.text2 b, .text3 b, .text4 b {display: block;text-align: center;margin-bottom: 20px;font-size: 26px;}
+.text4 p {font-size: 20px;}
+.text4 .p1 {margin-top: 15px;padding: 14px 10px 10px 15px;height: 58px;font-size: 16px;line-height: 18px;}
+.text5 a {color: hsl(42, 89%, 48%);text-decoration: underline;}
+.text5 .signin{display: block;margin:0 auto;width: 210px;height: 40px; line-height: 40px;margin-top: 28px; text-align: center; color:#fff; background:#30a719;text-decoration: none;}
+.ui-dialog-main-container {
+    display: none;
+    position: absolute;
+}

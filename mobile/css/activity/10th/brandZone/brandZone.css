@@ -1,0 +1,44 @@
+/* header */
+.header,.spheader{width:100%;}
+.header .hd-logo{height:42px;padding:0 15px;border-bottom:1px solid #d0d0d0; -webkit-box-shadow: 0 3px 43px rgba(6, 0, 1, 0.07);-o-box-shadow:0 3px 4px rgba(6, 0, 1, 0.07);-moz-box-shadow: 0 3px 4px rgba(6, 0, 1, 0.07);box-shadow: 0 3px 4px rgba(6, 0, 1, 0.07);background:-webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#f2f2f2));background:-moz-linear-gradient(top, #fff,#f2f2f2);background:-o-linear-gradient(top, #fff,#f2f2f2);}
+.header .logo{float:left;text-indent:-2000px;margin:0px;width:100px;height:43px;background:url(http://css.dhresource.com/mobile/activity/10th/brandZone/image/logo.png) no-repeat 0 11px;background-size:100px 25px;}
+.header .hdtop-right{float:right;height:43px;}
+.hdtop-right a{float:left;width:40px;height:40px;}
+.hdtop-right a:hover,.hdtop-right a:focus{text-decoration: none; }
+.hdtop-right .hdri-login{width:38px;background:url(http://css.dhresource.com/mobile/activity/10th/brandZone/image/login.png) no-repeat 2px 12px;background-size:32px 22.5px;margin-right:6px;}
+.hdtop-right .hdri-shopping{width:32px;height:33px;padding:7px 0 0 7px;color:#ee7711;text-align:center;font-size:14px;font-weight:bold;background:url(http://css.dhresource.com/mobile/activity/10th/brandZone/image/shopping.png) no-repeat 3px 12px;background-size:32px 22.5px;margin-right:11px;}
+.hdtop-right .hdri-letter{color:#ee7711;height:33px;padding-top:7px;height:36px;text-align:center;font-size:14px;font-weight:bold;background:url(http://css.dhresource.com/mobile/activity/10th/brandZone/image/letter.png) no-repeat 6px 16px;background-size:27px 18px;}
+.detail-header{position:relative;height:43px;border-bottom:1px solid #ddd;background:-webkit-gradient(linear,center  top,center bottom,color-stop(0,#fff),color-stop(0.97,#f6f6f6),color-stop(1,#f2f2f2));background:-moz-linear-gradient(top, #fff,#f2f2f2);background:-o-linear-gradient(top, #fff,#f2f2f2);}
+.detail-header .det-back{float:left;margin:7px 0 0 10px;width:65px;height:31px;background:url(http://css.dhresource.com/mobile/activity/10th/brandZone/image/back.png) no-repeat 0 0;background-size:65px 31px;}
+.det-hdtitle{display:block;color:#333;font-size:14px;line-height:43px;font-weight:bold;text-align:center;margin:0 50px;}
+/* brand Zone */
+.tenZ-ban img{display:block;margin: 0 auto;width: 320px;height: 110px;}
+.allCateList{border-top:1px solid #ddd;border-bottom:1px solid #ddd;-webkit-box-shadow: inset 0 2px 5px rgba(100,100,100,0.1);-moz-box-shadow:inset 0 2px 5px rgba(100,100,100,0.1);-o-box-shadow:inset 0 2px 5px rgba(100,100,100,0.1);box-shadow:inset 0 2px 5px rgba(100,100,100,0.1);}
+.allCateList ul{padding: 0 15px;}
+.allCateList ul li{height: 44px;line-height: 44px;border-bottom: 1px solid #eee;}
+.allCateList ul li:last-child{border-bottom: 0px;}
+.allCateList ul li a{display: block;color: #039;font-size: 14px;padding-right:10px;background:url(http://css.dhresource.com/mobile/common/image/narr-right.png) no-repeat scroll right 50% content-box;background-size:6px 9px;}
+.brandSpecial-logo{width: 275px;margin: 0 auto;padding: 18px 0 0 0;}
+.brandSpecial-logo ul li{float:left;width:91px;height:66px;border-bottom: 1px solid #c9ced4;border-right: 1px solid #c9ced4;}
+.brandSpecial-logo ul li img{display: block;padding:3px;max-width: 85px;max-height: 60px;}
+.brandSpecial-logo ul li:nth-child(4),.brandSpecial-logo ul li:nth-child(5),.brandSpecial-logo ul li:nth-child(6){border-bottom: 0px;}
+.brandSpecial-logo ul li:nth-child(3n){border-right: 0px;}
+.brandS-list h3{padding: 18px 10px 13px;color: #3f3f3f;font-size: 14px;font-weight: bold;}
+.brandS-list h3 a{float: right;font-weight: normal;color: #3f3f3f;}
+
+.bd-listcon{border: 1px solid #d0d2d5;margin: 0 10px 0;border-bottom:0px;border-right:0px;}
+.bd-listcon li{float: left;width: 50%;}
+.bd-listcon li a{display:block;height:222px;border-right: 1px solid #d0d2d5;border-bottom: 1px solid #d0d2d5;}
+.bd-listcon li:nth-child(1) a,.bd-listcon li:nth-child(2) a{border-top: 0px;}
+.tenZ-proimg {position:relative;line-height: 120px;padding:10px;text-align: center;border-bottom: 1px solid #d8d9dc;}
+.tenZ-narrD{position: absolute;width:16px;height: 6px;right:32px;bottom:-6px;background: url(http://css.dhresource.com/mobile/activity/10th/brandZone/image/icon-narrDown.png) no-repeat;background-size: 16px 6px; }
+.tenZ-proimg img{display:inline-block;vertical-align:middle;max-width: 125px;max-height: 120px;-webkit-select:none;}
+.tenZ-price{color: #666;font-size: 10px;padding:0px 0 10px 10px;}
+.tenZ-price em{color: #900000;font-size: 14px;}
+.tenZ-unit{color: #666;font-size: 10px;padding-left: 10px;text-decoration: line-through;}
+.tenZ-proName{overflow:hidden;color: #2d2d2d;font-size: 12px;padding:2px 0 2px 10px;height: 18px;white-space: nowrap;text-overflow:ellipsis;}
+.tenZ-discount{color: #ff7200;font-weight: bold;;font-size: 14px;padding: 10px 0 0 10px;}
+
+.go-backtop{padding:17px 0 10px;text-align:center;}
+.go-backtop a{height:35px;text-align:center;line-height:35px;color:#333;font-size:10px;font-weight:bold;}
+.go-backtop a i{display:inline-block;width:11px;height:9px;margin-left:5px;background:url(http://css.dhresource.com/mobile/common/image/narr-top.png) no-repeat right center;background-size:11px 9px;}

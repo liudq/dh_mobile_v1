@@ -1,0 +1,7 @@
+/* footer-stylesheet */
+.footer{padding:20px 0;text-align:center;background-color:#f6f6f6;border-top:1px solid #e6e6e6}
+.footer p{line-height:20px;font-size:9px;color:#888;}
+.ft-nav{font-size:10px;padding-top:12px;color:#aaa;font-weight:bold;}
+.ft-nav a{color:#666;font-weight:normal;padding:0 1px;}
+.footer .ft-join-login{font-size:14px;color:#333;}
+.footer .ft-join-login a{color:#039;font-weight:bold;}

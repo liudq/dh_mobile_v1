@@ -1,0 +1,125 @@
+/* unpaid page */
+.w-loginbtn{padding:20px 13px 20px 14px;}
+.w-loginbtn .w-submit{border:0 none;display:block;width:100%;text-align:center;-webkit-appearance:none;border:1px solid #e1a72b;border-top-color:#e7b440;border-left-color:#e7b440;border-right-color:#e7b440;color:#333;font-size:16px;font-family:'微软雅黑';border-radius:3px;width:100%;height: 43px;line-height: 43px;background-color:#fdd000;-webkit-box-shadow:0 2px 2px rgba(234,195,115,0.65);-o-box-shadow: 0 2px 2px rgba(234,195,115,0.65);-moz-box-shadow: 0 2px 3px rgba(234,195,115,0.65);box-shadow: 0 2px 3px  rgba(234,195,115,0.65);}
+.backOrder{border-top:1px solid #c8c7cc;background-color:#fff;}
+.backorder-num{font-style:normal;}
+.backorderlist{border-bottom:1px solid #c8c7cc;}
+.backorder-detail{padding:12px 10px 11px 10px;border-bottom:1px solid #c8c7cc;}
+.backorderlist a{display:block;padding:12px 10px 7px 10px;background:url(http://css.dhresource.com/mobile/wechat/orderManage/image/icon-skip.png) no-repeat right center content-box;background-size:8px 13px;}
+.noSkip a{background: none;-webkit-appearance:none;cursor: default;}
+.backorderlist dt,.backorder-detail dt{float: left;width:59px;height: 61px;line-height:59px;border:1px solid #ccc;text-align:center;}
+.backorderlist dt img,.backorder-detail dt img{display:inline-block;margin:0 auto;vertical-align:middle;max-width:59px;max-height:59px;}
+.backorderlist dd,.backorder-detail dd{margin-left: 79px;color:#333;line-height:17px;}
+.backorderlist dd{margin-left: 0px;}
+.logicDet .backorderlist dd{margin-left: 79px;}
+/* order */
+.order-num{color:#004bac;padding: 0 5px;}
+.orderls-item{color:#333;padding:6px 0 0 0;}
+.orderNumber{height:44px;line-height:44px;padding:0 10px;font-size:13px;font-family: '微软雅黑';}
+.qut-total{padding-top:11px;}
+.qut-total span{color: #004bac;}
+.qut-total span:nth-child(1){padding-right:15px;}
+.order-calculate{text-align:right;padding:10px 0 10px 0;font-family: '微软雅黑';}
+.order-calculate span{text-align: right;color: #333;}
+.order-calculate table{width: 100%;}
+.order-calculate tr td:nth-child(2){width:50px;text-align: left;color: #f00;padding-right: 15px;}
+.total-price{height: 42px;line-height: 42px;padding:0 10px;font-family: '微软雅黑';text-align:right;border-top:1px solid #f2cd69;border-bottom: 1px solid #e1a72b;background-color: #fffae5;}
+.total-price b{color: #f00;}
+.buyer-name{padding:9px 10px;margin-top:10px;font-size:15px;color:#333;font-family: '微软雅黑';height:25px;line-height: 25px;border-top:1px solid #ccc;border-bottom: 1px solid #ccc;background-color: #f7f7f7;}
+.buyer-grade{float:right;width:58px;text-align:center;height: 23px;font-size:15px;color: #fff;border:1px solid #f2cd69;-webkit-box-shadow:0 2px 2px rgba(234,195,115,0.65);-o-box-shadow: 0 2px 2px rgba(234,195,115,0.65);-moz-box-shadow: 0 2px 2px rgba(234,195,115,0.65);box-shadow: 0 2px 2px  rgba(234,195,115,0.65);background-color:#fbeba3;color: #604400;font-family: '微软雅黑';}
+/* logistics */
+.logistics{padding:15px 10px 30px;border-bottom: 1px solid #ccc;font-size:12px;color:#333;}
+.logi-waytime{padding-bottom: 15px;}
+.logi-tm{color: #004bac;}
+.logistics p{line-height: 20px;}
+.logi-tips{color: #693a0d;padding: 15px 0;font-family: '微软雅黑';}
+.logi-compNum{border-top:1px solid #ccc;margin-top: 10px;padding-left:10px;padding-right: 10px;font-size:11px;color:#333;font-family: '微软雅黑';}
+.logi-compNum h3{font-weight:normal;padding:11px 0 5px;}
+.logi-cominfor dl{padding-top:10px;}
+.logi-cominfor dt{float:left;width:64px;height: 44px;line-height: 44px;}
+.logi-cominfor dd{margin-left:64px;}
+.logi-cominfor dd select,.logi-cominfor dd input{display:inline-block;border-radius:0px;text-indent:10px;width:100%;height: 42px;line-height: 42px;border:1px solid #ccc;}
+.logi-cominfor dd select{-webkit-appearance:none;background:url(http://css.dhresource.com/mobile/wechat/orderManage/image/icon-selectbg.png) no-repeat 98.5% center;background-size:22px 16px;}
+.logi-cominfor dl:nth-child(2) dd{padding-right: 1px;}
+.orderInquiry{font-family: '微软雅黑';padding-top: 2px;}
+.logicinqBtn{display:block;padding:38px 0 0px;color:#004bac;font-size:15px;background: url(http://css.dhresource.com/mobile/wechat/orderManage/image/icon-logic.png) no-repeat center 5px;background-size:46px 25px;}
+.logicDet .backorderlist{padding:12px 10px 7px 10px;background-color:#fff;border-top:1px solid #ccc;}
+.logic-num{padding:8px 10px;background-color:#fffae5;color:#693a0d;font-size:13px;}
+.logic-num img{display:inline-block;vertical-align:middle;max-width: 50px;max-width: 50px;padding-right:18px;}
+.logi-follow{padding-bottom: 20px;}
+.logi-follow h3{height: 35px;line-height: 35px;color:#693a0d;font-size:13px;background-color:#fdd000;padding-left:10px;font-family: '微软雅黑';}
+.logi-followcon,.orderNum-state{font-size: 11px;line-height: 22px;padding:10px;font-family: '微软雅黑';}
+.orderNum-state{padding:10px 15px;border:1px solid #baeb9a;background:#f5fdf3;}
+.logi-follow .backorderlist{border-top: 0px;padding: 0 10px 3px;}
+.logi-follow .backorderlist dd{margin-left: 0px;font-size: 12px;line-height: 22px;}
+.logi-follow .backorderlist dd em{color: #039;}
+.wuliu{border-top: 1px solid #ccc;}
+.wuliu .req-ordercon{padding: 10px;background-color: #fff;border-bottom: 1px solid #ccc;}
+.wuliu .req-ordercon a{color: #333;}
+.order-state{padding:10px 10px 5px;border-bottom:1px solid #ccc;-webkit-column-count:4;-moz-column-count:4;-o-column-count:4;-moz-column-gap:0px;-webkit-column-gap:0px;}
+.order-state a{display: inline-block;color:#666;font-size:12px;width:100%;text-align:center;-moz-box-sizing:border-box;-o-box-sizing:border-box;-webkit-box-sizing:border-box;border-left: 1px solid #ccc;}
+.order-state a:nth-child(1){border-left: 0px;}
+.order-state a em,.order-state a span{display: block;}
+.order-state a em{color: #ff0000;}
+.order-state a span{padding-top:3px;color: #039;font-size: 13px;}
+.other-inquiry h3,.my-notice h3,.my-gooacti h3{border:1px solid #e1a72b;border-top-color:#e7b440;border-left-color:#e7b440;border-right-color:#e7b440;color:#693a0d;font-size:13px;font-family:'微软雅黑';padding-left:10px;height: 34px;line-height: 34px;background-color:#fdd000;-webkit-box-shadow:0 2px 2px rgba(234,195,115,0.65);-o-box-shadow: 0 2px 2px rgba(234,195,115,0.65);-moz-box-shadow: 0 2px 3px rgba(234,195,115,0.65);box-shadow: 0 2px 3px  rgba(234,195,115,0.65);}
+.other-inquiryway a{display:block;}
+.other-inquiryway li{height:43px;line-height: 43px;background-color:#fff;border-bottom:1px solid #ccc;background:#fff url(http://css.dhresource.com/mobile/wechat/orderManage/image/icon-cart.png) no-repeat 10px center;background-size:25px 14px;}
+.other-inquiryway li:nth-child(2){background: #fff url(http://css.dhresource.com/mobile/wechat/orderManage/image/dispute-icon.png) no-repeat 10px center;background-size:22px 19px;}
+.other-inquiryway li a{color:#333;padding:0 10px;text-indent:30px;background: url(http://css.dhresource.com/mobile/wechat/orderManage/image/icon-skip.png) no-repeat right center content-box;background-size:8px 13px;}
+.order-tips{padding: 60px 10px 30px;}
+
+/* requests */
+.req-order{padding-bottom:3px;background-color:#fff;border-bottom: 1px solid #ccc;}
+.req-order:nth-child(1){margin-top:0px;}
+.req-ordercon{padding:0 10px 10px;}
+.req-ordercon .req-orderprice{color:#f00;font-size:15px;}
+.req-ordercon .req-orderBtn{padding-top:10px;}
+.req-ordercon dt{margin-right: 106px;}
+.req-ordercon  dd{float: right;width:106px;text-align:center;}
+.req-ordercon .req-orderBtn a,.w-mycountRbind{display: inline-block;width:58px;text-align:center;height: 38px;line-height: 38px;border:1px solid #f2cd69;-webkit-box-shadow:0 2px 2px rgba(234,195,115,0.65);-o-box-shadow: 0 2px 2px rgba(234,195,115,0.65);-moz-box-shadow: 0 2px 3px rgba(234,195,115,0.65);box-shadow: 0 2px 3px  rgba(234,195,115,0.65);background-color:#fbeba3;color: #604400;font-family: '微软雅黑';}
+.requestsOrder .w-loginbtn{background-color:#fff;padding-bottom:50px;}
+.requestsOver dl{min-height: 20px;}
+.requestsOver dd{margin-top:-10px }
+.w-succ,.w-error,.w-confirm{padding:10px;margin-bottom:10px;color: #333;font-family: '微软雅黑';}
+.w-succ{border-top:1px solid #baeb9a;border-bottom:1px solid #baeb9a;background:#f5fdf3;}
+.w-error{background:#fbeeee;border-top:1px solid #ff7979;border-bottom:1px solid #ff7979;}
+.w-confirm{background:#fbfbee;border-top:1px solid #fcd22c;border-bottom:1px solid #fcd22c;}
+/* modify-price */
+.modify-price{margin-top: 10px;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+.mod-priceState{padding:0 10px;height:44px;line-height:44px;background-color:#f7f7f7;font-size:15px;color: #333;font-family: '微软雅黑';}
+.mod-priceState span{display:inline-block;padding-left: 18px;}
+.mod-priceState a{display:inline-block;margin-right:10px;margin-top:-2px;vertical-align:middle;width:22px;height:22px;background: url(http://css.dhresource.com/mobile/wechat/orderManage/image/icon-radio.png) no-repeat 0 0;background-size:22px 22px;}
+.mod-priceState .radioChecked{background: url(http://css.dhresource.com/mobile/wechat/orderManage/image/icon-radiochecked.png) no-repeat 0 0;background-size:22px 22px;}
+.mod-money{padding: 10px;font-family: '微软雅黑';font-size:12px;color: #333;}
+.mod-money span{float: left;width:118px;line-height: 35px;}
+.mod-moneytext{margin-left: 118px;}
+.mod-money input{display: inline-block;text-indent:10px;width:100%;height:35px;line-height: 35px;border: 1px solid #999;border-radius: 3px;}
+.mod-money .w-error{border:1px solid #ff7979;color:#333;margin-top: 10px;}
+.w-modcancel{padding-top: 10px;}
+.w-modcancel input{display:inline-block;width:100%;-webkit-appearance:none;height:42px;border:0 none;font-family: '微软雅黑';font-size:16px;border:1px solid #cfcfcf;-webkit-box-shadow:0 2px 2px rgba(207,207,207,0.65);-o-box-shadow: 0 2px 2px rgba(207,207,207,0.65);-moz-box-shadow: 0 2px 3px rgba(207,207,207,0.65);box-shadow: 0 2px 3px  rgba(207,207,207,0.65);background-color:#f8f8f8;color: #333;}
+.mod-money .w-loginbtn{padding:0px;}
+.w-header .w-hdri{float: none;font-size: 12px;line-height: 30px;}
+.order-time{float: right;color: #333;font-size: 12px;}
+.orderNumber .req-orderprice{float: right;color: #f00;font-size:13px;}
+.order-money{color: #f00;font-size:14px;}
+.orderNum-title{border-bottom: 1px solid #ccc;padding: 10px 0;}
+.orderNum-title .orderNumber{line-height: 22px;height: 22px;}
+/* page */
+.proMan-page{padding: 10px;background-color: #fff;text-align: center;}
+.proMan-pagelf{position:relative;display: inline-block;width: 270px;margin: 0 auto;}
+.proMan-select{position: absolute;background:rgba(0,0,0,0);text-indent:-2000px;width:125px;left:68px;height: 40px;border:0 none;-webkit-appearance:none;}
+.proMan-pagelf a{display: inline-block;vertical-align:middle;width:60px;height: 40px;}
+.proMan-pagelf span{display: inline-block;vertical-align:middle;text-align:center;color:#333;font-size:13px;width:120px;padding:0 2px;height: 40px;line-height: 40px;border:0 none;}
+.proMan-pagelf .pgprev-nopage{background: url(http://css.dhresource.com/mobile/wechat/orderManage/image/icon-nopalf.png) no-repeat center center;background-size:13px 20px;}
+.proMan-pagelf .pgnext-avtive{background: url(http://css.dhresource.com/mobile/wechat/orderManage/image/icon-pgri.png) no-repeat center center;background-size:13px 20px;}
+.proMan-pagelf .pgprev-active{background: url(http://css.dhresource.com/mobile/wechat/orderManage/image/icon-pglf.png) no-repeat center center;background-size:13px 20px;}
+.proMan-pagelf .pgnext-nopage{background: url(http://css.dhresource.com/mobile/wechat/orderManage/image/icon-nopgri.png) no-repeat center center;background-size:13px 20px;}
+.proMa-pgbg{display: inline-block;width:13px;height:8px;margin-left:5px;vertical-align: middle;background: url(http://css.dhresource.com/mobile/wechat/orderManage/image/icon-pgbg.png) no-repeat 0 0;background-size:13px 8px;}
+.req-orderlist{color: #333;padding:10px;display:block;padding-right:10px;background:url(http://css.dhresource.com/mobile/wechat/orderManage/image/icon-skip.png) no-repeat right center content-box;background-size:8px 13px;}
+.req-order:nth-child(1){border-top: none;}
+.req-orderlist .req-orderprice{color: #f00;}
+.w-reqMoney{padding: 5px 15px;}
+.w-reqMoney .w-loginbtn,.w-reqMoney .w-modcancel{padding: 0px;}
+.w-reqMoney .w-modcancel input{border-radius: 2px;box-shadow:none;color: #999;}
+.hasRecorded{border-top: 1px solid #ccc;}

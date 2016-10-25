@@ -1,0 +1,28 @@
+body{background-color: #f7f7f7;}
+/* header */
+.w-header{padding:0px 10px 0;}
+.logo{float:left;width:101px;height:44px;background: url(http://css.dhresource.com/mobile/common/image/logo.png) no-repeat 0 11px;background-size:101px 26px;}
+.w-hdri{float:right;line-height:44px;color: #666;font-size: 15px;font-family:'微软雅黑';}
+/*遮罩层 */
+.lay-confirmo,.lay-cancel{padding: 0 10px;}
+.layyerCon{position:fixed;z-index:201;display:none;width:100%;bottom:0px;background:rgba(0,0,0,0.6);font-family: '微软雅黑';}
+.layyerCon p{color: #fff;padding:10px;}
+.lay-confirmo input{border:0 none;-webkit-appearance:none;width: 100%;height: 42px;line-height: 42px;text-align: center;font-family: '微软雅黑';border:1px solid #e1a72b;border-top-color:#e7b440;border-left-color:#e7b440;border-right-color:#e7b440;border-radius:3px;color:#333;font-size:16px;background: #fdd000;}
+.lay-cancel{padding-top:8px;}
+.lay-cancel input{border:0 none;-webkit-appearance:none;margin-bottom:10px;width: 100%;height: 42px;line-height: 42px;font-family: '微软雅黑';text-align: center;border:1px solid #cfcfcf;border-radius:3px;color:#333;font-size:16px;background: #f8f8f8;}
+.layyerConiframe{display:none;position: fixed;left:0;top:0;width: 100%;height: 100%;background: rgba(0,0,0,0);z-index:100;}
+.w-bindSucc,.w-bindError{padding:20px 20px 20px 61px;font-family: '微软雅黑';border:1px solid #baeb9a;background:#f5fdf3 url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-succ.png) no-repeat 14px 21px;background-size:33px 33px;}
+.w-bindError{border:1px solid #ff7979;background:#fbeeee url(http://css.dhresource.com/mobile/wechat/wcommon/image/icon-error.png) no-repeat 14px 21px;background-size:33px 33px;}
+.w-bindSucc h3,.w-bindError h3{color: #333;}
+.w-bindSucc p{font-size:11px;color: #666;padding-top:8px;}
+.w-bindErrorReson{font-size:11px;color: #666;padding-top:8px;}
+.w-bindErrorReson p{line-height: 23px;}
+.w-bindTips{font-size:13px;padding:8px 10px;color: #693a0d;border:1px solid #e1a72b;background-color:#fff6ce;}
+.w-bindTips em{color: #ff0000;}
+.w-bindResult{padding:10px 15px 0;}
+
+/* loading */
+.loading{color: #666;font-size: 15px;font-family: '微软雅黑';}
+.loadingimg{text-align: center;padding-top: 20px;}
+.loadingimg img{margin:0 auto;max-width: 43px;max-height: 41px;}
+.loading p{text-align: center;padding-top: 15px;}

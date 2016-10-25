@@ -1,0 +1,33 @@
+/* header */
+.header,.spheader{width:100%;}
+.header .hd-logo{height:42px;padding:0 15px;border-bottom:1px solid #d0d0d0; -webkit-box-shadow: 0 3px 43px rgba(6, 0, 1, 0.07);-o-box-shadow:0 3px 4px rgba(6, 0, 1, 0.07);-moz-box-shadow: 0 3px 4px rgba(6, 0, 1, 0.07);box-shadow: 0 3px 4px rgba(6, 0, 1, 0.07);background:-webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#f2f2f2));background:-moz-linear-gradient(top, #fff,#f2f2f2);background:-o-linear-gradient(top, #fff,#f2f2f2);}
+.header .logo{float:left;text-indent:-2000px;margin:0px;width:100px;height:43px;background:url(http://css.dhresource.com/mobile/activity/10th/tenZone/image/logo.png) no-repeat 0 11px;background-size:100px 25px;}
+.header .hdtop-right{float:right;height:43px;}
+.hdtop-right a{float:left;width:40px;height:40px;}
+.hdtop-right a:hover,.hdtop-right a:focus{text-decoration: none; }
+.hdtop-right .hdri-login{width:38px;background:url(http://css.dhresource.com/mobile/activity/10th/tenZone/image/login.png) no-repeat 2px 12px;background-size:32px 22.5px;margin-right:6px;}
+.hdtop-right .hdri-shopping{width:32px;height:33px;padding:7px 0 0 7px;color:#ee7711;text-align:center;font-size:14px;font-weight:bold;background:url(http://css.dhresource.com/mobile/activity/10th/tenZone/image/shopping.png) no-repeat 3px 12px;background-size:32px 22.5px;margin-right:11px;}
+.hdtop-right .hdri-letter{color:#ee7711;height:33px;padding-top:7px;height:36px;text-align:center;font-size:14px;font-weight:bold;background:url(http://css.dhresource.com/mobile/activity/10th/tenZone/image/letter.png) no-repeat 6px 16px;background-size:27px 18px;}
+/* 10Zone */
+.tenZ-ban img{display:block;margin: 0 auto;width: 320px;height: 110px;}
+.tenZ-allCate{padding: 13px 10px 0px;}
+.tenZ-allCateList .tenZ-allCateTit{background-color: #fff2cb;border-bottom: 1px solid #f5d365;}
+.tenZ-allCateList .tenZ-allCateTit a{display:block;padding:0 25px 0 20px;height: 50px;line-height: 50px;color:#773e00;font-size:14px;background:url(http://css.dhresource.com/mobile/activity/10th/tenZone/image/icon-down.png) no-repeat content-box right 24px;background-size:8.5px 5px;}
+.tenZ-allCateList:first-child .tenZ-allCateTit{border-radius: 4px 4px 0 0;}
+.tenZ-allCateList:last-child .tenZ-allCateTit{border-radius: 0 0 4px 4px;}
+.ten-allcatecon{display:none;border: 1px solid #d0d2d5;margin: 5px 0 25px;border-bottom:0px;border-right:0px;}
+.ten-allcatecon li{float: left;width: 50%;}
+.ten-allcatecon li a{display:block;height:222px;border-right: 1px solid #d0d2d5;border-bottom: 1px solid #d0d2d5;}
+.ten-allcatecon li:nth-child(1) a,.ten-allcatecon li:nth-child(2) a{border-top: 0px;}
+.tenZ-proimg {position:relative;line-height: 124px;padding:10px;text-align: center;border-bottom: 1px solid #d8d9dc;}
+.tenZ-narrD{position: absolute;width:16px;height: 6px;right:32px;bottom:-6px;background: url(http://css.dhresource.com/mobile/activity/10th/tenZone/image/icon-narrDown.png) no-repeat;background-size: 16px 6px; }
+.tenZ-proimg img{display:inline-block;vertical-align:middle;max-width: 124px;max-height: 124px;}
+.tenZ-price{color: #666;font-size: 10px;padding:10px 0 0 10px;}
+.tenZ-price em{color: #900000;font-size: 14px;}
+.tenZ-unit{color: #666;font-size: 10px;padding-left: 10px;text-decoration: line-through;}
+.tenZ-proName{overflow:hidden;color: #2d2d2d;font-size: 12px;padding:0 0 10px 10px;height: 18px;white-space: nowrap;text-overflow:ellipsis;}
+.current  .tenZ-allCateTit a{background:url(http://css.dhresource.com/mobile/activity/10th/tenZone/image/icon-up.png) no-repeat content-box right 24px;background-size:8.5px 5px;}
+.current .ten-allcatecon {display: block;}
+.go-backtop{padding:17px 0 10px;text-align:center;}
+.go-backtop a{height:35px;text-align:center;line-height:35px;color:#333;font-size:10px;font-weight:bold;}
+.go-backtop a i{display:inline-block;width:11px;height:9px;margin-left:5px;background:url(http://css.dhresource.com/mobile/common/image/narr-top.png) no-repeat right center;background-size:11px 9px;}

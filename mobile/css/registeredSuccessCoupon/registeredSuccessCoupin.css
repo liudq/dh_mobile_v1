@@ -1,0 +1,32 @@
+/*******************************注册送coupon2015.5.25 add xiaonannan*****************************/
+.mask{display:none;position: fixed;left: 0;top: 0;width: 100%;height: 100%;background-color: #000;-ms-filter: "alpha(Opacity=50)";filter: alpha(opacity=50);opacity: .5;_position: absolute;
+  _bottom: auto;_top: expression(eval(document.documentElement.scrollTop)); _height: expression(documentElement.clientHeight);}
+.registeredCoupon-pop{width:100%;padding:18px 0px;position:absolute;top:50px;border-top:1px solid #d1d1d1;display:none;background:#fff;}
+.registeredCouponCont{padding:0px 10px;}
+.closed{width:12px;height:12px;float:right;background: url(image/closed.png) no-repeat;background-size:12px 12px;}
+.registeredCouponTxt{text-align:center;}
+.registeredCouponTxt h3{font-size:18px;color:#454545;}
+.registeredCouponTxt p{padding:8px 0px;color:#a6a6a6;}
+
+.success-info-cont{height:144px;margin-bottom:7px;padding:10px;color:#fff;font-family:"Arial";border-radius:2px;background:#ffbf16;display:none;}
+.success-info-cont-lf{width:84px;font-weight:bold;float:left;text-align:center;padding-right:16px;padding-bottom:8px;border-right: 1px dashed #fff;}
+.success-info-cont-rt{margin-left:100px;padding:0px 10px;}
+.f74{font-size:56px;line-height:74px;}
+.f15{font-size:15px;line-height:15px;}
+.f36{font-size:18px;line-height:18px;}
+.start{height:14px;display:block;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAOCAYAAABZ/o57AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4NkRGNjkyREY5M0QxMUU0OUFEQThCOUY2MTQ5MzU1NCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4NkRGNjkyRUY5M0QxMUU0OUFEQThCOUY2MTQ5MzU1NCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjg2REY2OTJCRjkzRDExRTQ5QURBOEI5RjYxNDkzNTU0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjg2REY2OTJDRjkzRDExRTQ5QURBOEI5RjYxNDkzNTU0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+UMGFFgAAAVtJREFUeNpi/P//PwMZgAmIbYH4IAP1ACcQKwLxNVwWkgP8gXg5EDNS0aFZQDwPpywoREnETED8/j8EOJChHxtmB+K/UDM1sKkhJ0TdgVgAyl5EpVDNQIrdaZSEKCMQ8wCxMhC//I8K0oFYBIhZyYgZPiDWQQpNGPADYiEgZoGpBxEyeAwrAeI7/4kHX4F4OxDz4/FwDxA/IcHMj0C8ipCvQaG07z9pwIKAmRxAfJME834DsQIxUcRMgmP1iYx2Yh0LiiF5WNRTy7HaJKZRkGPPE3CkBKm5/i8QT8cj/w+Ir5KY038A8So88k+A+AU5Bb4NgZqKm4xiyQOPnBqy+5jINPQVEG9Ek5ckw6HInr8NxLvR5PlJLUeZkNJNIJQPEpcG4i1QOV8S0yg3VB+oXHaEFl0gcTUgPgGVM0AuR4nBoHIxGbkARsMqQBxLokPl0DyNjg2B2B3GBwgwAPSZbnJRRxaVAAAAAElFTkSuQmCC') repeat-x;}
+.dataCont{width:100%;padding:15px 0px 0px 0px; font-weight:normal;/* white-space:nowrap; */}
+.dataCont p{font-size:12px;}
+@media screen and (min-width:320px){
+    .fb15{font-size:14px; line-height:14px;font-weight:bold;}
+    .dataCont{font-size:12px;}
+}
+@media screen and (min-width:480px) and (max-width:640px){
+    .fb15{font-size:24px; line-height:24px;}
+    .dataCont p{font-size:14px;}
+}
+.continue-btn{display:block;margin:10px 0px;height:44px;line-height:44px;text-align:center;font-size:16px;font-weight:bold;border-radius:3px;color:#fff;background:#feb901}
+.registeredCouponNote{padding:13px 10px;background:#f3f3f3;}
+.registeredCouponNote h3{padding-bottom:5px;font-size:14px;color:#464646;}
+.registeredCouponNoteList li{line-height:20px;color:#aaa;}
+/***********************注册送coupon2015.5.25 add xiaonannan  end******************************/

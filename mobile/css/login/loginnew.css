@@ -1,0 +1,76 @@
+﻿body{background:#fff;color:#39362b;font:12px/1.5 San Francisco,Helvetica Neue,Arial, Helvetica, sans-serif;}
+header{ display:none;height:39px;line-height:39px;padding:5px 0;background-color:#fff;border-bottom:1px solid #ddd;text-align:center;}
+.logo{display:inline-block;width:100px;height:45px;margin:0 auto;text-indent:-2000px;background:url(//css.dhresource.com/mobile/common/image/logo.png) no-repeat 0 10px;background-size:100px 25px}
+.logo a:hover,.logo a:focus{text-decoration:none}
+h1{padding:15px 25px 10px;line-height:20px;text-align:left;font-size:14px;color:#8e9aa2;-webkit-box-shadow:inset 0 2px 3px rgba(80,80,80,0.20);-o-box-shadow:inset 0 2px 3px rgba(80,80,80,0.20);-moz-box-shadow:inset 0 2px 3px rgba(80,80,80,0.20);box-shadow:inset 0 2px 3px rgba(80,80,80,0.20)}
+.sec{display:none;margin:10px 15px 0px;}
+.sec .tit{height:45px;padding:0 5px;line-height:45px;font-size:18px;font-weight:bold;background:#ffefc1;color:#fff;}
+.sec .tit a{display:block;color:#735112;background:url(//css.dhresource.com/mobile/login/image/login-right.png) no-repeat center right;background-size:8px 14px;}
+.sec .cur-bg a{color: #727272;background: none;border-bottom: 1px solid #ddd;}
+.sec .cur-bg{background:#f8f8f8;border: none}
+
+/*#J_login{border: 1px solid #ddd;}*/
+#J_login{display: block;}
+.lr-form div{position:relative;margin-top:15px;overflow:hidden;border:1px solid #cbc8bb;border-radius: 3px;}
+.lr-form label{float:left;line-height:44px;padding:0 10px;vertical-align:middle;font-size:14px}
+.lr-form input:-webkit-autofill {
+	-webkit-box-shadow : 0 0 0px 1000px white inset ;
+	
+}
+.lr-form input{width:100%;height:37px;padding:3px 0;font-size:13px;color:#333;text-indent:5px;vertical-align:middle;border:0;-webkit-appearance:none;}
+.lr-form input[type=submit]{height:43px;border:0;font-size:16px;-webkit-appearance:none;border-radius:3px;background: -webkit-linear-gradient(top, #ffd42f, #ffcb05);color:#39362b}
+.lr-form .forget{float: right;color: #07c;font-size: 11px;cursor: pointer;margin-bottom: 15px;padding-top: 14px;}
+.lr-form .join-info{text-align:center;margin-bottom:15px;border: 0 none;}
+.join-info span{display:block;font-size:14px;line-height:16px;color:#666}
+.join-info a{font-size:12px;line-height:14px;color:#07c}
+.error-info{color:#ff0000;font-size:11px;padding:0 5px}
+.lr-form div.error-border{border:1px solid #ff0000}
+
+.thirdLogin h3{font-size: 20px;font-weight: bolder;color: #8e9aa2; line-height: 44px; height: 44px;background: #f0f2f3; position: absolute;top: 38px; left: 50%; -webkit-transform: translate(-50%, -50%); padding: 0 10px;  }
+.oh-login{display:inline-block;float:left;width:50%;border-radius:2px;text-align:center;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.oh-login a{display:block;height:43px;line-height:43px;text-align:right;font-size:16px;font-weight:bold;margin:0 auto;border-radius:3px;color:#fff;}
+.fb-login a{margin-right: 5px;background:#fff url(//css.dhresource.com/mobile/login/image/loginbg.png) no-repeat center 5px; background-size: 40px auto;}
+.gl-login a{margin-left: 5px;background:#fff url(//css.dhresource.com/mobile/login/image/loginbg.png) no-repeat center -83px; background-size: 40px auto;}
+/*验证码*/
+.lr-form div.verificationCode{border: none;}
+.lr-form div.verificationCode input{float: left;width: 60%;border:1px solid #cbc8bb;outline:none;border-radius: 3px}
+.lr-form div.verificationCode.error-border input{border:1px solid #ff0000;border-radius: 3px;}
+.lr-form div.verificationCode img{float: right;width: 36%;height: 44px;}
+.hidden{display: none}
+.lr-form .emailcon{position:relative;border: 0 none;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius:0px;margin: 0px;overflow: visible;background:none;}
+.emaillist{width:100%;border: 1px solid #ddd;background-color: #fff;border-radius: 3px;margin-top:6px;}
+.emaillist li{height: 34px;line-height: 34px;padding-left: 6px;cursor: pointer;color:#727272;font-size: 14px;border-bottom: 1px solid #ddd;}
+.emaillist li:hover,.emaillist .s-hover{background-color: #e8e8e8;}
+.close-btn{display:none;position:absolute;right:9px;top:10px;width:25px;height:25px;background: url(//css.dhresource.com/mobile/login/image/closenew.png) no-repeat 4px 4px; background-size: 17px 17px;}
+.passwordcon .close-btn{right: 40px;}
+.nosee{position:absolute;right:10px;top:12px;width:25px;height:21px;background: url(//css.dhresource.com/mobile/login/image/noseenew.png) no-repeat 0 0; background-size: 25px 21px;}
+.see{background: url(//css.dhresource.com/mobile/login/image/seenew.png) no-repeat 0 0; background-size: 25px 21px;}
+.lr-form .foucusColor{}
+.emaillist .ly-close{text-align: right;height:34px;line-height:31px;padding-right: 6px;border: none;}
+.emaillist .ly-close:hover{background: none;}
+.ly-close a{color: #47abef;font-size: 14px;}
+.passwordcon{padding-right: 0px;}
+.email-txt input,.passwordcon input{outline:none;} 
+
+.backbtn{padding: 0 13px;height: 50px;margin-bottom: 30px;background: #fff;}
+.backbtn a{display:inline-block;line-height:50px;padding-left:20px;color:#39362b;font-size: 18px;background: url(//css.dhresource.com/mobile/login/image/backbg.png) no-repeat 0 14px; background-size: 19px 22px;}
+.orsignin{text-align: center;color: #a6a398;width:100%;height:45px;line-height:45px;}
+.faceback-goole{padding:1px 15px;}
+.faceback-goole a{font-size: 0px;border:1px solid #ebeae4;}
+.guest-mode{padding:15px;padding: 0 15px;margin: 15px 0;}
+.guest-mode a{display:block;width:100%;height: 23px;padding:10px 0;line-height: 23px;text-align: center;background: -webkit-linear-gradient(top, #fff5c1, #ffeca6);border: 1px solid #ddcc8b;border-radius: 2px;color:#39362b;font-size: 12px;}
+.logreg-tit .tit{display:inline-block;float:left;width:50%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+.logreg-tit .tit a{display: block;height: 45px;line-height: 45px;text-align: center;color: #39362b;font-size: 15px;border: 1px solid #ebeae4;  border-top:none;background: #f5f4ef url(//css.dhresource.com/mobile/login/image/bg_left.png) repeat-y right 0;background-size: 7px 1px;-webkit-tap-highlight-color:transparent;}
+.logreg-tit .tit:last-child a{background: #f5f4ef url(//css.dhresource.com/mobile/login/image/bg_right.png) repeat-y 0 0;background-size:7px 1px}
+.logreg-tit .tit.cur-bg:last-child a{background: #fff}
+.logreg-tit .cur-bg a{background:#fff;border:none;}
+@media screen and (min-device-width: 414px){
+ .lr-form .join-info{padding:0;margin-top: 0;height: 45px;line-height: 45px;margin-bottom:0;}
+ .gl-login a{background:#fff url(//css.dhresource.com/mobile/login/image/loginbg.png) no-repeat center -102px; background-size: 35px auto;}
+ .fb-login a{background:#fff url(//css.dhresource.com/mobile/login/image/loginbg.png) no-repeat center -145px; background-size: 35px auto;}
+}
+
+.lr-form div.selectcon{margin-top:15px;border: 1px solid #cbc8bb;background:none;}
+.lr-form div.selectcon select{border:none;display:inline-block;color:#999;font-size:14px;height:45px;text-indent:5px;-webkit-appearance:none;border-radius:3px;width: 100%;background:url(image/arrow.png) no-repeat 94% center #fff;background-size:11px 6px;border-radius:3px;}
+.lr-form div.selectcon select.error-border{border: 1px solid #ff0000;}
+.lr-form div.error-info,.lr-form div.j-error-info{border:none;background:none;margin-top:0px;}

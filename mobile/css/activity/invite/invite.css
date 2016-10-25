@@ -1,0 +1,37 @@
+.t-underline{text-decoration:underline}
+.invite-coupon{padding:28px 9px;line-height:17px;font-size:17px;font-weight:bold;text-align:center;color:#404040}
+.invite-register{padding:0 9px;}
+.invite-register input{display:block;line-height:normal;font-size:15px;color:#404040}
+.invite-register .invite-text{display:block;width:100%;height:38px;padding:3px 0;vertical-align:middle;text-indent:10px;border: 0 none;}
+.invite-register .invite-btn{background-color:#FFC300;-webkit-appearance:none;width:100%;height:45px;margin-top:19px;border:0;color:#fff;font-size:16px;border-radius:3px}
+.invite-register .invite-check{float:left;width:30px;height:30px;margin:2px 10px 2px 0}
+.invite-image{margin:10px auto;}
+.invite-image img{margin:10px auto}
+.invite-info{padding:23px 16px 0;font-size:15px;color:#999;text-align:center}
+.invite-tip{padding-left:18px;font-size:15px;color:#404040;margin:23px 10px;background:url(//css.dhresource.com/mobile/activity/invite/image/iv-tip.jpg) no-repeat 0 0;background-size:15px 15px}
+.error-info{width:97%;color:red;display:none}
+.invite-register .error{border-color:red}
+.agree-info{display:none;width:270px;background:#fff;border:1px solid #ccc;position:fixed;z-index:1000;top:50%;margin-top:-180px;left:50%;margin-left:-135px;padding-top:10px}
+.agree-info span{font-weight:bold;font-size:16px;padding:10px}
+.agree-info-box{height:240px;margin:10px 0 10px 10px;overflow-x:hidden;overflow-y:auto}
+.agree-info-box p{font-size:14px;margin-bottom:5px;}
+.agree-info a{position:absolute;width:20px;height:20px;display:block;right:2px;top:-6px;font-size:20px;text-align:center}
+.verify-code{position:relative;overflow:hidden;padding-right:200px}
+.verify-code img{position:absolute;right:0;top:5px;}
+
+.email-txt,.passwordcon,.verifycon{border:1px solid #ccc;border-radius:3px;margin:10px auto;position: relative;}
+.email-txt input,.passwordcon input,.verifycon input{outline:none;}
+.hidden{display: none}
+.lr-form .emailcon{position:relative;border: none;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;margin: 0px;overflow: visible;background:none;}
+.emaillist{width:100%;border: 1px solid #ddd;background-color: #fff;border-radius: 3px;margin-top:6px;}
+.emaillist li{height: 34px;line-height: 34px;padding-left: 6px;cursor: pointer;color:#727272;font-size: 14px;border-bottom: 1px solid #ddd;}
+.emaillist li:hover,.emaillist .s-hover{background-color: #e8e8e8;}
+.close-btn{display:none;position:absolute;right:9px;top:10px;width:25px;height:25px;background: url(//css.dhresource.com/mobile/activity/invite/image/close-btn.png) no-repeat 4px 4px; background-size: 17px 17px;}
+.passwordcon .close-btn{right: 45px;}
+.nosee{position:absolute;right:9px;top:12px;width:25px;height:21px;background: url(//css.dhresource.com/mobile/activity/invite/image/nosee.png) no-repeat 0 0; background-size: 25px 21px;}
+.see{background: url(//css.dhresource.com/mobile/activity/invite/image/see.png) no-repeat 0 0; background-size: 25px 21px;}
+.foucusColor{border:1px solid #ffb902;}
+.emaillist .ly-close{text-align: right;height:34px;line-height:34px;padding-right: 6px;border: none;}
+.emaillist .ly-close:hover{background: none;}
+.ly-close a{color: #47abef;font-size: 14px;}
+.email-txt,.passwordcon{padding-right: 35px;}

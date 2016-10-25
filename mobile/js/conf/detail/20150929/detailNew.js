@@ -1,0 +1,17 @@
+$IMPORT('/DHMUtils/DHMCommon.js');
+$IMPORT('/DHMUtils/DHMInit.js');
+$IMPORT('/DHMUtils/DHMSearch.js');
+$IMPORT('/DHMUtils/DHMSlide.js');
+/*$IMPORT('/registeredSuccessCoupon/registeredSuccessCoupon.js');*/
+$IMPORT('/detail/20150929/config.js');
+$IMPORT('/detail/20150929/tpl.js');
+$IMPORT('/detail/20150929/shipto.js');
+$IMPORT('/detail/20150929/storecoupon.js');
+$IMPORT('/detail/20150929/storeCouponTpl.js');
+$IMPORT('/detail/20150929/priceonapp.js');
+$IMPORT('/detail/20150929/popupTip.js');
+$IMPORT('/detail/20150929/dataErrorLog.js');
+$IMPORT('/detail/20150929/addToFav.js');
+$IMPORT('/detail/20150929/dhCouponTpl.js');
+$IMPORT('/detail/20150929/dhCoupon.js');
+$IMPORT('/detail/20150929/detailNew.js');
